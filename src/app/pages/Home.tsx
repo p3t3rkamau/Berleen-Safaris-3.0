@@ -1,5 +1,4 @@
 // src/pages/Home.tsx
-import React from 'react'
 import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 import { HeroSlider } from '../components/HeroSlider'
@@ -8,7 +7,6 @@ import { loadDestinations } from '../data/loadDestinations'
 import { Award, Users, Headphones, MapPin, Star, Quote } from 'lucide-react'
 import { StatsBand } from '../components/StatsBand'
 import PopularSafaris from '../components/FeaturedDestination'
-import ReviewsSection from '../components/ReviewsSection'
 
 const allDestinations = loadDestinations()
 
@@ -214,13 +212,6 @@ export function Home() {
               </motion.div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Add the Reviews Section */}
-      <section className="py-16 px-4 bg-gray-900/50">
-        <div className="container mx-auto max-w-6xl">
-          <ReviewsSection />
         </div>
       </section>
 
