@@ -12,7 +12,7 @@ export function Footer() {
               
                <div className="ml-0">
                 <div className="">
-                  <img src={logo} alt="Adventures Connect" className="h-20 w-auto" />
+                  <img src={logo} alt="Berleen Safaris" className="h-20 w-auto" />
                 </div>
             
               </div>
@@ -96,7 +96,7 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-white/10 mt-8 pt-6 text-center text-sm text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Adventures Connect Ltd. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Berleen Safaris Ltd. All rights reserved.</p>
         </div>
       </div>
     </footer>

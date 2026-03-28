@@ -71,7 +71,7 @@ export function About() {
               className="text-white max-w-2xl"
             >
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-                About Adventures Connect
+                About Berleen Safaris
               </h1>
               <p className="text-xl md:text-2xl text-gray-200">
                 Creating unforgettable safari experiences since 2010
@@ -95,7 +95,7 @@ export function About() {
             </h2>
             <div className="prose prose-lg mx-auto text-gray-600">
               <p className="mb-4">
-                Adventures Connect Ltd. was founded in 2010 with a simple mission: to share the incredible beauty 
+                Berleen Safaris Ltd. was founded in 2010 with a simple mission: to share the incredible beauty 
                 and wildlife of East Africa with travelers from around the world. What started as a small operation 
                 with a single safari vehicle has grown into one of the region's most trusted safari companies.
               </p>
@@ -171,7 +171,7 @@ export function About() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--safari-brown-dark)] mb-4">
-              Why Choose Adventures Connect
+              Why Choose Berleen Safaris
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               We go above and beyond to ensure your safari is unforgettable

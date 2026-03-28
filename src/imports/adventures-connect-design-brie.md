@@ -1,4 +1,4 @@
-Design a modern, premium, fully responsive Travel & Tours website for a company called “Adventures Connect Ltd.” The design theme should be inspired by the attached logo, using a warm African safari palette: sunset gold gradients, earthy browns, deep black, and clean white sections. The aesthetic should feel adventurous, luxurious, and authentic to East Africa safari experiences.
+Design a modern, premium, fully responsive Travel & Tours website for a company called “Berleen Safaris Ltd.” The design theme should be inspired by the attached logo, using a warm African safari palette: sunset gold gradients, earthy browns, deep black, and clean white sections. The aesthetic should feel adventurous, luxurious, and authentic to East Africa safari experiences.
 
 Global Layout Requirements:
 
