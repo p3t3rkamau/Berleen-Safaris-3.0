@@ -1,5 +1,8 @@
-import { createBrowserRouter } from 'react-router-dom';
+import React from 'react';
+import { createBrowserRouter, Outlet } from 'react-router-dom';
 import { RootLayout } from './components/RootLayout';
+
+// Public Pages
 import { Home } from './pages/Home';
 import { About } from './pages/About';
 import { Destinations } from './pages/Destinations';
@@ -9,7 +12,19 @@ import { SafariDetail } from './pages/SafariDetail';
 import { Gallery } from './pages/Gallery';
 import { Contact } from './pages/Contact';
 
+// Admin Components
+import AdminLogin from './pages/AdminLogin';
+import { AuthProvider } from './components/AuthContext';
+
+// Admin wrapper that provides auth context to admin routes
+const AdminWrapper = () => (
+  <AuthProvider>
+    <Outlet />
+  </AuthProvider>
+);
+
 export const router = createBrowserRouter([
+  // Public Routes
   {
     path: '/',
     Component: RootLayout,
@@ -22,6 +37,15 @@ export const router = createBrowserRouter([
       { path: 'safari/:id', Component: SafariDetail },
       { path: 'gallery', Component: Gallery },
       { path: 'contact', Component: Contact },
+    ],
+  },
+  
+  // Admin Routes (only login page)
+  {
+    path: '/admin',
+    element: <AdminWrapper />,
+    children: [
+      { path: 'login', element: <AdminLogin /> },
     ],
   },
 ]);

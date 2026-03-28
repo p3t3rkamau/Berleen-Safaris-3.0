@@ -1,4 +1,8 @@
 /dist
 /node_modules
 /package-lock.json
-/gitattributes
+/gitattributes/dist
+/node_modules
+/package-lock.json
+.env.local
+.env

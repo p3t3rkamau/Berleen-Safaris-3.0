@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'motion/react';
 import { Phone, Mail, MapPin, Send, MessageCircle, Clock } from 'lucide-react';
 import * as Accordion from '@radix-ui/react-accordion';
