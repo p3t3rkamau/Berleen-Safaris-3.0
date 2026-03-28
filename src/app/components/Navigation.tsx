@@ -1,13 +1,15 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, LogOut, Shield } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import { logo }  from '../assets/img/exports';
+import { logo } from '../assets/img/exports';
+import { useAuth } from './AuthContext';
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const { user, isAdmin, signOut } = useAuth();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,6 +22,11 @@ export function Navigation() {
   useEffect(() => {
     setIsMobileMenuOpen(false);
   }, [location]);
+
+  const handleLogout = async () => {
+    await signOut();
+    window.location.href = '/';
+  };
 
   const navLinks = [
     { name: 'Home', path: '/' },
@@ -43,12 +50,10 @@ export function Navigation() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <div className="flex items-center">
-              
               <div className="ml-0">
                 <div className="">
-                   <img src={logo} alt="Berleen Safaris" className="h-20 w-auto" />
+                  <img src={logo} alt="Berleen Safaris" className="h-20 w-auto" />
                 </div>
-             
               </div>
             </div>
           </Link>
@@ -68,6 +73,34 @@ export function Navigation() {
                 {link.name}
               </Link>
             ))}
+            
+            {/* Admin Section - Desktop */}
+            {user ? (
+              <div className="flex items-center gap-3">
+                {isAdmin && (
+                  <div className="flex items-center gap-1 text-green-600 text-sm font-medium">
+                    <Shield size={16} />
+                    <span>Admin Mode</span>
+                  </div>
+                )}
+                <button
+                  onClick={handleLogout}
+                  className="flex items-center gap-2 px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-full transition-all duration-300 hover:scale-105"
+                >
+                  <LogOut size={18} />
+                  Logout
+                </button>
+              </div>
+            ) : (
+              <Link
+                to="/admin/login"
+                className="flex items-center gap-2 bg-gradient-to-r from-amber-600 to-amber-700 text-white px-4 py-2 rounded-full hover:shadow-lg transition-all duration-300 hover:scale-105"
+              >
+                <Shield size={18} />
+                Admin Login
+              </Link>
+            )}
+            
             <Link
               to="/contact"
               className="bg-gradient-to-r from-[var(--safari-gold)] to-[var(--safari-orange)] text-white px-6 py-2 rounded-full hover:shadow-lg transition-all duration-300 hover:scale-105"
@@ -109,6 +142,34 @@ export function Navigation() {
                     {link.name}
                   </Link>
                 ))}
+                
+                {/* Admin Section - Mobile */}
+                {user ? (
+                  <>
+                    {isAdmin && (
+                      <div className="flex items-center gap-1 text-green-600 text-sm font-medium py-2">
+                        <Shield size={16} />
+                        <span>Admin Mode Active</span>
+                      </div>
+                    )}
+                    <button
+                      onClick={handleLogout}
+                      className="flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-full transition-all duration-300"
+                    >
+                      <LogOut size={18} />
+                      Logout
+                    </button>
+                  </>
+                ) : (
+                  <Link
+                    to="/admin/login"
+                    className="flex items-center justify-center gap-2 bg-gradient-to-r from-amber-600 to-amber-700 text-white px-4 py-2 rounded-full transition-all duration-300"
+                  >
+                    <Shield size={18} />
+                    Admin Login
+                  </Link>
+                )}
+                
                 <Link
                   to="/contact"
                   className="bg-gradient-to-r from-[var(--safari-gold)] to-[var(--safari-orange)] text-white px-6 py-2 rounded-full text-center hover:shadow-lg transition-all duration-300"
