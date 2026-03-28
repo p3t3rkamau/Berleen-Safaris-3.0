@@ -1,4 +1,5 @@
 // src/pages/Home.tsx
+import React from 'react'
 import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 import { HeroSlider } from '../components/HeroSlider'
@@ -7,6 +8,7 @@ import { loadDestinations } from '../data/loadDestinations'
 import { Award, Users, Headphones, MapPin, Star, Quote } from 'lucide-react'
 import { StatsBand } from '../components/StatsBand'
 import PopularSafaris from '../components/FeaturedDestination'
+import ReviewsSection from '../components/ReviewsSection'
 
 const allDestinations = loadDestinations()
 
@@ -37,7 +39,7 @@ const testimonials = [
   {
     name: 'Sarah & John Mitchell',
     location: 'United States',
-    text: 'Our Masai Mara safari was absolutely incredible! The guides were knowledgeable, the accommodations were perfect, and we saw all the Big Five. Berleen Safaris made our dream safari a reality!',
+    text: 'Our Masai Mara safari was absolutely incredible! The guides were knowledgeable, the accommodations were perfect, and we saw all the Big Five. Adventures Connect made our dream safari a reality!',
     rating: 5,
     image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop',
   },
@@ -129,7 +131,7 @@ export function Home() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--safari-brown-dark)] mb-4">
-              Why Choose Berleen Safaris
+              Why Choose Adventures Connect
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               We are committed to providing exceptional safari experiences with unmatched service
@@ -212,6 +214,13 @@ export function Home() {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Add the Reviews Section */}
+      <section className="py-16 px-4 bg-gray-900/50">
+        <div className="container mx-auto max-w-6xl">
+          <ReviewsSection />
         </div>
       </section>
 
