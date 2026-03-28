@@ -7,11 +7,11 @@ export function TopBar() {
         <div className="flex flex-wrap gap-4 items-center justify-center sm:justify-start">
           <a href="tel:+254714018914" className="flex items-center gap-2 hover:text-[var(--safari-gold)] transition-colors">
             <Phone className="w-4 h-4" />
-            <span> +254 722 371 171 / +254 721 949 410</span>
+            <span>Currency: USD</span>
           </a>
-          <a href="mailto:info@adventuresconnect.com" className="flex items-center gap-2 hover:text-[var(--safari-gold)] transition-colors">
+          <a href="mailto:tours@berleensafaris.com" className="flex items-center gap-2 hover:text-[var(--safari-gold)] transition-colors">
             <Mail className="w-4 h-4" />
-            <span>info@adventuresconnect.co.ke</span>
+            <span>tours@berleensafaris.com</span>
           </a>
         </div>
         <div className="flex gap-4 items-center">
