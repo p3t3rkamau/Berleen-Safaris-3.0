@@ -1,0 +1,109 @@
+{
+  "id": "best-maasai-mara-diani",
+  "title": "The Best of the Maasai Mara and Diani",
+  "country": "Kenya",
+  "duration": "7 Days / 6 Nights",
+  "price": 2470,
+  "description": "Combine Kenya’s iconic Maasai Mara wildlife with the pristine beaches of Diani. Witness the Great Wildebeest Migration (July–October), enjoy guided game drives, and relax on Africa’s finest coastal resorts.",
+  "image": "https://cdn.atrsafari.com/cdn/05explore/locations-and-lodges/africa/kenya/mara/triangle/angama-mara/0/stills/00page/01KANG-IM0001-angama-mara-1920.jpg",
+  "category": "luxury",
+  "experience": "wildlife & beach",
+  "highlights": [
+    "Witness the Great Wildebeest Migration in Maasai Mara (Jul–Oct)",
+    "Three nights in Maasai Mara at luxury lodges",
+    "Four nights in Diani Beach on the Indian Ocean",
+    "Guided game drives in open-sided Landcruisers",
+    "Return airstrip transfers and flights included",
+    "Angama Foundation contribution included"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrival and Maasai Mara Transfer",
+      "description": "Flight to Maasai Mara departing 10:00 hrs, arriving 10:50 hrs. Transfer to Ashnil Mara Lodge. Afternoon game drive at 15:30 hrs."
+    },
+    {
+      "day": 2,
+      "title": "Full Day in Maasai Mara",
+      "description": "Morning and afternoon game drives in Maasai Mara. Optional full-day game drive with packed lunch. Spot the Big Five and other wildlife."
+    },
+    {
+      "day": 3,
+      "title": "Full Day in Maasai Mara",
+      "description": "Morning and afternoon game drives continue. Witness the Great Wildebeest Migration if traveling Jul–Oct."
+    },
+    {
+      "day": 4,
+      "title": "Maasai Mara to Diani Beach",
+      "description": "Early morning game drive, check-out at 10:00 hrs. Flight to Nairobi at 11:00 hrs, connect to Diani departing 14:20 hrs. Arrival at 15:30 hrs and transfer to Swahili Beach Resort & Spa."
+    },
+    {
+      "day": 5,
+      "title": "Diani Beach Leisure",
+      "description": "Relax and enjoy the beach. Optional excursions available."
+    },
+    {
+      "day": 6,
+      "title": "Diani Beach Leisure",
+      "description": "Full day at leisure or optional activities such as water sports and island tours."
+    },
+    {
+      "day": 7,
+      "title": "Diani Beach Leisure",
+      "description": "Relaxation day at Swahili Beach Resort & Spa, enjoy resort facilities."
+    },
+    {
+      "day": 8,
+      "title": "Departure",
+      "description": "Check out after breakfast, transfer to Diani Airport for Nairobi bound flight via Vipingo Ridge arriving 12:30 hrs. Short excursion or shopping in Nairobi if timing allows, then transfer to JKIA for onward flight."
+    }
+  ],
+  "included": [
+    "Three nights accommodation in Governor camp Maasai Mara",
+    "Three nights accommodation in Diani Beach on half board (The Maji or Swahili Beach Resort & SPA) or full board (Afro Chic)",
+    "Flights: Wilson – Maasai Mara – Wilson, Wilson – Diani – Wilson on Safarilink or Governors Air",
+    "Professional driver guide and pre-tour briefing",
+    "Return airstrip transfers in Maasai Mara and Diani",
+    "Guided game drives in open-sided Landcruisers",
+    "Same-day laundry at Angama",
+    "Wi-Fi in lodges",
+    "All park entrance fees and relevant taxes",
+    "Angama Foundation contribution"
+  ],
+  "notIncluded": [
+    "Tips and gratuities",
+    "Personal expenses such as travel insurance, phone calls, meals/drinks not indicated",
+    "Optional activities"
+  ],
+  "pricing": {
+    "midSeason": {
+      "1st-Apr-30th-Jun": 4470,
+      "01-nov-20-dec": 4770,
+      "1st-jun-31-oct": 6030
+    },
+    "peakSeason": {
+       "1st-Apr-30th-Jun": 4470,
+      "01-nov-20-dec": 4770,
+      "1st-jun-31-oct": 6030
+    }
+  },
+  "accommodation": [
+    "Angama Mara Camp – Maasai Mara (3 nights)",
+    "Little Governors Camp – Maasai Mara (3 nights)",
+    "Ashnil Mara Camp – Maasai Mara (3 nights)",
+    "Afro Chic – Diani Beach (4 nights)",
+    "The Maji – Diani Beach (4 nights)",
+    "Swahili Beach Resort & Spa – Diani Beach (4 nights)"
+  ],
+  "gallery": [
+    "/images/safaris/angama-mara.jpg",
+    "/images/safaris/ashnil-mara.jpg",
+    "/images/safaris/the-maji.jpg",
+    "/images/safaris/swahili-beach.jpg"
+  ],
+  "travelInfo": {
+    "clothes": "Bring mosquito repellent, sunscreen, hat, sunglasses, and malaria medication. Early mornings and evenings may be cool, so a sweater and trousers/jeans are recommended.",
+    "food": "Most hotels and lodges serve buffet menus with desserts. Some offer set menus. Food is of international standard, prepared by professional chefs."
+  },
+  "note": "Adventures Connect LTD reserves the right to substitute accommodations with similar facilities in circumstances beyond our control."
+}

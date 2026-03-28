@@ -1,0 +1,15 @@
+{
+  "id": "tanzania",
+  "name": "Tanzania",
+  "country": "Tanzania",
+  "flag": "🇹🇿",
+  "image": "https://www.inspiresafaris.com/wp-content/uploads/2026/03/erhan-1.jpg",
+  "description": "Home to the Serengeti, Ngorongoro Crater and Zanzibar's spice-scented beaches — Tanzania is Africa at its most iconic.",
+  "highlights": [
+    "Serengeti",
+    "Ngorongoro Crater",
+    "Zanzibar",
+    "Tarangire",
+    "Mount Kilimanjaro"
+  ]
+}

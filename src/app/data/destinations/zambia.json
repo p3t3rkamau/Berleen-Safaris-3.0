@@ -1,0 +1,15 @@
+{
+  "id": "zambia",
+  "name": "Zambia",
+  "country": "Zambia",
+  "flag": "🇿🇲",
+  "image": "https://cdn.adventure-life.com/14/08/30/iStock-1081365424/1300x820.webp",
+  "description": "Known for the mighty Victoria Falls and abundant wildlife, Zambia offers stunning national parks and adventure experiences.",
+  "highlights": [
+    "Victoria Falls",
+    "South Luangwa National Park",
+    "Lower Zambezi",
+    "Kafue National Park",
+    "Livingstone"
+  ]
+}

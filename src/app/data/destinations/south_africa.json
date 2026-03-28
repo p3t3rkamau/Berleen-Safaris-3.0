@@ -1,0 +1,15 @@
+{
+  "id": "south_africa",
+  "name": "South Africa",
+  "country": "South Africa",
+  "flag": "🇿🇦",
+  "image": "https://www.andbeyond.com/wp-content/uploads/sites/5/cape-town-aerial-view-greenpoint-stadium.jpg",
+  "description": "From vibrant cities to the wilds of Kruger, South Africa is a country of contrasts, offering beaches, mountains, and rich culture.",
+  "highlights": [
+    "Kruger National Park",
+    "Cape Town",
+    "Table Mountain",
+    "Garden Route",
+    "Robben Island"
+  ]
+}

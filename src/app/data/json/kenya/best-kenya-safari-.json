@@ -1,0 +1,89 @@
+{
+  "id": "best-kenya-safari-",
+  "title": "Best of Kenya Safari",
+  "country": "Kenya",
+  "duration": "5 Days / 4 Nights",
+  "price": 2000,
+  "description": "This short but immersive safari explores central and southern Kenya, from the Aberdares to Lake Nakuru and Maasai Mara. Guests enjoy iconic wildlife, stunning landscapes, and optional game drives. The Great Wildebeest Migration can be witnessed from July to October in the Maasai Mara.",
+  "image": "https://media-cdn.tripadvisor.com/media/photo-s/2e/db/5b/d5/luxury-suite-verandah.jpg",
+  "category": "luxury",
+  "experience": "wildlife",
+  "highlights": [
+    "Aberdares wildlife viewing at The Ark Lodge",
+    "Flamingoes and rhinos at Lake Nakuru National Park",
+    "Game drives in Maasai Mara with chances to witness the Great Wildebeest Migration",
+    "Luxury lodge accommodation with meals included"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "date": "26th August 2023",
+      "title": "Arrival and Transfer to Aberdares",
+      "description": "Arrival on KQ 311 from Dubai, customs formalities, then drive to Aberdares Country Club. Transfer to The Ark Lodge for overnight stay. Afternoon wildlife viewing at waterhole."
+    },
+    {
+      "day": 2,
+      "date": "27th August 2023",
+      "title": "Aberdares to Lake Nakuru",
+      "description": "After breakfast, drive to Lake Nakuru National Park (3.5 hours). Lunch at Lake Nakuru Sopa Lodge. Afternoon game drive to view flamingoes, rhinos, and Rothschild giraffe."
+    },
+    {
+      "day": 3,
+      "date": "28th August 2023",
+      "title": "Lake Nakuru to Maasai Mara",
+      "description": "Drive to Mara Elatia Camp in Maasai Mara (5 hours). Afternoon game drive. Witness the Great Wildebeest Migration if visiting between July–October."
+    },
+    {
+      "day": 4,
+      "date": "29th August 2023",
+      "title": "Full Day in Maasai Mara",
+      "description": "Morning and afternoon game drives in Maasai Mara. Optional full day game drive with packed lunch."
+    },
+    {
+      "day": 5,
+      "date": "30th August 2023",
+      "title": "Departure",
+      "description": "Early morning departure at 08:30 from Maasai Mara. Arrival in Nairobi in time for KQ 310 flight to Dubai departing at 17:00 hrs."
+    }
+  ],
+  "included": [
+    "Accommodation on full board basis (breakfast, lunch, and dinner) in the mentioned lodges",
+    "Exclusive use of safari-equipped Landcruiser (not shared)",
+    "Professional driver guide and pre-tour briefing",
+    "Unlimited game drives during safari",
+    "All park entrance fees and relevant taxes"
+  ],
+  "notIncluded": [
+    "Tips and gratuities",
+    "Personal expenses such as travel insurance, laundry, phone calls",
+    "Meals or drinks not indicated",
+    "Optional activities"
+  ],
+  "pricing": {
+    "lowSeason": {
+      "solo": 2000,
+      "twoPersons": 2000,
+      "group": 2000
+    },
+    "highSeason": {
+      "solo": 2000,
+      "twoPersons": 2000,
+      "group": 2000
+    }
+  },
+  "accommodation": [
+    "The Ark Lodge – Aberdares (1 night)",
+    "Lake Nakuru Sopa Lodge – Lake Nakuru (1 night)",
+    "Mara Elatia Camp – Maasai Mara (2 nights)"
+  ],
+  "gallery": [
+    "https://primateworldsafaris.com/wp-content/uploads/2023/02/the-ark-lodge.jpg",
+    "https://www.kws.go.ke/sites/default/files/2019-11/parks/Lake%20Nakuru/Lake-Nakuru-5.jpg",
+    "https://tour.epesicloud.com/app/storage/uploads/37/1741240706_94_masai_mara.jpg"
+  ],
+  "travelInfo": {
+    "clothes": "Bring mosquito repellent, sunscreen, hat, sunglasses, and malaria medication. Highlands can be cool in mornings and evenings, so a sweater and long trousers/jeans are recommended.",
+    "food": "Most lodges serve buffet-style meals; a few offer set menus. Food is of international standard, prepared by professional chefs."
+  },
+  "note": "Adventures Connect LTD reserves the right to substitute accommodations with similar facilities in circumstances beyond our control."
+}

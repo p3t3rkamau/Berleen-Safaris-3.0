@@ -1,0 +1,15 @@
+{
+  "id": "kenya",
+  "name": "Kenya",
+  "country": "Kenya",
+  "flag": "🇰🇪",
+  "image": "https://www.lakenakurukenya.com/wp-content/uploads/2020/10/5-Days-of-Lake-Naivasha-Crescent-Island-Maasai-Mara-Wildlife-Safaris-750x450.jpg",
+  "description": "The birthplace of the safari, Kenya offers extraordinary wildlife, dramatic landscapes and vibrant Maasai culture.",
+  "highlights": [
+    "Maasai Mara",
+    "Amboseli",
+    "Tsavo",
+    "Diani Beach",
+    "Lake Nakuru"
+  ]
+}

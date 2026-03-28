@@ -1,0 +1,87 @@
+{
+  "id": "best-kenya-safari-south",
+  "title": "Best of Kenya Safari - South Edition",
+  "country": "Kenya",
+  "duration": "3 Days / 2 Nights",
+  "price": 3450,
+  "description": "Kenya pioneered the safari experience and remains a country of striking contrasts, from snow-capped mountains to lush tropical forests and golden beaches. This safari showcases Kenya’s remarkable landscapes, cultures and wildlife diversity. Guests experience the iconic Maasai Mara ecosystem combined with luxury accommodation and exclusive flights, offering an unforgettable wildlife experience in one of Africa’s most celebrated safari destinations.",
+  "image": "https://zazuventure.com/wp-content/uploads/2020/08/4328101038_5ed584481f.jpg",
+  "category": "luxury",
+  "experience": "wildlife",
+  "highlights": [
+    "Luxury stay in Nairobi at Villa Rosa Kempinski",
+    "Exclusive charter flights to and from the Maasai Mara",
+    "Two nights luxury accommodation in the Maasai Mara",
+    "Daily game drives in one of Africa’s richest wildlife reserves",
+    "Optional hot air balloon safari over the Mara plains"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrival in Nairobi",
+      "description": "Arrival in Nairobi and transfer to Villa Rosa Kempinski for an overnight stay on a bed and breakfast basis."
+    },
+    {
+      "day": 2,
+      "title": "Fly to Maasai Mara",
+      "description": "Board an exclusive charter flight from Nairobi to the Maasai Mara. Transfer to your luxury camp and enjoy your first game drive in the reserve followed by dinner and overnight stay."
+    },
+    {
+      "day": 3,
+      "title": "Maasai Mara Safari and Departure",
+      "description": "Morning game drive in the Maasai Mara followed by breakfast and flight back to Nairobi for onward travel."
+    }
+  ],
+  "included": [
+    "Return charter flight to and from the Maasai Mara",
+    "Two nights accommodation on full board basis in the Maasai Mara",
+    "Teas and coffee with snacks",
+    "Refreshments during game drives",
+    "Two game drives daily",
+    "Return airstrip transfers in Maasai Mara",
+    "Return airport transfers in Nairobi",
+    "All meals and drinks (excluding French Champagne and reserve wines)",
+    "Laundry services and WiFi",
+    "All on-property guest experiences",
+    "Balloon ride over the Mara",
+    "Emergency medical evacuation insurance",
+    "VAT and government levies",
+    "Park entrance fees and contribution to the Angama Foundation"
+  ],
+  "notIncluded": [
+    "Additional guest experiences not listed in the package",
+    "Safari shop purchases and in-tent massages",
+    "Tips and gratuities",
+    "Telephone calls",
+    "Cognac and cigars"
+  ],
+  "pricing": {
+    "lowSeason": {
+      "solo": 3450,
+      "twoPersons": 3450,
+      "group": 3450
+    },
+    "highSeason": {
+      "solo": 3750,
+      "twoPersons": 3750,
+      "group": 3750
+    }
+  },
+  "accommodation": [
+    "Villa Rosa Kempinski - Nairobi (1 night)",
+    "Kichwa Tembo Tented Camp - Maasai Mara (2 nights)",
+    "Bateleur Camp - Maasai Mara (2 nights)",
+    "Angama Mara - Maasai Mara (2 nights)"
+  ],
+  "gallery": [
+    "/images/safaris/nairobi.jpg",
+    "/images/safaris/maasai-mara.jpg",
+    "/images/safaris/angama-mara.jpg",
+    "/images/safaris/kichwa-tembo.jpg"
+  ],
+  "travelInfo": {
+    "clothes": "Bring mosquito repellent, sunscreen, a hat and sunglasses. Early mornings and evenings in the Maasai Mara can be cool so a light jacket or sweater is recommended.",
+    "food": "Meals are served at luxury camps and lodges offering international standard cuisine with a variety of beverages included except for premium champagne and reserve wines."
+  },
+  "note": "Cessna Caravan is a single-engine 12-seater aircraft and the DHC-6 Twin Otter is an 18-seater twin-engine aircraft used for charter flights to the Maasai Mara."
+}

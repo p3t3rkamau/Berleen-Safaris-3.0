@@ -1,0 +1,73 @@
+{
+  "id": "best-kenya-mara-sassan-elmi",
+  "title": "Best of Kenya Mara Safari",
+  "country": "Kenya",
+  "duration": "3 Days / 2 Nights",
+  "price": 1265,
+  "description": "Experience the iconic Maasai Mara wildlife with luxury game drives and optional balloon safari. This safari is ideal for witnessing Kenya’s Big Five and the Great Migration (Jul–Oct) in a short, immersive trip.",
+  "image": "https://www.discoverafrica.com/wp-content/uploads/2023/09/iStock-513903233-1.jpg",
+  "category": "luxury",
+  "experience": "wildlife",
+  "highlights": [
+    "Full day guided game drives in Maasai Mara",
+    "Optional hot air balloon ride",
+    "Accommodation at Olorien Camp",
+    "Exclusive safari Landcruiser use, not shared",
+    "Professional driver guide",
+    "Visit during Great Migration (Jul–Oct)"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Naivasha to Maasai Mara",
+      "description": "Pick up at 07:30 hrs from Enashipai Resort in Naivasha. 5-hour drive to Maasai Mara, lunch at Olorien Camp, followed by afternoon game drive at 15:30 hrs. Overnight at Zebra Plains Mara Camp."
+    },
+    {
+      "day": 2,
+      "title": "Full Day in Maasai Mara",
+      "description": "Morning and afternoon game drives. Optional hot air balloon safari. Spot the Big Five and other wildlife. Overnight at Zebra Plains Mara Camp."
+    },
+    {
+      "day": 3,
+      "title": "Departure to Nairobi",
+      "description": "Early morning game drive at 06:00 hrs before breakfast. Depart 08:30 hrs for Nairobi, arriving 14:30 hrs. Drop off at JKIA for onward flight at 16:45 hrs."
+    }
+  ],
+  "included": [
+    "Accommodation on Full Board at Olorien Camp",
+    "Exclusive use of safari-equipped Landcruiser (not shared)",
+    "Unlimited game drives",
+    "Professional driver guide and pre-tour briefing",
+    "All park entrance fees and relevant taxes"
+  ],
+  "notIncluded": [
+    "Tips",
+    "Personal expenses (travel insurance, laundry, phone calls, meals/drinks not indicated)",
+    "Optional activities not mentioned"
+  ],
+   "pricing": {
+    "lowSeason": {
+      "solo": 785,
+      "2people": 1265,
+      "group": 985
+    },
+    "highSeason": {
+      "solo": 780,
+      "2people": 980,
+      "group": 1065
+    }
+  },
+  "accommodation": [
+    "Olkinyei Camp – Maasai Mara (2 nights)",
+    "Zebra Plains Mara Camp – Maasai Mara (2 nights)"
+  ],
+  "gallery": [
+    "https://www.andbeyond.com/wp-content/uploads/sites/5/WILDwatch-Africa-Tanzania-Bateleur-Ben-Haas-lion-playtime-08-Website-1920x1080-fill-gravityauto-Q_AutoBest.jpg",
+    "https://sarunibasecamp.com/wp-content/uploads/2023/10/Saruni-Basecamp-Maasai-warrior-throwing-a-spear-1024x666.jpg"
+  ],
+  "travelInfo": {
+    "clothes": "Bring mosquito repellent, sunscreen, hat, sunglasses, and malaria medication. Early mornings and evenings can be cool; a sweater and trousers/jeans are recommended.",
+    "food": "Buffet-style meals at lodges, some set menus. All food is of international standard prepared by professional chefs."
+  },
+  "note": "Adventures Connect LTD reserves the right to substitute accommodations with similar facilities in circumstances beyond our control."
+}

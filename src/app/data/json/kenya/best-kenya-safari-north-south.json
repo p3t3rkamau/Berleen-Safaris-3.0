@@ -1,0 +1,152 @@
+{
+  "id": "best-kenya-safari-north-south",
+  "title": "Best of Kenya Safari – North and South Edition",
+  "country": "Kenya",
+  "duration": "15 Days / 14 Nights",
+  "price": 6230,
+  "description": "This extensive safari explores northern and southern Kenya, from Ol Pejeta and Samburu to the Aberdares, Lake Naivasha, Maasai Mara, Amboseli, and finally the Kenyan coast. Guests experience iconic wildlife, cultural visits, and optional excursions, including the Great Wildebeest Migration between July and October.",
+  "image": "https://jewelsafaris.com/wp-content/uploads/2019/09/Ol-Pejeta-Chimpanzee-Sanctuary-1.jpg",
+  "category": "luxury",
+  "experience": "wildlife",
+  "highlights": [
+    "Chimpanzee sanctuary and Big Five at Ol Pejeta Conservancy",
+    "Rare species sightings in Samburu including Grevy’s zebra and Beisa oryx",
+    "Aberdares wildlife viewing at The Ark Lodge",
+    "Boat ride and birdlife at Lake Naivasha",
+    "Game drives in Maasai Mara with opportunity to witness the Great Wildebeest Migration",
+    "Amboseli National Park with elephant herds and views of Mount Kilimanjaro",
+    "Mombasa beach stay with optional activities such as Fort Jesus tour, dolphin swimming, and Chale Island visit"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrival in Nairobi",
+      "description": "Arrival at Jomo Kenyatta International Airport, transfer to Tamarind Tree Hotel for overnight stay."
+    },
+    {
+      "day": 2,
+      "title": "Nairobi to Ol Pejeta Conservancy",
+      "description": "Drive from Nairobi to Serena Sweetwaters Tented Camp in Ol Pejeta. Afternoon game drive. Explore wildlife including the Big Five and the Chimpanzee sanctuary."
+    },
+    {
+      "day": 3,
+      "title": "Ol Pejeta to Samburu",
+      "description": "Drive to Samburu Intrepids Camp with lunch en route. Afternoon game drive along the Ewaso Nyiro river."
+    },
+    {
+      "day": 4,
+      "title": "Full Day in Samburu",
+      "description": "Morning and afternoon game drives. Spot Grevy’s zebra, Beisa oryx, and other wildlife. Optional Samburu village visit."
+    },
+    {
+      "day": 5,
+      "title": "Samburu to Aberdares",
+      "description": "Drive to Aberdares Country Club and transfer to The Ark Lodge. Afternoon wildlife viewing at the waterhole."
+    },
+    {
+      "day": 6,
+      "title": "Aberdares to Lake Naivasha",
+      "description": "Depart The Ark after breakfast and drive to Lake Naivasha Sopa Lodge. Afternoon leisure or optional boat ride."
+    },
+    {
+      "day": 7,
+      "title": "Lake Naivasha to Maasai Mara",
+      "description": "Drive to Ashnil Mara Camp in Maasai Mara. Afternoon game drive."
+    },
+    {
+      "day": 8,
+      "title": "Full Day in Maasai Mara",
+      "description": "Morning and afternoon game drives. Optional full day with packed lunch. Possible sightings of all Big Five and the Great Migration (July–October)."
+    },
+    {
+      "day": 9,
+      "title": "Maasai Mara to Amboseli via Nairobi",
+      "description": "Morning departure to Nairobi, lunch at Carnivore Restaurant, then drive to Amboseli National Park. Evening game drive en route to Amboseli Serena Lodge."
+    },
+    {
+      "day": 10,
+      "title": "Full Day in Amboseli",
+      "description": "Morning and afternoon game drives. Elephant herds and views of Mount Kilimanjaro. High chances of spotting all Big Five."
+    },
+    {
+      "day": 11,
+      "title": "Amboseli to Mombasa by Train",
+      "description": "Transfer to Emali Railway Station. First-class train ride on Madaraka Express to Mombasa, spotting wildlife en route. Transfer to Serena Beach Hotel & Spa."
+    },
+    {
+      "day": 12,
+      "title": "Leisure in Mombasa",
+      "description": "Relax at Serena Beach Hotel & Spa. Optional activities include Fort Jesus tour, Haller Park nature walk, and Tamarind Dhow dinner cruise."
+    },
+    {
+      "day": 13,
+      "title": "Leisure in Mombasa",
+      "description": "Optional activities such as Chale Island tour, dolphin swimming at Wasini Island, or water sports. Enjoy resort facilities."
+    },
+    {
+      "day": 14,
+      "title": "Leisure in Mombasa",
+      "description": "Final full day in Mombasa to enjoy the beach, water activities, or optional excursions."
+    },
+    {
+      "day": 15,
+      "title": "Departure",
+      "description": "Check out after breakfast. Transfer to Moi International Airport for your Nairobi-bound flight."
+    }
+  ],
+  "included": [
+    "Accommodation on full board in safari lodges, half board at Swahili Beach resort, bed & breakfast at Tamarind Tree Hotel",
+    "Exclusive use of safari-equipped Landcruiser (not shared)",
+    "Unlimited game drives while on safari",
+    "Services of a English-speaking professional driver guide and pre-tour briefing",
+    "All park entrance fees and relevant taxes",
+    "First-class train ticket (SGR)",
+    "Return transfers in Mombasa and Diani",
+    "Excursions into wasiai ilands and Chale Island",
+    "One-way air ticket Mombasa to Nairobi (SafariLink)"
+  ],
+  "notIncluded": [
+    "Tips and gratuities",
+    "Items of personal nature",
+    "Personal expenses (laundry, phone calls, extra meals/drinks)",
+    "Optional activities not mentioned"
+  ],
+  "pricing": {
+    "lowSeason": {
+      "solo": 5470,
+      "twoPersons": 6230,
+      "group": 5790
+    },
+    "highSeason": {
+      "solo": 5470,
+      "twoPersons": 6230,
+      "group": 5790
+    }
+  },
+  "accommodation": [
+    "Tamarind Tree Hotel – Nairobi (1 night)",
+    "Serena Sweetwaters Tented Camp – Ol Pejeta (1 night)",
+    "Samburu Intrepids Camp – Samburu (2 nights)",
+    "The Ark Lodge – Aberdares (1 night)",
+    "Lake Naivasha Sopa Lodge – Lake Naivasha (1 night)",
+    "Ol Kinyei Mara Camp – Maasai Mara (2 nights)",
+    "Amboseli Serena Lodge – Amboseli (1 nights)",
+    "Kilangani serena (1 nights)",
+    "Swahili Beach resort – Mombasa (3 nights)"
+  ],
+  "gallery": [
+    "/images/safaris/tamarind-tree.jpg",
+    "/images/safaris/ol-pejeta.jpg",
+    "/images/safaris/samburu.jpg",
+    "/images/safaris/the-ark.jpg",
+    "/images/safaris/lake-naivasha.jpg",
+    "/images/safaris/maasai-mara.jpg",
+    "/images/safaris/amboseli.jpg",
+    "/images/safaris/mombasa-beach.jpg"
+  ],
+  "travelInfo": {
+    "clothes": "Bring mosquito repellent, sunscreen, a hat and sunglasses. Highlands can be cool in mornings and evenings, so a sweater or light jacket is recommended.",
+    "food": "Most lodges serve buffet-style meals; some provide set menus. Food is of international standard prepared by world-class chefs."
+  },
+  "note": "Adventures Connect LTD reserves the right to substitute accommodations with similar facilities in circumstances beyond our control."
+}
