@@ -1,16 +1,12 @@
 /dist
 /node_modules
 /package-lock.json
-<<<<<<< HEAD
 /gitattributes/dist
 /node_modules
 /package-lock.json
 .env.local
 .env
-
-/.env.local
-./env
 /.gitattributes
-=======
-/gitattributes
->>>>>>> parent of c0c73c6 (Add reviews, auth, admin login and routes)
+
+
+

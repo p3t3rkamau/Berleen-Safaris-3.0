@@ -1,0 +1,131 @@
+{
+  "id": "kenya-signature-safari",
+  "title": "Kenya Signature Safari",
+  "country": "Kenya",
+  "duration": "11 Days / 10 Nights",
+  "price": 9100,
+  "description": "Explore Kenya’s most iconic and exclusive safari destinations by air including Samburu, Maasai Mara and Lumo Conservancy. Experience luxury camps, rich wildlife encounters, cultural visits and unique activities such as night game drives, bush dinners and scenic flights across Kenya.",
+
+  "image": "",
+  "category": "luxury",
+  "experience": "wildlife",
+
+  "highlights": [
+    "Fly-in safari across Kenya",
+    "Samburu Special Five wildlife",
+    "Maasai Mara Big Five experience",
+    "Lumo Conservancy night game drives",
+    "Bush dinners and breakfasts",
+    "Cultural visits with Maasai, Samburu & Taita communities",
+    "Luxury stays in Soroi camps",
+    "Great Wildebeest Migration (seasonal)"
+  ],
+
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrival in Nairobi",
+      "description": "Arrival at Jomo Kenyatta International Airport and transfer to your hotel for overnight stay."
+    },
+    {
+      "day": 2,
+      "title": "Fly to Samburu",
+      "description": "Transfer to Wilson Airport and fly to Samburu National Reserve. Afternoon game drive."
+    },
+    {
+      "day": 3,
+      "title": "Samburu Safari",
+      "description": "Full day game drives in Samburu exploring unique wildlife species."
+    },
+    {
+      "day": 4,
+      "title": "Samburu Safari",
+      "description": "Another full day of game drives with optional experiences and sundowners."
+    },
+    {
+      "day": 5,
+      "title": "Fly to Maasai Mara",
+      "description": "Flight to Maasai Mara with en-route game drive and afternoon safari."
+    },
+    {
+      "day": 6,
+      "title": "Maasai Mara Safari",
+      "description": "Full day game drives in Maasai Mara with Big Five sightings."
+    },
+    {
+      "day": 7,
+      "title": "Maasai Mara Safari",
+      "description": "Another full day exploring Maasai Mara with optional bush dinner."
+    },
+    {
+      "day": 8,
+      "title": "Fly to Lumo Conservancy",
+      "description": "Travel to Lumo Wildlife Conservancy and enjoy evening activities."
+    },
+    {
+      "day": 9,
+      "title": "Lumo Conservancy",
+      "description": "Full day game viewing including night game drives and optional activities."
+    },
+    {
+      "day": 10,
+      "title": "Lumo Conservancy",
+      "description": "Another full day enjoying wildlife, bush experiences and relaxation."
+    },
+    {
+      "day": 11,
+      "title": "Departure",
+      "description": "Transfer to airstrip and fly back to Nairobi for departure."
+    }
+  ],
+
+  "included": [
+    "Return airport transfers in Nairobi",
+    "Scheduled domestic flights between destinations",
+    "Accommodation on bed & breakfast in Nairobi",
+    "Full board accommodation in safari camps",
+    "Park entrance fees and conservancy fees",
+    "Professional English-speaking guides",
+    "Game drives and safari activities",
+    "Emergency evacuation insurance"
+  ],
+
+  "notIncluded": [
+    "International flights",
+    "Tips and gratuities",
+    "Personal expenses",
+    "Optional excursions",
+    "Travel insurance"
+  ],
+
+  "pricing": {
+    "lowSeason": {
+      "group": 9100
+    },
+    "midSeason": {
+      "group": 9590
+    },
+    "highSeason": {
+      "group": 10650
+    },
+    "shoulderSeason": {
+      "group": 9540
+    }
+  },
+
+  "accommodation": [
+    "Four Points by Sheraton Nairobi Airport / Tamarind Tree Hotel – Nairobi (1 night)",
+    "Soroi Larsens Camp – Samburu (3 nights)",
+    "Soroi Luxury Migration Camp – Maasai Mara (3 nights)",
+    "Soroi Lions Bluff Lodge – Lumo Conservancy (3 nights)"
+  ],
+
+  "gallery": [],
+
+  "travelInfo": {
+    "clothes": "Light clothing for daytime and warm layers for early mornings and evenings. Comfortable safari wear recommended.",
+    "food": "Full board meals provided in safari camps with a mix of international and local cuisine."
+  },
+
+  "note": "Pricing is based on 4 persons traveling together and may vary depending on season and availability."
+}
