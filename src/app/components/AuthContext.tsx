@@ -40,7 +40,8 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   };
 
   // CHANGE THIS TO YOUR ACTUAL ADMIN EMAIL
-  const isAdmin = user?.email === 'admin@berleensafaris.com';
+  const isAdmin = user?.email === 'admin@berleensafaris.com' || 
+                  user?.email === 'irayaian15@gmail.com';
 
   return (
     <AuthContext.Provider value={{ user, signIn, signOut, isAdmin, loading }}>
