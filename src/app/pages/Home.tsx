@@ -1,13 +1,11 @@
-// src/pages/Home.tsx
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { useParams } from 'react-router-dom'
 import { HeroSlider } from '../components/HeroSlider'
 import { motion } from 'motion/react'
 import { loadDestinations } from '../data/loadDestinations'
 import { Award, Users, Headphones, MapPin, Star, Quote } from 'lucide-react'
 import { StatsBand } from '../components/StatsBand'
-import PopularSafaris from '../components/FeaturedDestination'
+import PopularSafaris from '../components/PopularSafaris'
 import ReviewsSection from '../components/ReviewsSection'
 
 const allDestinations = loadDestinations()
@@ -159,9 +157,8 @@ export function Home() {
         </div>
       </section>
 
-      <section>
-        <PopularSafaris />
-      </section>
+      {/* Popular Safaris - Now using the actual data */}
+      <PopularSafaris />
 
       <section>
         <StatsBand />

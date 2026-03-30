@@ -1,4 +1,5 @@
 // src/pages/SafariDetail.tsx
+import React from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { motion } from 'motion/react'
 import { getSafariById } from '../data/loadSafaris'

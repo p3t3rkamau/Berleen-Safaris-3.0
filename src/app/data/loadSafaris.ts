@@ -1,14 +1,5 @@
-// src/data/loadSafaris.ts
-
 import type { Safari } from '../../types/safari'
-
-/**
- * Vite automatically discovers all JSON safari files
- * inside src/data/json/** folders.
- */
-const safariModules = import.meta.glob('./json/**/*.json', {
-  eager: true
-}) as Record<string, { default?: Safari }>
+import combinedSafaris from '../data/json/safari-experiences/berleen-safaris-combined.json'
 
 /**
  * Internal cached safari list
@@ -16,21 +7,18 @@ const safariModules = import.meta.glob('./json/**/*.json', {
 const safaris: Safari[] = []
 
 /**
- * Load safaris safely.
- * If a file is corrupt or missing fields it will be skipped.
+ * Load safaris from combined JSON file
  */
 function initSafaris() {
-  for (const path in safariModules) {
-    try {
-      const mod = safariModules[path]
+  try {
+    const safariList = combinedSafaris.safaris
+    
+    if (!safariList || !Array.isArray(safariList)) {
+      console.warn('⚠️ Invalid combined safaris data')
+      return
+    }
 
-      if (!mod || !mod.default) {
-        console.warn(`⚠️ Safari file skipped (no default export): ${path}`)
-        continue
-      }
-
-      const safari = mod.default
-
+    for (const safari of safariList) {
       // Basic validation
       if (
         !safari.id ||
@@ -38,19 +26,21 @@ function initSafaris() {
         !safari.country ||
         typeof safari.price !== 'number'
       ) {
-        console.warn(`⚠️ Invalid safari data skipped: ${path}`)
+        console.warn(`⚠️ Invalid safari data skipped: ${safari.id}`)
         continue
       }
 
       safaris.push(safari)
-
-    } catch (error) {
-      console.warn(`⚠️ Failed to load safari JSON: ${path}`, error)
     }
-  }
 
-  // Sort once after loading
-  safaris.sort((a, b) => a.price - b.price)
+    // Sort once after loading
+    safaris.sort((a, b) => a.price - b.price)
+    
+    console.log(`✅ Loaded ${safaris.length} safaris from combined file`)
+
+  } catch (error) {
+    console.warn('⚠️ Failed to load combined safaris JSON', error)
+  }
 }
 
 // initialize once
@@ -85,6 +75,26 @@ export function getSafarisByCategory(category: string): Safari[] {
 }
 
 /**
+ * Filter by experience
+ */
+export function getSafarisByExperience(experience: string): Safari[] {
+  return safaris.filter(s => s.experience === experience)
+}
+
+/**
+ * Search safaris by keyword
+ */
+export function searchSafaris(keyword: string): Safari[] {
+  const lowerKeyword = keyword.toLowerCase()
+  return safaris.filter(s => 
+    s.title.toLowerCase().includes(lowerKeyword) ||
+    s.description.toLowerCase().includes(lowerKeyword) ||
+    s.country.toLowerCase().includes(lowerKeyword) ||
+    s.highlights.some(h => h.toLowerCase().includes(lowerKeyword))
+  )
+}
+
+/**
  * Get unique countries
  */
 export function getCountries(): string[] {
@@ -96,4 +106,25 @@ export function getCountries(): string[] {
  */
 export function getCategories(): string[] {
   return Array.from(new Set(safaris.map(s => s.category))).sort()
+}
+
+/**
+ * Get unique experiences
+ */
+export function getExperiences(): string[] {
+  return Array.from(new Set(safaris.map(s => s.experience))).sort()
+}
+
+/**
+ * Get featured safaris (first 6)
+ */
+export function getFeaturedSafaris(limit: number = 6): Safari[] {
+  return safaris.slice(0, limit)
+}
+
+/**
+ * Get safari count
+ */
+export function getSafariCount(): number {
+  return safaris.length
 }

@@ -1,5 +1,5 @@
 // src/pages/Safaris.tsx
-import { useState, useMemo, useRef, useEffect } from 'react'
+import React, { useState, useMemo, useRef, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'motion/react'
 import { loadSafaris } from '../data/loadSafaris'

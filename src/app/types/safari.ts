@@ -23,7 +23,6 @@ export interface TravelInfo {
 }
 
 export interface Safari {
-  price: any
   id: string
   title: string
   country: string
