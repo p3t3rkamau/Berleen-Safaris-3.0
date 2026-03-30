@@ -1,16 +1,16 @@
 // safari.ts — Central type definition for all safari data
 
-export interface SafariPricingTier {
-  solo: number
-  twoPersons: number
-  group: number
+export interface PricingItem {
+  season: string
+  period?: string
+  price: number
+  currency?: string
+  minPax?: number
+  type?: "group" | "perPerson"
 }
-
 export interface SafariPricing {
-  lowSeason: SafariPricingTier
-  highSeason: SafariPricingTier
+  prices: PricingItem[]
 }
-
 export interface ItineraryDay {
   day: number
   title: string
@@ -27,7 +27,7 @@ export interface Safari {
   title: string
   country: string
   duration: string
-  price: number
+  prices: number
   description: string
 
   image: string

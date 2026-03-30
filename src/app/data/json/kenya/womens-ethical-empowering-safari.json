@@ -1,0 +1,140 @@
+{
+  "id": "womens-ethical-empowering-safari",
+  "title": "Women’s Ethical & Empowering Safari",
+  "country": "Kenya",
+  "duration": "11 Days / 10 Nights",
+  "price": 7950,
+  "description": "A women-only safari experience combining wildlife, culture and personal growth. Travel through Kenya’s iconic destinations while engaging with local communities, conservation projects and meaningful cultural experiences, all within a safe and supportive group environment.",
+
+  "image": "",
+  "category": "luxury",
+  "experience": "cultural",
+
+  "highlights": [
+    "Women-only guided safari experience",
+    "Visit Reteti Elephant Sanctuary",
+    "Community interactions with Samburu women",
+    "Game drives in Samburu and Maasai Mara",
+    "Visit Giraffe Centre and Elephant Orphanage",
+    "Cultural immersion and conservation experiences",
+    "Hosted group experience with expert guide",
+    "Domestic flight to Maasai Mara"
+  ],
+
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrival in Nairobi",
+      "description": "Arrival at Jomo Kenyatta International Airport and transfer to your hotel. Evening at leisure."
+    },
+    {
+      "day": 2,
+      "title": "Nairobi Immersion",
+      "description": "Explore Nairobi or relax before the safari. Evening welcome meeting with fellow travelers."
+    },
+    {
+      "day": 3,
+      "title": "Ol Pejeta Conservancy",
+      "description": "Drive north through the highlands to Ol Pejeta. Afternoon game drive and rhino conservation experience."
+    },
+    {
+      "day": 4,
+      "title": "Transfer to Samburu",
+      "description": "Drive to Samburu National Reserve and enjoy wildlife viewing in this unique arid ecosystem."
+    },
+    {
+      "day": 5,
+      "title": "Samburu Community Experience",
+      "description": "Bush walk with rangers, visit local school and enjoy traditional community experiences."
+    },
+    {
+      "day": 6,
+      "title": "Reteti Elephant Sanctuary",
+      "description": "Visit the community-owned Reteti Elephant Sanctuary and learn about elephant conservation."
+    },
+    {
+      "day": 7,
+      "title": "Return to Nairobi",
+      "description": "Travel back to Nairobi for overnight stay and relaxation."
+    },
+    {
+      "day": 8,
+      "title": "Fly to Maasai Mara",
+      "description": "Flight to Maasai Mara followed by an afternoon game drive."
+    },
+    {
+      "day": 9,
+      "title": "Maasai Mara Safari",
+      "description": "Full day game drives in Maasai Mara exploring wildlife and landscapes."
+    },
+    {
+      "day": 10,
+      "title": "Community Visit",
+      "description": "Visit local community projects and enjoy a reflective group experience."
+    },
+    {
+      "day": 11,
+      "title": "Departure",
+      "description": "Morning flight back to Nairobi and transfer for departure."
+    }
+  ],
+
+  "included": [
+    "24/7 travel assistance",
+    "Airport transfers",
+    "Visit to Giraffe Centre",
+    "Visit to Elephant Orphanage",
+    "Accommodation as per itinerary",
+    "Meals as specified",
+    "Professional driver guide",
+    "Game drives in 4x4 safari vehicles",
+    "Park entrance fees",
+    "Domestic flight Maasai Mara to Nairobi",
+    "Hosted experience with Bena Roberts",
+    "Travel pack with itinerary"
+  ],
+
+  "notIncluded": [
+    "International flights",
+    "Tips and gratuities",
+    "Personal expenses",
+    "Travel insurance"
+  ],
+
+  "pricing": {
+    "lowSeason": {
+      "solo": 7950,
+      "twoPersons": 7950,
+      "group": 7950,
+      "lowSeason": 7950,
+      "highSeason": 7950,
+      "midSeason": 7950,
+      "shoulderSeason": 7950
+    },
+    "highSeason": {
+      "solo": 7950,
+      "twoPersons": 7950,
+      "group": 7950,
+      "lowSeason": 7950,
+      "highSeason": 7950,
+      "midSeason": 7950,
+      "shoulderSeason": 7950
+    }
+  },
+
+  "accommodation": [
+    "Hyatt Place Nairobi – Nairobi (3 nights)",
+    "Sweetwaters Tented Camp – Ol Pejeta (1 night)",
+    "Soroi Samburu Lodge – Samburu (3 nights)",
+    "Soroi Mara Bush Camp – Maasai Mara (3 nights)"
+  ],
+
+  "gallery": [],
+
+  "travelInfo": {
+    "clothes": "Comfortable safari wear, modest clothing for community visits, hat, sunscreen and a light jacket for cool mornings.",
+    "food": "Mix of international and local cuisine served at lodges with full board meal plans during safari."
+  },
+
+  "note": "This is a women-only group safari. Pricing is fixed and based on scheduled departures."
+}

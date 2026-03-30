@@ -1,0 +1,137 @@
+{
+  "id": "wild-north-mount-kenya-expedition",
+  "title": "Wild North & Mount Kenya Expedition",
+  "country": "Kenya",
+  "duration": "10 Days / 9 Nights",
+  "price": 5490,
+  "description": "A unique expedition combining wildlife safari and a Mount Kenya climb. Explore Samburu’s rare species, experience authentic cultural interactions, then embark on a multi-day trek to Africa’s second highest peak before relaxing at Ol Pejeta Conservancy.",
+
+  "image": "",
+  "category": "adventure",
+  "experience": "wildlife",
+
+  "highlights": [
+    "Samburu safari with rare northern species",
+    "Traditional Samburu cultural experience",
+    "Mount Kenya summit trek via Timau Route",
+    "Luxury mountain camping with VIP setup",
+    "Ol Pejeta Conservancy rhino sanctuary visit",
+    "Combination of trekking and wildlife safari",
+    "Views of Mount Kenya peaks and alpine landscapes"
+  ],
+
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrival in Nairobi",
+      "description": "Arrival at Jomo Kenyatta International Airport and transfer to hotel for overnight stay."
+    },
+    {
+      "day": 2,
+      "title": "Drive to Samburu",
+      "description": "Scenic drive to Samburu National Reserve followed by afternoon game drive."
+    },
+    {
+      "day": 3,
+      "title": "Samburu Safari & Cultural Experience",
+      "description": "Full day game drives and a traditional Samburu cultural experience including community interaction."
+    },
+    {
+      "day": 4,
+      "title": "Start Mount Kenya Trek",
+      "description": "Transfer to Timau route and begin trek through moorland to Marania Camp."
+    },
+    {
+      "day": 5,
+      "title": "Marania to Major’s Camp",
+      "description": "Hike through mountain terrain towards Major’s Camp with scenic views."
+    },
+    {
+      "day": 6,
+      "title": "Major’s Camp to Simba Tarn",
+      "description": "Gradual ascent through alpine landscapes to Simba Tarn Camp."
+    },
+    {
+      "day": 7,
+      "title": "Summit Attempt – Point Lenana",
+      "description": "Early morning trek for sunrise summit and descent to Austrian Hut."
+    },
+    {
+      "day": 8,
+      "title": "Technical Climb & Descent",
+      "description": "Optional technical climb towards Batian and descent to Mackinder’s Camp."
+    },
+    {
+      "day": 9,
+      "title": "Descend & Transfer to Ol Pejeta",
+      "description": "Descend from Mount Kenya and transfer to Ol Pejeta Conservancy for overnight stay."
+    },
+    {
+      "day": 10,
+      "title": "Return to Nairobi",
+      "description": "Morning game drive followed by return transfer to Nairobi for departure."
+    }
+  ],
+
+  "included": [
+    "Airport transfers",
+    "Private 4x4 safari vehicle",
+    "Professional English-speaking guide",
+    "Unlimited game drives",
+    "Park entrance fees",
+    "Mount Kenya trekking crew and guides",
+    "Camping equipment and VIP tent setup",
+    "All meals during safari and trek",
+    "Emergency evacuation cover in Kenya",
+    "Mineral water during safari",
+    "Ol Pejeta Conservancy stay"
+  ],
+
+  "notIncluded": [
+    "International flights",
+    "Tips and gratuities",
+    "Personal expenses",
+    "Travel insurance",
+    "Optional activities"
+  ],
+
+  "pricing": {
+    "lowSeason": {
+      "solo": 5490,
+      "twoPersons": 5490,
+      "group": 5490,
+      "lowSeason": 5490,
+      "highSeason": 5490,
+      "midSeason": 5490,
+      "shoulderSeason": 5490
+    },
+    "highSeason": {
+      "solo": 5490,
+      "twoPersons": 5490,
+      "group": 5490,
+      "lowSeason": 5490,
+      "highSeason": 5490,
+      "midSeason": 5490,
+      "shoulderSeason": 5490
+    }
+  },
+
+  "accommodation": [
+    "Four Points by Sheraton – Nairobi (1 night)",
+    "Soroi Samburu Lodge – Samburu (2 nights)",
+    "Marania Camp – Mount Kenya (1 night)",
+    "Major’s Camp – Mount Kenya (1 night)",
+    "Simba Tarn Camp – Mount Kenya (1 night)",
+    "Austrian Hut / Mackinder’s Camp – Mount Kenya (2 nights)",
+    "Sweetwaters Serena Camp – Ol Pejeta (1 night)"
+  ],
+
+  "gallery": [],
+
+  "travelInfo": {
+    "clothes": "Layered clothing for varying climates, proper hiking boots, warm gear for high altitude and comfortable safari wear.",
+    "food": "Full board meals during safari and trek with prepared meals by camp crew and lodges."
+  },
+
+  "note": "Mount Kenya climb includes high-altitude trekking and optional technical climbing. Suitable for physically fit travelers."
+}

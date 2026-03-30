@@ -1,0 +1,111 @@
+{
+  "id": "wings-over-the-wilderness-4-nights",
+  "title": "4 Nights Wings Over the Wilderness Safari",
+  "country": "Kenya",
+  "duration": "5 Days / 4 Nights",
+  "price": 5105,
+  "description": "A short fly-in safari exploring Samburu and Maasai Mara. Experience Kenya’s diverse landscapes, from rugged northern terrain to vast savannah plains, with luxury camps, guided game drives and scenic flights.",
+
+  "image": "",
+  "category": "luxury",
+  "experience": "wildlife",
+
+  "highlights": [
+    "Fly-in safari across Kenya",
+    "Samburu Special Five wildlife",
+    "Maasai Mara Big Five safari",
+    "Great Wildebeest Migration (seasonal)",
+    "Luxury stays at Soroi camps",
+    "Game drives in custom 4x4 safari vehicles",
+    "Bush dinner and sundowner experience"
+  ],
+
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Fly to Samburu",
+      "description": "Depart from Wilson Airport to Samburu National Reserve. Transfer to camp and enjoy an afternoon game drive."
+    },
+    {
+      "day": 2,
+      "title": "Samburu Safari",
+      "description": "Full day game drives exploring Samburu’s unique wildlife including the Samburu Special Five."
+    },
+    {
+      "day": 3,
+      "title": "Fly to Maasai Mara",
+      "description": "Scheduled flight to Maasai Mara followed by an afternoon game drive."
+    },
+    {
+      "day": 4,
+      "title": "Maasai Mara Safari",
+      "description": "Full day exploring Maasai Mara with opportunities to spot the Big Five and seasonal migration."
+    },
+    {
+      "day": 5,
+      "title": "Departure",
+      "description": "Fly back to Nairobi Wilson Airport for departure."
+    }
+  ],
+
+  "included": [
+    "Full board accommodation at safari camps",
+    "Park entrance fees for Samburu and Maasai Mara",
+    "Twice daily game drives with professional guide",
+    "Return scheduled light aircraft flights",
+    "All airport and airstrip transfers",
+    "Selected beverages including soft drinks, beers and house wines",
+    "One sundowner experience",
+    "One bush dinner experience"
+  ],
+
+  "notIncluded": [
+    "International flights",
+    "Tips and gratuities",
+    "Personal expenses",
+    "Travel insurance"
+  ],
+
+  "pricing": {
+    "prices": [
+      {
+        "season": "shoulder",
+        "period": "Jan - Feb / Jun",
+        "price": 5465,
+        "currency": "USD"
+      },
+      {
+        "season": "low",
+        "period": "Mar - May",
+        "price": 5105,
+        "currency": "USD"
+      },
+      {
+        "season": "high",
+        "period": "Jul - Sep",
+        "price": 6110,
+        "currency": "USD"
+      },
+      {
+        "season": "shoulder",
+        "period": "Oct - Dec",
+        "price": 5370,
+        "currency": "USD"
+      }
+    ]
+  },
+
+  "accommodation": [
+    "Soroi Larsens Camp – Samburu (2 nights)",
+    "Soroi Luxury Migration Camp – Maasai Mara (2 nights)"
+  ],
+
+  "gallery": [],
+
+  "travelInfo": {
+    "clothes": "Light clothing for daytime and warmer layers for early mornings and evenings. Comfortable safari wear recommended.",
+    "food": "Full board meals with a mix of international and local cuisine including bush dining experiences."
+  },
+
+  "note": "Pricing is indicative and may vary depending on season and availability. Single supplement applies."
+}

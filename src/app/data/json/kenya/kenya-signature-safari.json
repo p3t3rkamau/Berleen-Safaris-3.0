@@ -98,20 +98,14 @@
     "Travel insurance"
   ],
 
-  "pricing": {
-    "lowSeason": {
-      "group": 9100
-    },
-    "midSeason": {
-      "group": 9590
-    },
-    "highSeason": {
-      "group": 10650
-    },
-    "shoulderSeason": {
-      "group": 9540
-    }
-  },
+"pricing": {
+  "prices": [
+    { "season": "low", "period": "Mar - May", "price": 9100, "minPax": 4 },
+    { "season": "mid", "period": "Jun", "price": 9590, "minPax": 4 },
+    { "season": "high", "period": "Jul - Sep", "price": 10650, "minPax": 4 },
+    { "season": "shoulder", "period": "Oct - Dec", "price": 9540, "minPax": 4 }
+  ]
+},
 
   "accommodation": [
     "Four Points by Sheraton Nairobi Airport / Tamarind Tree Hotel – Nairobi (1 night)",

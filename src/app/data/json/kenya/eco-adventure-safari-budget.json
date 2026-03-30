@@ -1,0 +1,129 @@
+{
+  "id": "eco-adventure-safari-budget",
+  "title": "Eco Adventure Safari – Budget",
+  "country": "Kenya",
+  "duration": "9 Days / 8 Nights",
+  "price": 4180,
+  "description": "An eco-friendly safari combining wildlife, conservation and community experiences across Lumo Conservancy and Samburu. Travel sustainably while engaging in meaningful cultural interactions and conservation initiatives.",
+
+  "image": "",
+  "category": "budget",
+  "experience": "cultural",
+
+  "highlights": [
+    "Eco-friendly safari experience",
+    "Visit community conservation projects",
+    "Cultural immersion with Taita community",
+    "Reteti Elephant Sanctuary visit",
+    "Game drives in Lumo and Samburu",
+    "Train journey from Nairobi to Voi",
+    "Tree planting and community initiatives"
+  ],
+
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrival in Nairobi",
+      "description": "Arrival at Jomo Kenyatta International Airport and transfer to hotel."
+    },
+    {
+      "day": 2,
+      "title": "Transfer to Lumo",
+      "description": "Train journey to Voi followed by transfer to Lumo Conservancy and afternoon game drive."
+    },
+    {
+      "day": 3,
+      "title": "Community Conservation Projects",
+      "description": "Visit local schools and community projects supporting education and sustainability."
+    },
+    {
+      "day": 4,
+      "title": "Taita Cultural Experience",
+      "description": "Full day cultural immersion with Taita community including traditional cooking and activities."
+    },
+    {
+      "day": 5,
+      "title": "Return to Nairobi",
+      "description": "Transfer back to Nairobi by train and overnight stay."
+    },
+    {
+      "day": 6,
+      "title": "Drive to Samburu",
+      "description": "Scenic drive to Samburu National Reserve with afternoon game drive."
+    },
+    {
+      "day": 7,
+      "title": "Samburu Community Experience",
+      "description": "Game drives, community visits and conservation activities including tree planting."
+    },
+    {
+      "day": 8,
+      "title": "Reteti Elephant Sanctuary",
+      "description": "Visit Reteti Elephant Sanctuary and learn about community-led conservation."
+    },
+    {
+      "day": 9,
+      "title": "Departure",
+      "description": "Morning game drive followed by return to Nairobi for departure."
+    }
+  ],
+
+  "included": [
+    "Private 4x4 safari vehicle",
+    "Professional driver guide",
+    "Airport transfers",
+    "Train tickets Nairobi – Voi – Nairobi",
+    "Accommodation as per itinerary",
+    "Full board meals during safari",
+    "Unlimited game drives",
+    "Park fees for Lumo and Samburu",
+    "Community excursions and activities",
+    "Evacuation insurance",
+    "Mineral water during safari"
+  ],
+
+  "notIncluded": [
+    "International flights",
+    "Tips and gratuities",
+    "Personal expenses",
+    "Travel insurance",
+    "Meals not specified"
+  ],
+
+  "pricing": {
+    "lowSeason": {
+      "solo": 4750,
+      "twoPersons": 4750,
+      "group": 4180,
+      "lowSeason": 4750,
+      "highSeason": 4945,
+      "midSeason": 4325,
+      "shoulderSeason": 4325
+    },
+    "highSeason": {
+      "solo": 4945,
+      "twoPersons": 4465,
+      "group": 4295,
+      "lowSeason": 4750,
+      "highSeason": 4945,
+      "midSeason": 4465,
+      "shoulderSeason": 4465
+    }
+  },
+
+  "accommodation": [
+    "Crowne Plaza Airport Hotel – Nairobi (1 night)",
+    "Soroi Cheetah Tented Camp – Lumo (3 nights)",
+    "Emara Ole Sereni – Nairobi (1 night)",
+    "Soroi Samburu Lodge – Samburu (3 nights)"
+  ],
+
+  "gallery": [],
+
+  "travelInfo": {
+    "clothes": "Light clothing for warm weather, comfortable walking shoes, modest wear for community visits, and a light jacket for mornings.",
+    "food": "Full board meals during safari with a mix of local and international cuisine. Some meals in Nairobi are excluded."
+  },
+
+  "note": "Pricing varies depending on season and group size. Festive season supplements may apply."
+}
