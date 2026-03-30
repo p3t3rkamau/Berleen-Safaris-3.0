@@ -1,4 +1,3 @@
-// src/pages/Safaris.tsx
 import React, { useState, useMemo, useRef, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'motion/react'
@@ -7,6 +6,9 @@ import type { Safari } from '../types/safari'
 import { Clock, DollarSign, ArrowRight, Filter, X, Search } from 'lucide-react'
 
 const allSafaris = loadSafaris()
+
+// Log the number of safaris loaded for debugging
+console.log(`📁 Safaris page loaded: ${allSafaris.length} safaris total`)
 
 export function Safaris() {
   const [query, setQuery] = useState('')
@@ -17,6 +19,7 @@ export function Safaris() {
   const [showSuggestions, setShowSuggestions] = useState(false)
   const searchRef = useRef<HTMLDivElement>(null)
 
+  // Get unique values for filters - now includes all Berleen safaris
   const countries = useMemo(
     () => Array.from(new Set(allSafaris.map(s => s.country).filter(Boolean))).sort(),
     []
@@ -118,7 +121,7 @@ export function Safaris() {
                 Our Safari Packages
               </h1>
               <p className="text-xl text-gray-200 max-w-2xl mx-auto mb-8">
-                Choose from our carefully curated safari experiences across East Africa
+                Choose from {allSafaris.length} carefully curated safari experiences across East Africa
               </p>
 
               {/* Search bar */}
@@ -167,7 +170,7 @@ export function Safaris() {
                                 alt={s.title}
                                 className="w-10 h-10 rounded-lg object-cover flex-shrink-0"
                               />
-                              <div className="text-left">
+                              <div className="text-left flex-1">
                                 <p className="text-sm font-semibold text-[var(--safari-brown-dark)]">
                                   {s.title}
                                 </p>
@@ -250,9 +253,18 @@ export function Safaris() {
                   onChange={setSelectedExperience}
                   options={experiences.filter(Boolean).map(e => ({
                     value: e,
-                    label: e.charAt(0).toUpperCase() + e.slice(1),
+                    label: e === 'short' ? 'Short Safari (1-4 days)' : 
+                           e === 'classic' ? 'Classic Safari (5-7 days)' : 
+                           'Extended Safari (8+ days)',
                   }))}
                 />
+                
+                {/* Show total count in filters */}
+                <div className="mt-6 pt-6 border-t border-gray-200">
+                  <p className="text-sm text-gray-600">
+                    Found <span className="font-bold text-[var(--safari-gold)]">{filteredSafaris.length}</span> safaris
+                  </p>
+                </div>
               </div>
             </div>
 
@@ -278,7 +290,11 @@ export function Safaris() {
                   <FilterChip label={selectedBudget} onRemove={() => setSelectedBudget('all')} />
                 )}
                 {selectedExperience !== 'all' && (
-                  <FilterChip label={selectedExperience} onRemove={() => setSelectedExperience('all')} />
+                  <FilterChip label={
+                    selectedExperience === 'short' ? 'Short Safari' :
+                    selectedExperience === 'classic' ? 'Classic Safari' :
+                    'Extended Safari'
+                  } onRemove={() => setSelectedExperience('all')} />
                 )}
               </div>
 
@@ -375,6 +391,37 @@ function Highlight({ text, query }: { text: string; query: string }) {
 }
 
 function SafariCard({ safari, index, query }: { safari: Safari; index: number; query: string }) {
+  // Get category badge color based on budget type
+  const getCategoryColor = (category: string): string => {
+    switch (category) {
+      case 'luxury': return 'bg-amber-500'
+      case 'budget': return 'bg-green-500'
+      case 'mid-range': return 'bg-blue-500'
+      default: return 'bg-[var(--safari-gold)]'
+    }
+  }
+
+  // Get country flag emoji
+  const getCountryFlag = (country: string): string => {
+    const flags: Record<string, string> = {
+      'Kenya': '🇰🇪',
+      'Tanzania': '🇹🇿',
+      'Kenya & Tanzania': '🇰🇪🇹🇿',
+      'East Africa': '🌍'
+    }
+    return flags[country] || '🌍'
+  }
+
+  // Get experience badge text
+  const getExperienceBadge = (experience: string): string => {
+    switch (experience) {
+      case 'short': return '⚡ Short Safari'
+      case 'classic': return '🌟 Classic Safari'
+      case 'extended': return '🏆 Extended Safari'
+      default: return '🌍 Safari'
+    }
+  }
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -393,22 +440,32 @@ function SafariCard({ safari, index, query }: { safari: Safari; index: number; q
             loading="lazy"
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
           />
-          <div className="absolute top-4 right-4 flex flex-col gap-2">
+          {/* Badges */}
+          <div className="absolute top-4 left-4 flex flex-col gap-2">
             {safari.category && (
-              <span className="bg-[var(--safari-gold)] text-white px-3 py-1 rounded-full text-xs font-semibold capitalize">
+              <span className={`${getCategoryColor(safari.category)} text-white px-3 py-1 rounded-full text-xs font-semibold capitalize shadow-md`}>
                 {safari.category}
               </span>
             )}
-            {safari.country && (
-              <span className="bg-white/90 text-gray-700 px-3 py-1 rounded-full text-xs font-semibold capitalize">
-                {safari.country}
-              </span>
-            )}
+          </div>
+          <div className="absolute top-4 right-4">
+            <span className="bg-black/60 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1 shadow-md">
+              {getCountryFlag(safari.country)} {safari.country}
+            </span>
+          </div>
+          <div className="absolute bottom-4 left-4">
+            <span className="bg-black/60 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-semibold shadow-md">
+              {getExperienceBadge(safari.experience)}
+            </span>
           </div>
         </div>
 
         <div className="p-6">
-          <h3 className="text-xl font-bold text-[var(--safari-brown-dark)] mb-2 group-hover:text-[var(--safari-gold)] transition-colors">
+          <div className="flex items-center gap-2 text-gray-500 text-sm mb-2">
+            <Clock className="w-4 h-4" />
+            <span>{safari.duration}</span>
+          </div>
+          <h3 className="text-xl font-bold text-[var(--safari-brown-dark)] mb-2 group-hover:text-[var(--safari-gold)] transition-colors line-clamp-2">
             <Highlight text={safari.title} query={query} />
           </h3>
           <p className="text-gray-600 mb-4 line-clamp-2 text-sm">
@@ -416,15 +473,22 @@ function SafariCard({ safari, index, query }: { safari: Safari; index: number; q
           </p>
 
           <div className="flex items-center justify-between mb-4 pb-4 border-b border-gray-200">
-            <div className="flex items-center gap-2 text-gray-600 text-sm">
-              <Clock className="w-4 h-4" />
-              <span>{safari.duration}</span>
-            </div>
-            <div className="flex items-center gap-1 text-[var(--safari-gold)] font-bold text-sm">
+            <div className="flex items-center gap-1 text-[var(--safari-gold)] font-bold">
               <DollarSign className="w-4 h-4" />
-              <span>From ${safari.price?.toLocaleString()}</span>
+              <span className="text-lg">From ${safari.price?.toLocaleString()}</span>
             </div>
           </div>
+
+          {/* Highlights preview for Berleen safaris */}
+          {safari.highlights && safari.highlights.length > 0 && (
+            <div className="mb-4 flex flex-wrap gap-1">
+              {safari.highlights.slice(0, 2).map((h: string, i: number) => (
+                <span key={i} className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full line-clamp-1">
+                  {h.length > 30 ? h.substring(0, 30) + '...' : h}
+                </span>
+              ))}
+            </div>
+          )}
 
           <div className="flex items-center justify-between text-[var(--safari-gold)] group-hover:text-[var(--safari-orange)] transition-colors">
             <span className="font-semibold text-sm">View Details</span>

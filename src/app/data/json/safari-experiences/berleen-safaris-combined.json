@@ -794,6 +794,1602 @@
           ]
         },
         "accommodation": ["Ibis Styles Hotel", "Zebra Mara main Camp"]
+      },
+      {
+        "id": "roaring-kenya-safari",
+        "title": "ROARING KENYA SAFARI",
+        "country": "Kenya",
+        "duration": "11 Days / 10 Nights",
+        "price": 3300,
+        "description": "An extensive Kenya safari covering Samburu Game Reserve, Ol Pejeta Conservancy, Lake Nakuru, Masai Mara, Lake Naivasha, and Amboseli National Park.",
+        "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600&h=400&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&h=500&fit=crop"
+        ],
+        "category": "mid-range",
+        "experience": "extended",
+        "highlights": [
+          "Samburu Game Reserve - unique northern species",
+          "Ol Pejeta Conservancy - chimpanzee sanctuary",
+          "Lake Nakuru National Park",
+          "Masai Mara Game Reserve",
+          "Lake Naivasha boat ride",
+          "Amboseli National Park with Kilimanjaro views"
+        ],
+        "itinerary": [
+          {"day": 1, "title": "Arrival - Nairobi", "description": "Welcome to Kenya! Transfer to Hilton Garden Inn."},
+          {"day": 2, "title": "Nairobi - Samburu", "description": "Drive to Samburu Game Reserve for afternoon game drive."},
+          {"day": 3, "title": "Samburu Game Reserve", "description": "Full day game viewing in Samburu."},
+          {"day": 4, "title": "Samburu - Ol Pejeta", "description": "Drive to Ol Pejeta Conservancy."},
+          {"day": 5, "title": "Ol Pejeta - Lake Nakuru", "description": "Drive to Lake Nakuru for afternoon game drive."},
+          {"day": 6, "title": "Lake Nakuru - Masai Mara", "description": "Travel to Masai Mara with Maasai village visit."},
+          {"day": 7, "title": "Masai Mara - Full Day Game Drive", "description": "Full day game viewing."},
+          {"day": 8, "title": "Masai Mara - Lake Naivasha", "description": "Transfer to Lake Naivasha for boat ride."},
+          {"day": 9, "title": "Lake Naivasha - Amboseli", "description": "Drive to Amboseli National Park."},
+          {"day": 10, "title": "Amboseli - Full Day Game Drive", "description": "Elephants with Kilimanjaro backdrop."},
+          {"day": 11, "title": "Amboseli - Nairobi - Departure", "description": "Return to Nairobi for departure."}
+        ],
+        "included": [
+          "Arrival/departure transfers",
+          "Bed and breakfast at Hilton Garden Inn",
+          "Full board at all safari lodges/camps",
+          "English speaking driver guide",
+          "Unlimited drinking water",
+          "Game viewing drives",
+          "Park entrance fees as per itinerary",
+          "Complimentary Maasai village visit",
+          "Boat ride on Lake Naivasha"
+        ],
+        "notIncluded": [
+          "International airfares",
+          "Visa fees",
+          "Meals not mentioned",
+          "Personal items",
+          "Travel insurance",
+          "Tips and gratuities",
+          "Balloon ride"
+        ],
+        "pricing": {
+          "prices": [
+            {"season": "Jan - 2nd April", "price": 4070, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "07th April - 31st May (excl Easter)", "price": 3725, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "Easter", "price": 4290, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st - 14th June", "price": 4015, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "15th - 30th June", "price": 4480, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "July - 30th August", "price": 5070, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st - 15th Sept", "price": 5060, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "16th - 30th Sept", "price": 5060, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "October", "price": 4460, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "November", "price": 4255, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st - 15th December", "price": 4255, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "16th Dec - 05th Jan 2027", "price": 5550, "currency": "USD", "minPax": 2, "type": "perPerson"}
+          ]
+        },
+        "accommodation": ["Hilton Garden Inn", "Ashnil Samburu Camp", "Maisha Sweetwaters Camp", "Lake Nakuru Lodge", "Mara Maisha Camp", "Lake Naivasha Sopa Resort", "Kibo Safari Camp"],
+        "travelInfo": {
+          "clothes": "Lightweight clothing for day, warm layers for early mornings.",
+          "food": "Full board meals included."
+        },
+        "note": "Prices are per person sharing. Upgrade to Landcruiser available at supplement."
+      },
+      {
+        "id": "serengeti-finest",
+        "title": "SERENGETI FINEST",
+        "country": "Tanzania",
+        "duration": "4 Days / 3 Nights",
+        "price": 1615,
+        "description": "A premium Tanzania safari focusing on the world-famous Serengeti National Park with comfortable accommodation and game drives in a 4x4 Land Cruiser.",
+        "image": "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=600&h=400&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&h=500&fit=crop"
+        ],
+        "category": "luxury",
+        "experience": "short",
+        "highlights": [
+          "Full day game drives in Serengeti",
+          "Great Migration viewing (seasonal)",
+          "Seronera River wildlife concentration",
+          "Leopard spotting",
+          "4x4 Land Cruiser safari vehicle"
+        ],
+        "itinerary": [
+          {"day": 1, "title": "Arrival - Arusha", "description": "Transfer to Arusha for overnight stay."},
+          {"day": 2, "title": "Arusha - Serengeti", "description": "Drive to Serengeti with game drive en route."},
+          {"day": 3, "title": "Serengeti - Full Day Game Drive", "description": "Full day game viewing in Serengeti."},
+          {"day": 4, "title": "Serengeti - Arusha - Departure", "description": "Morning game drive, return to Arusha for departure."}
+        ],
+        "included": [
+          "English speaking professional guide",
+          "Meals and accommodation as specified",
+          "4x4 Land Cruiser with open roof",
+          "Park entry fees",
+          "Ngorongoro Transit fees",
+          "Unlimited drinking water",
+          "Airport transfers"
+        ],
+        "notIncluded": [
+          "International airfares",
+          "Visa fees",
+          "Travel insurance",
+          "Personal items",
+          "Tips and gratuities",
+          "Balloon ride"
+        ],
+        "pricing": {
+          "prices": [
+            {"season": "High season", "price": 1980, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "Low season", "price": 1925, "currency": "USD", "minPax": 2, "type": "perPerson"}
+          ]
+        },
+        "accommodation": ["African Tulip", "Moyo Tented Camp"],
+        "travelInfo": {
+          "clothes": "Lightweight clothing, warm layers for early mornings.",
+          "food": "Full board meals included."
+        },
+        "note": "Proof of yellow fever vaccination is mandatory upon arrival in Tanzania. Easter/Christmas supplements apply."
+      },
+      {
+        "id": "tanzania-essential-serengeti",
+        "title": "TANZANIA ESSENTIAL – THE SERENGETI",
+        "country": "Tanzania",
+        "duration": "4 Days / 3 Nights",
+        "price": 1640,
+        "description": "An essential Tanzania safari focusing on the iconic Serengeti National Park with comfortable accommodation and expert-guided game drives.",
+        "image": "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=600&h=400&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&h=500&fit=crop"
+        ],
+        "category": "mid-range",
+        "experience": "short",
+        "highlights": [
+          "Full day game drives in Serengeti",
+          "Seronera River wildlife viewing",
+          "Leopard sightings",
+          "Great Migration viewing (seasonal)",
+          "4x4 Land Cruiser safari vehicle"
+        ],
+        "itinerary": [
+          {"day": 1, "title": "Arrival - Arusha", "description": "Transfer to Arusha for overnight stay."},
+          {"day": 2, "title": "Arusha - Serengeti", "description": "Drive to Serengeti with game drive en route."},
+          {"day": 3, "title": "Serengeti - Full Day Game Drive", "description": "Full day game viewing in Serengeti."},
+          {"day": 4, "title": "Serengeti - Arusha - Departure", "description": "Morning game drive, return to Arusha for departure."}
+        ],
+        "included": [
+          "English speaking professional guide",
+          "Meals and accommodation as specified",
+          "4x4 Land Cruiser with open roof",
+          "Park entry fees",
+          "Ngorongoro Transit fees",
+          "Unlimited drinking water",
+          "Airport transfers"
+        ],
+        "notIncluded": [
+          "International airfares",
+          "Visa fees",
+          "Travel insurance",
+          "Personal items",
+          "Tips and gratuities",
+          "Balloon ride"
+        ],
+        "pricing": {
+          "prices": [
+            {"season": "High season", "price": 1985, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "Low season", "price": 1925, "currency": "USD", "minPax": 2, "type": "perPerson"}
+          ]
+        },
+        "accommodation": ["African Tulip", "Embalakai Camps"],
+        "travelInfo": {
+          "clothes": "Lightweight clothing, warm layers for early mornings.",
+          "food": "Full board meals included."
+        },
+        "note": "Proof of yellow fever vaccination is mandatory upon arrival in Tanzania."
+      },
+      {
+        "id": "taste-of-kenya",
+        "title": "TASTE OF KENYA",
+        "country": "Kenya",
+        "duration": "7 Days / 6 Nights",
+        "price": 2350,
+        "description": "A diverse Kenya safari experience covering Mount Kenya, Ol Pejeta Conservancy, Lake Elementeita, and Masai Mara with luxurious accommodations.",
+        "image": "https://images.unsplash.com/photo-1549366021-9f761d450615?w=600&h=400&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&h=500&fit=crop"
+        ],
+        "category": "luxury",
+        "experience": "classic",
+        "highlights": [
+          "Fairmont Mount Kenya Safari Club",
+          "Ol Pejeta Conservancy - rhino sanctuary",
+          "Lake Elementeita",
+          "Masai Mara Game Reserve",
+          "Maasai village cultural visit",
+          "Karen Blixen Museum"
+        ],
+        "itinerary": [
+          {"day": 1, "title": "Arrival - Nairobi", "description": "Transfer to Emara Ole Sereni Hotel."},
+          {"day": 2, "title": "Nairobi - Mount Kenya", "description": "Drive to Fairmont Mount Kenya Safari Club."},
+          {"day": 3, "title": "Mount Kenya - Ol Pejeta", "description": "Half day game drive in Ol Pejeta Conservancy."},
+          {"day": 4, "title": "Mount Kenya - Lake Elementeita", "description": "Drive to Lake Elementeita."},
+          {"day": 5, "title": "Lake Elementeita - Masai Mara", "description": "Travel to Masai Mara with Maasai village visit."},
+          {"day": 6, "title": "Masai Mara - Full Day Game Drive", "description": "Full day game viewing."},
+          {"day": 7, "title": "Masai Mara - Nairobi - Departure", "description": "Return to Nairobi with Karen Blixen Museum visit."}
+        ],
+        "included": [
+          "Arrival/departure transfers",
+          "Bed and breakfast at Emara Ole Sereni",
+          "Full board at Fairmont Mount Kenya Safari Club",
+          "Full board at Lake Elementeita Mountain Lodge",
+          "Full board at Zebra Valley Camp",
+          "Karen Blixen museum visit",
+          "English speaking driver guide",
+          "Unlimited drinking water",
+          "Game viewing drives",
+          "Complimentary Maasai village visit"
+        ],
+        "notIncluded": [
+          "International airfares",
+          "Visa fees",
+          "Meals not mentioned",
+          "Personal items",
+          "Balloon ride",
+          "Travel insurance",
+          "Tips and gratuities"
+        ],
+        "pricing": {
+          "prices": [
+            {"season": "05th Jan - 31st March", "price": 2805, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "April - 10th June (excl Easter)", "price": 2775, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "Easter", "price": 3255, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "11th - 30th June", "price": 2860, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st - 14th July", "price": 3780, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "15th July - 03rd Sept", "price": 3835, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "04th - 17th Sept", "price": 3640, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "18th - 30th Sept", "price": 3495, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st Oct - 18th Dec", "price": 3125, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "19th Dec - 05th Jan 2027", "price": 3915, "currency": "USD", "minPax": 2, "type": "perPerson"}
+          ]
+        },
+        "accommodation": ["Emara Ole Sereni", "Fairmont Mount Kenya Safari Club", "Lake Elementeita Mountain Lodge", "Zebra Valley Camp"],
+        "travelInfo": {
+          "clothes": "Lightweight clothing, warm layers for early mornings.",
+          "food": "Full board meals included."
+        },
+        "note": "A different rate applies for Lake Elementeita Mountain Lodge during World Safari Rally dates."
+      },
+      {
+        "id": "thrilling-kenya-outdoor-budget",
+        "title": "THRILLING KENYA OUTDOOR SAFARI - Budget",
+        "country": "Kenya",
+        "duration": "6 Days / 5 Nights",
+        "price": 1435,
+        "description": "An action-packed budget safari covering Lake Elementeita, Lake Nakuru National Park, and Masai Mara Game Reserve.",
+        "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600&h=400&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&h=500&fit=crop"
+        ],
+        "category": "budget",
+        "experience": "classic",
+        "highlights": [
+          "Lake Elementeita",
+          "Lake Nakuru National Park",
+          "Full day game drive in Masai Mara",
+          "Complimentary Maasai village visit",
+          "Giraffe Centre visit"
+        ],
+        "itinerary": [
+          {"day": 1, "title": "Arrival - Nairobi", "description": "Transfer to Ibis Styles Hotel."},
+          {"day": 2, "title": "Nairobi - Lake Elementeita", "description": "Drive to Lake Elementeita."},
+          {"day": 3, "title": "Lake Elementeita - Lake Nakuru", "description": "Full day visit to Lake Nakuru with box lunch."},
+          {"day": 4, "title": "Lake Elementeita - Masai Mara", "description": "Drive to Masai Mara with Maasai village visit."},
+          {"day": 5, "title": "Masai Mara - Full Day Game Drive", "description": "Full day game viewing."},
+          {"day": 6, "title": "Masai Mara - Nairobi - Departure", "description": "Return to Nairobi with Giraffe Centre visit."}
+        ],
+        "included": [
+          "Arrival/departure transfers",
+          "Bed and breakfast at Ibis Styles Hotel",
+          "Full board at Sentrim Lake Elementeita",
+          "Full board at Mtito Safari Camp",
+          "Box lunch from Sentrim",
+          "Giraffe centre visit",
+          "English speaking driver guide",
+          "Unlimited drinking water",
+          "Game viewing drives",
+          "Park entrance fees",
+          "Complimentary Maasai village visit"
+        ],
+        "notIncluded": [
+          "International airfares",
+          "Visa fees",
+          "Meals not mentioned",
+          "Personal items",
+          "Balloon ride",
+          "Travel insurance",
+          "Tips and gratuities"
+        ],
+        "pricing": {
+          "prices": [
+            {"season": "05th Jan - 31st March", "price": 1840, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "Easter", "price": 1920, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st Apr - 30th Jun", "price": 1760, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st July - 30th Sept", "price": 2345, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st Oct - 31st Oct", "price": 2195, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st Nov - 19th Dec", "price": 2140, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "20th Dec - 05th Jan 2027", "price": 2455, "currency": "USD", "minPax": 2, "type": "perPerson"}
+          ]
+        },
+        "accommodation": ["Ibis Styles Hotel", "Sentrim Lake Elementeita", "Mtito Safari Camp"],
+        "travelInfo": {
+          "clothes": "Lightweight clothing, warm layers for early mornings.",
+          "food": "Full board meals included."
+        },
+        "note": "Prices are per person sharing. Guide tip recommended $10-$15 per day."
+      },
+      {
+        "id": "ultimate-tanzania-safari",
+        "title": "ULTIMATE TANZANIA SAFARI",
+        "country": "Tanzania",
+        "duration": "6 Days / 5 Nights",
+        "price": 2375,
+        "description": "A comprehensive Tanzania safari covering Serengeti National Park and Ngorongoro Crater with premium accommodations.",
+        "image": "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=600&h=400&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&h=500&fit=crop"
+        ],
+        "category": "mid-range",
+        "experience": "classic",
+        "highlights": [
+          "Two full days in Serengeti",
+          "Great Migration viewing",
+          "Ngorongoro Crater tour",
+          "Big Five viewing",
+          "Black rhino sightings",
+          "4x4 Land Cruiser safari vehicle"
+        ],
+        "itinerary": [
+          {"day": 1, "title": "Arrival - Arusha", "description": "Transfer to African Tulip."},
+          {"day": 2, "title": "Arusha - Serengeti", "description": "Drive to Serengeti with game drive en route."},
+          {"day": 3, "title": "Serengeti - Full Day Game Drive", "description": "Full day game viewing in Serengeti."},
+          {"day": 4, "title": "Serengeti - Ngorongoro", "description": "Drive to Ngorongoro Conservation Area."},
+          {"day": 5, "title": "Ngorongoro Crater Tour", "description": "Full day crater tour."},
+          {"day": 6, "title": "Ngorongoro - Arusha - Departure", "description": "Return to Arusha for departure."}
+        ],
+        "included": [
+          "Airport transfers",
+          "4WD Land Cruiser with pop-up roofs",
+          "Professional safari guide",
+          "Game drives",
+          "Accommodation with meals",
+          "Park entry fees",
+          "Mineral water during safari"
+        ],
+        "notIncluded": [
+          "International flights",
+          "Visa fees",
+          "Maasai Village visit",
+          "Balloon safari",
+          "Personal items",
+          "Travel insurance",
+          "Tips and gratuities"
+        ],
+        "pricing": {
+          "prices": [
+            {"season": "January", "price": 2925, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "February", "price": 2925, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "March", "price": 2905, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "April (Excluding Easter)", "price": 2670, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "Easter", "price": 2670, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "May", "price": 2670, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "June", "price": 2905, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "July", "price": 2925, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "August", "price": 2925, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "September", "price": 2925, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "October", "price": 2905, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "November", "price": 2815, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st - 15th Dec", "price": 2815, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "16th - 31st Dec", "price": 2925, "currency": "USD", "minPax": 2, "type": "perPerson"}
+          ]
+        },
+        "accommodation": ["African Tulip", "Embalakai Serengeti Camp", "Embalakai Ngorongoro Camp"],
+        "travelInfo": {
+          "clothes": "Lightweight clothing, warm layers for early mornings.",
+          "food": "Full board meals included."
+        },
+        "note": "Proof of yellow fever vaccination is mandatory in Tanzania."
+      },
+      {
+        "id": "tanzania-6days-5nights",
+        "title": "6 DAYS / 5 NIGHTS TANZANIA SAFARI",
+        "country": "Tanzania",
+        "duration": "6 Days / 5 Nights",
+        "price": 3025,
+        "description": "A comprehensive Tanzania safari covering Tarangire, Serengeti, Ngorongoro Crater, and Lake Manyara with multiple accommodation options.",
+        "image": "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=600&h=400&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&h=500&fit=crop"
+        ],
+        "category": "mid-range",
+        "experience": "classic",
+        "highlights": [
+          "Tarangire National Park",
+          "Two days in Serengeti",
+          "Ngorongoro Crater tour",
+          "Lake Manyara National Park",
+          "4x4 Land Cruiser safari vehicle"
+        ],
+        "itinerary": [
+          {"day": 1, "title": "Arrival - Arusha", "description": "Transfer to The African Tulip."},
+          {"day": 2, "title": "Arusha - Tarangire", "description": "Game drive in Tarangire National Park."},
+          {"day": 3, "title": "Tarangire - Serengeti", "description": "Drive to Serengeti with game drive."},
+          {"day": 4, "title": "Serengeti - Full Day Game Drive", "description": "Full day game viewing."},
+          {"day": 5, "title": "Serengeti - Ngorongoro", "description": "Crater tour, drive to Karatu."},
+          {"day": 6, "title": "Lake Manyara - Arusha - Departure", "description": "Game drive in Lake Manyara, return to Arusha."}
+        ],
+        "included": [
+          "Airport transfers",
+          "4WD Land Cruiser with pop-up roofs",
+          "Professional safari guide",
+          "Accommodation with meals",
+          "Park entry fees",
+          "Drinking water"
+        ],
+        "notIncluded": [
+          "International flights",
+          "Visa fees",
+          "Maasai Village visit",
+          "Balloon safari",
+          "Personal items",
+          "Travel insurance",
+          "Tips and gratuities"
+        ],
+        "pricing": {
+          "prices": [
+            {"season": "High season", "price": 3630, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "Low season", "price": 3355, "currency": "USD", "minPax": 2, "type": "perPerson"}
+          ]
+        },
+        "accommodation": ["The African Tulip", "Tarangire Elephant springs", "Serengeti Katikati Camp", "Tloma Lodge"],
+        "travelInfo": {
+          "clothes": "Lightweight clothing, warm layers for early mornings.",
+          "food": "Full board meals included."
+        },
+        "note": "Proof of yellow fever vaccination is mandatory upon arrival in Tanzania."
+      },
+      {
+        "id": "kenya-11days-10nights",
+        "title": "11 DAYS / 10 NIGHTS - KENYA SAFARI",
+        "country": "Kenya",
+        "duration": "11 Days / 10 Nights",
+        "price": 3180,
+        "description": "An extensive Kenya safari covering Nairobi, Samburu, Lake Nakuru, Masai Mara, Lake Naivasha, and Amboseli National Park.",
+        "image": "https://images.unsplash.com/photo-1549366021-9f761d450615?w=600&h=400&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&h=500&fit=crop"
+        ],
+        "category": "mid-range",
+        "experience": "extended",
+        "highlights": [
+          "Nairobi city tour",
+          "Samburu Game Reserve",
+          "Lake Nakuru",
+          "Masai Mara",
+          "Lake Naivasha boat ride",
+          "Amboseli National Park"
+        ],
+        "itinerary": [
+          {"day": 1, "title": "Arrival - Nairobi", "description": "Transfer to Hilton Garden Inn."},
+          {"day": 2, "title": "Nairobi City Tour", "description": "David Sheldrick, Giraffe Centre, Karen Blixen Museum."},
+          {"day": 3, "title": "Nairobi - Samburu", "description": "Drive to Samburu for afternoon game drive."},
+          {"day": 4, "title": "Samburu Game Reserve", "description": "Full day game viewing."},
+          {"day": 5, "title": "Samburu - Lake Nakuru", "description": "Drive to Lake Nakuru."},
+          {"day": 6, "title": "Lake Nakuru - Masai Mara", "description": "Travel to Masai Mara with Maasai village visit."},
+          {"day": 7, "title": "Masai Mara - Full Day Game Drive", "description": "Full day game viewing."},
+          {"day": 8, "title": "Masai Mara - Lake Naivasha", "description": "Boat ride on Lake Naivasha."},
+          {"day": 9, "title": "Lake Naivasha - Amboseli", "description": "Drive to Amboseli."},
+          {"day": 10, "title": "Amboseli - Full Day Game Drive", "description": "Elephants with Kilimanjaro backdrop."},
+          {"day": 11, "title": "Amboseli - Nairobi - Departure", "description": "Return to Nairobi for departure."}
+        ],
+        "included": [
+          "Arrival/departure transfers",
+          "Bed and breakfast at Hilton Garden Inn",
+          "Full board at all safari lodges",
+          "English speaking driver guide",
+          "Unlimited drinking water",
+          "Game viewing drives",
+          "Park entrance fees",
+          "Boat ride on Lake Naivasha"
+        ],
+        "notIncluded": [
+          "International airfares",
+          "Visa fees",
+          "Meals not mentioned",
+          "Personal items",
+          "Travel insurance",
+          "Tips and gratuities",
+          "Balloon ride"
+        ],
+        "pricing": {
+          "prices": [
+            {"season": "Jan - 2nd April", "price": 3950, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "07th April - 31st May (excl Easter)", "price": 3635, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "Easter", "price": 4170, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st - 14th June", "price": 3895, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "15th - 30th June", "price": 4310, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "July - 30th August", "price": 4895, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st - 15th Sept", "price": 4890, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "16th - 30th Sept", "price": 4890, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "October", "price": 4345, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "November", "price": 4165, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st - 15th December", "price": 4165, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "16th Dec - 05th Jan 2027", "price": 5380, "currency": "USD", "minPax": 2, "type": "perPerson"}
+          ]
+        },
+        "accommodation": ["Hilton Garden Inn", "Ashnil Samburu Camp", "Lake Nakuru Lodge", "Mara Maisha Camp", "Lake Naivasha Sopa Resort", "Kibo Safari Camp"],
+        "travelInfo": {
+          "clothes": "Lightweight clothing, warm layers for early mornings.",
+          "food": "Full board meals included."
+        },
+        "note": "Prices are per person sharing. Upgrade to Landcruiser available."
+      },
+      {
+        "id": "kenya-13days-12nights",
+        "title": "13 DAYS / 12 NIGHTS - KENYA SAFARI",
+        "country": "Kenya",
+        "duration": "13 Days / 12 Nights",
+        "price": 3900,
+        "description": "The ultimate Kenya safari experience covering Nairobi, Ol Pejeta, Samburu, Lake Nakuru, Masai Mara, Lake Naivasha, and Amboseli with premium accommodations.",
+        "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600&h=400&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&h=500&fit=crop"
+        ],
+        "category": "mid-range",
+        "experience": "extended",
+        "highlights": [
+          "Nairobi city tour",
+          "Ol Pejeta Conservancy",
+          "Samburu Game Reserve",
+          "Lake Nakuru",
+          "Masai Mara",
+          "Lake Naivasha boat ride",
+          "Amboseli National Park"
+        ],
+        "itinerary": [
+          {"day": 1, "title": "Arrival - Nairobi", "description": "Transfer to Hilton Garden Inn."},
+          {"day": 2, "title": "Nairobi City Tour", "description": "David Sheldrick, Giraffe Centre, Karen Blixen Museum."},
+          {"day": 3, "title": "Nairobi - Ol Pejeta", "description": "Drive to Ol Pejeta Conservancy."},
+          {"day": 4, "title": "Ol Pejeta - Full Day", "description": "Game drives and Chimpanzee Sanctuary."},
+          {"day": 5, "title": "Ol Pejeta - Samburu", "description": "Drive to Samburu."},
+          {"day": 6, "title": "Samburu Game Reserve", "description": "Full day game viewing."},
+          {"day": 7, "title": "Samburu - Lake Nakuru", "description": "Drive to Lake Nakuru."},
+          {"day": 8, "title": "Lake Nakuru - Masai Mara", "description": "Travel to Masai Mara with Maasai village visit."},
+          {"day": 9, "title": "Masai Mara - Full Day Game Drive", "description": "Full day game viewing."},
+          {"day": 10, "title": "Masai Mara - Lake Naivasha", "description": "Boat ride on Lake Naivasha."},
+          {"day": 11, "title": "Lake Naivasha - Amboseli", "description": "Drive to Amboseli."},
+          {"day": 12, "title": "Amboseli - Full Day Game Drive", "description": "Elephants with Kilimanjaro backdrop."},
+          {"day": 13, "title": "Amboseli - Nairobi - Departure", "description": "Return to Nairobi for departure."}
+        ],
+        "included": [
+          "Arrival/departure transfers",
+          "Bed and breakfast at Hilton Garden Inn",
+          "Full board at all safari lodges",
+          "English speaking driver guide",
+          "Unlimited drinking water",
+          "Game viewing drives",
+          "Park entrance fees",
+          "Boat ride on Lake Naivasha"
+        ],
+        "notIncluded": [
+          "International airfares",
+          "Visa fees",
+          "Meals not mentioned",
+          "Personal items",
+          "Travel insurance",
+          "Tips and gratuities",
+          "Balloon ride"
+        ],
+        "pricing": {
+          "prices": [
+            {"season": "Jan - 2nd April", "price": 4815, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "07th April - 31st May (excl Easter)", "price": 4445, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "Easter", "price": 5045, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st - 14th June", "price": 4815, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "15th - 30th June", "price": 5275, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "July - 30th August", "price": 5885, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st - 15th Sept", "price": 5880, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "16th - 30th Sept", "price": 5880, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "October", "price": 5230, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "November", "price": 4995, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st - 15th December", "price": 4995, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "16th Dec - 05th Jan 2027", "price": 6370, "currency": "USD", "minPax": 2, "type": "perPerson"}
+          ]
+        },
+        "accommodation": ["Hilton Garden Inn", "Maisha Sweetwaters Camp", "Ashnil Samburu Camp", "Lake Nakuru Lodge", "Mara Maisha Camp", "Lake Naivasha Sopa Resort", "Kibo Safari Camp"],
+        "travelInfo": {
+          "clothes": "Lightweight clothing, warm layers for early mornings.",
+          "food": "Full board meals included."
+        },
+        "note": "Prices are per person sharing. Upgrade to Landcruiser available."
+      },
+      {
+        "id": "amboseli-hunters-manor-luxury",
+        "title": "AMBOSELI FINEST – HUNTERS MANOR LUXURY",
+        "country": "Kenya",
+        "duration": "4 Days / 3 Nights",
+        "price": 830,
+        "description": "A luxurious Amboseli safari experience at Hunters Luxury Manor, featuring spectacular Mount Kilimanjaro views and Maasai cultural experience.",
+        "image": "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=600&h=400&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&h=500&fit=crop"
+        ],
+        "category": "luxury",
+        "experience": "short",
+        "highlights": [
+          "Luxury accommodation at Hunters Luxury Manor",
+          "Spectacular Mount Kilimanjaro views",
+          "Elephant herds in Amboseli",
+          "Complimentary Maasai village visit"
+        ],
+        "itinerary": [
+          {"day": 1, "title": "Arrival - Nairobi", "description": "Transfer to Ibis Styles Hotel."},
+          {"day": 2, "title": "Nairobi - Amboseli", "description": "Drive to Amboseli with Maasai village visit."},
+          {"day": 3, "title": "Amboseli - Full Day Game Drive", "description": "Full day game viewing."},
+          {"day": 4, "title": "Amboseli - Nairobi - Departure", "description": "Return to Nairobi for departure."}
+        ],
+        "included": [
+          "Arrival/departure transfers",
+          "Bed and breakfast at Ibis Styles Hotel",
+          "Full board at Hunters Luxury Manor",
+          "English speaking driver guide",
+          "Unlimited drinking water",
+          "Game viewing drives",
+          "Park entrance fees",
+          "Complimentary Maasai village visit"
+        ],
+        "notIncluded": [
+          "International airfares",
+          "Visa fees",
+          "Meals not mentioned",
+          "Personal items",
+          "Balloon ride",
+          "Travel insurance",
+          "Tips and gratuities"
+        ],
+        "pricing": {
+          "prices": [
+            {"season": "05th Jan - 31st March", "price": 1075, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "April - 30th June (excl Easter)", "price": 1065, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "Easter", "price": 1110, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "July and August", "price": 1295, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st Sept - 31st Oct", "price": 1170, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "November", "price": 1115, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st Dec - 20th Dec", "price": 1125, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "23rd Dec - 05th Jan 2027", "price": 1210, "currency": "USD", "minPax": 2, "type": "perPerson"}
+          ]
+        },
+        "accommodation": ["Ibis Styles Hotel", "Hunters Luxury Manor"],
+        "travelInfo": {
+          "clothes": "Lightweight clothing, warm layers for early mornings.",
+          "food": "Full board meals included."
+        },
+        "note": "Perfect as a safari extension. Balloon ride available at $520 per adult."
+      },
+      {
+        "id": "amboseli-kibo-camp",
+        "title": "AMBOSELI FINEST – KIBO SAFARI CAMP",
+        "country": "Kenya",
+        "duration": "4 Days / 3 Nights",
+        "price": 990,
+        "description": "A comfortable Amboseli safari at Kibo Safari Camp, featuring spectacular Mount Kilimanjaro views, Maasai cultural experience, and excellent game viewing.",
+        "image": "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=600&h=400&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&h=500&fit=crop"
+        ],
+        "category": "mid-range",
+        "experience": "short",
+        "highlights": [
+          "Comfortable accommodation at Kibo Safari Camp",
+          "Spectacular Mount Kilimanjaro views",
+          "Elephant herds in Amboseli",
+          "Complimentary Maasai village visit"
+        ],
+        "itinerary": [
+          {"day": 1, "title": "Arrival - Nairobi", "description": "Transfer to Ibis Styles Hotel."},
+          {"day": 2, "title": "Nairobi - Amboseli", "description": "Drive to Amboseli with Maasai village visit."},
+          {"day": 3, "title": "Amboseli - Full Day Game Drive", "description": "Full day game viewing."},
+          {"day": 4, "title": "Amboseli - Nairobi - Departure", "description": "Return to Nairobi for departure."}
+        ],
+        "included": [
+          "Arrival/departure transfers",
+          "Bed and breakfast at Ibis Styles Hotel",
+          "Full board at Kibo Safari Camp",
+          "English speaking driver guide",
+          "Unlimited drinking water",
+          "Game viewing drives",
+          "Park entrance fees",
+          "Complimentary Maasai village visit"
+        ],
+        "notIncluded": [
+          "International airfares",
+          "Visa fees",
+          "Meals not mentioned",
+          "Personal items",
+          "Balloon ride",
+          "Travel insurance",
+          "Tips and gratuities"
+        ],
+        "pricing": {
+          "prices": [
+            {"season": "05th Jan - 28th Feb", "price": 1235, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "March - 02nd April", "price": 1175, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "07th April - 31st May", "price": 1175, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "Easter", "price": 1240, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st - 14th June", "price": 1285, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "15th June - 30th Sept", "price": 1385, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st Oct - 31st Oct", "price": 1285, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st Nov - 22nd Dec", "price": 1225, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "23rd Dec - 05th Jan 2027", "price": 1385, "currency": "USD", "minPax": 2, "type": "perPerson"}
+          ]
+        },
+        "accommodation": ["Ibis Styles Hotel", "Kibo Safari Camp"],
+        "travelInfo": {
+          "clothes": "Lightweight clothing, warm layers for early mornings.",
+          "food": "Full board meals included."
+        },
+        "note": "Perfect as a safari extension."
+      },
+      {
+        "id": "awesome-samburu",
+        "title": "AWESOME SAMBURU",
+        "country": "Kenya",
+        "duration": "4 Days / 3 Nights",
+        "price": 960,
+        "description": "A focused Samburu safari experience featuring unique northern wildlife species, Samburu cultural visit, and comfortable accommodation at Ashnil Samburu Camp.",
+        "image": "https://images.unsplash.com/photo-1549366021-9f761d450615?w=600&h=400&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&h=500&fit=crop"
+        ],
+        "category": "mid-range",
+        "experience": "short",
+        "highlights": [
+          "Samburu Game Reserve",
+          "Reticulated giraffe, Grevy's zebra, Beisa oryx",
+          "Large elephant herds",
+          "Complimentary Samburu village cultural visit"
+        ],
+        "itinerary": [
+          {"day": 1, "title": "Arrival - Nairobi", "description": "Transfer to Ibis Styles Hotel."},
+          {"day": 2, "title": "Nairobi - Samburu", "description": "Drive to Samburu for afternoon game drive."},
+          {"day": 3, "title": "Samburu - Full Day", "description": "Game drives and Samburu village visit."},
+          {"day": 4, "title": "Samburu - Nairobi - Departure", "description": "Morning game drive, return to Nairobi."}
+        ],
+        "included": [
+          "Arrival/departure transfers",
+          "Bed and breakfast at Ibis Styles Hotel",
+          "Full board at Ashnil Samburu Camp",
+          "English speaking driver guide",
+          "Unlimited drinking water",
+          "Park entrance fees",
+          "Game viewing drives",
+          "Complimentary Samburu village visit"
+        ],
+        "notIncluded": [
+          "International airfares",
+          "Visa fees",
+          "Meals not mentioned",
+          "Personal items",
+          "Balloon ride",
+          "Travel insurance",
+          "Tips and gratuities"
+        ],
+        "pricing": {
+          "prices": [
+            {"season": "5th Jan - 02nd April", "price": 1230, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "Easter", "price": 1295, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "07th April - 31st May (excluding Easter)", "price": 1110, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st - 30th June", "price": 1230, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st July - 30th Sept", "price": 1380, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st Oct - 20th Dec", "price": 1245, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "21st Dec - 05th Jan 2027", "price": 1435, "currency": "USD", "minPax": 2, "type": "perPerson"}
+          ]
+        },
+        "accommodation": ["Ibis Styles Hotel", "Ashnil Samburu Camp"],
+        "travelInfo": {
+          "clothes": "Lightweight clothing, warm layers for early mornings.",
+          "food": "Full board meals included."
+        },
+        "note": "Perfect as a safari extension. Please book flights past 2000Hrs."
+      },
+      {
+        "id": "classic-kenya-budget",
+        "title": "CLASSIC KENYA SAFARI - Budget Traveler",
+        "country": "Kenya",
+        "duration": "5 Days / 4 Nights",
+        "price": 1335,
+        "description": "A classic budget-friendly Kenya safari covering Karen Blixen Museum, Lake Naivasha boat ride, and Masai Mara Game Reserve.",
+        "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600&h=400&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&h=500&fit=crop"
+        ],
+        "category": "budget",
+        "experience": "classic",
+        "highlights": [
+          "Karen Blixen Museum",
+          "Boat ride on Lake Naivasha",
+          "Full day game drive in Masai Mara",
+          "Complimentary Maasai village visit",
+          "Giraffe Centre visit"
+        ],
+        "itinerary": [
+          {"day": 1, "title": "Arrival - Nairobi", "description": "Transfer to Ibis Styles Hotel."},
+          {"day": 2, "title": "Nairobi - Lake Naivasha", "description": "Karen Blixen Museum, boat ride on Lake Naivasha."},
+          {"day": 3, "title": "Naivasha - Masai Mara", "description": "Drive to Masai Mara with Maasai village visit."},
+          {"day": 4, "title": "Masai Mara - Full Day Game Drive", "description": "Full day game viewing."},
+          {"day": 5, "title": "Masai Mara - Nairobi - Departure", "description": "Return to Nairobi with Giraffe Centre visit."}
+        ],
+        "included": [
+          "Arrival/departure transfers",
+          "Bed and breakfast at Ibis Styles Nairobi",
+          "Full board at Sawela Lodge",
+          "Full board at Mtito Safari Camp",
+          "English speaking driver guide",
+          "Unlimited drinking water",
+          "Game viewing drives",
+          "Park entrance fee for 01 day in Mara",
+          "Complimentary Maasai village visit",
+          "01 hour boat ride on Lake Naivasha"
+        ],
+        "notIncluded": [
+          "International airfares",
+          "Visa fees",
+          "Meals not mentioned",
+          "Personal items",
+          "Travel insurance",
+          "Tips and gratuities"
+        ],
+        "pricing": {
+          "prices": [
+            {"season": "Jan - March", "price": 1655, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "Easter", "price": 1740, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "April - 30th June", "price": 1535, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st July - 30th Sept", "price": 2120, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st October - 31st October", "price": 1970, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st Nov - 20th December", "price": 1900, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "21st December - 05th Jan", "price": 2210, "currency": "USD", "minPax": 2, "type": "perPerson"}
+          ]
+        },
+        "accommodation": ["Ibis Styles Hotel", "Sawela Lodge", "Mtito Safari Camp"],
+        "travelInfo": {
+          "clothes": "Lightweight clothing, warm layers for early mornings.",
+          "food": "Full board meals included."
+        },
+        "note": "Note over festive time Sawela Lodge has minimum of 03 nights booking."
+      },
+      {
+        "id": "earthwings-classic-budget",
+        "title": "EARTHWINGS CLASSIC SAFARI - Budget Traveler",
+        "country": "Kenya",
+        "duration": "7 Days / 6 Nights",
+        "price": 1915,
+        "description": "A comprehensive budget-friendly safari covering Amboseli, Lake Naivasha, and Masai Mara with included lunches and cultural experiences.",
+        "image": "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=600&h=400&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&h=500&fit=crop"
+        ],
+        "category": "budget",
+        "experience": "classic",
+        "highlights": [
+          "Amboseli National Park",
+          "Boat ride on Lake Naivasha",
+          "Full day game drive in Masai Mara",
+          "Complimentary Maasai village visit",
+          "Giraffe Centre visit",
+          "Included lunch at Tamarind Brassiere"
+        ],
+        "itinerary": [
+          {"day": 1, "title": "Arrival - Nairobi", "description": "Transfer to Ibis Styles Hotel."},
+          {"day": 2, "title": "Nairobi - Amboseli", "description": "Drive to Amboseli for afternoon game drive."},
+          {"day": 3, "title": "Amboseli - Full Day", "description": "Full day game viewing."},
+          {"day": 4, "title": "Amboseli - Lake Naivasha", "description": "Via Nairobi, lunch at Tamarind Brassiere."},
+          {"day": 5, "title": "Lake Naivasha - Masai Mara", "description": "Boat ride, drive to Masai Mara with Maasai village visit."},
+          {"day": 6, "title": "Masai Mara - Full Day Game Drive", "description": "Full day game viewing."},
+          {"day": 7, "title": "Masai Mara - Nairobi - Departure", "description": "Return to Nairobi with Giraffe Centre visit."}
+        ],
+        "included": [
+          "Arrival/departure transfers",
+          "Bed and breakfast at Ibis Styles Hotel",
+          "Full board at Hunters Luxury Manor",
+          "Full board at Sawela Lodge",
+          "Full board at Mtito Safari Camp",
+          "English speaking driver guide",
+          "Unlimited drinking water",
+          "Game viewing drives",
+          "Park entrance fees for Amboseli",
+          "01 Hour boat ride at Lake Naivasha",
+          "Park entrance fee for 01 day in Mara",
+          "Lunch at Tamarind Brassiere",
+          "Complimentary Maasai village visit"
+        ],
+        "notIncluded": [
+          "International airfares",
+          "Visa fees",
+          "Meals not mentioned",
+          "Personal items",
+          "Travel insurance",
+          "Tips and gratuities"
+        ],
+        "pricing": {
+          "prices": [
+            {"season": "05th Jan - 28th Feb", "price": 2395, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "March", "price": 2395, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "April - May (excluding Easter)", "price": 2300, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "Easter", "price": 2530, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "June", "price": 2300, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "July - August", "price": 3040, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "September", "price": 2910, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "October", "price": 2755, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "Nov - 15th Dec", "price": 2725, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "16th Dec - 05th Jan 2027", "price": 3070, "currency": "USD", "minPax": 2, "type": "perPerson"}
+          ]
+        },
+        "accommodation": ["Ibis Styles Hotel", "Hunters Luxury Manor", "Sawela Lodge", "Mtito Safari Camp"],
+        "travelInfo": {
+          "clothes": "Lightweight clothing, warm layers for early mornings.",
+          "food": "Full board meals included."
+        },
+        "note": "Note over festive time Sawela Lodge has minimum of 03 nights booking."
+      },
+      {
+        "id": "earthwings-classic",
+        "title": "EARTHWINGS CLASSIC SAFARI",
+        "country": "Kenya",
+        "duration": "7 Days / 6 Nights",
+        "price": 2155,
+        "description": "A premium safari experience covering Amboseli, Lake Naivasha, and Masai Mara with superior accommodations.",
+        "image": "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=600&h=400&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&h=500&fit=crop"
+        ],
+        "category": "mid-range",
+        "experience": "classic",
+        "highlights": [
+          "Amboseli National Park",
+          "Boat ride on Lake Naivasha",
+          "Full day game drive in Masai Mara",
+          "Complimentary Maasai village visit",
+          "Giraffe Centre visit",
+          "Superior accommodations"
+        ],
+        "itinerary": [
+          {"day": 1, "title": "Arrival - Nairobi", "description": "Transfer to Emara Ole Sereni."},
+          {"day": 2, "title": "Nairobi - Amboseli", "description": "Drive to Kibo Safari Camp."},
+          {"day": 3, "title": "Amboseli - Full Day", "description": "Full day game viewing."},
+          {"day": 4, "title": "Amboseli - Lake Naivasha", "description": "Via Nairobi, lunch at Tamarind Brassiere."},
+          {"day": 5, "title": "Lake Naivasha - Masai Mara", "description": "Boat ride, drive to Zebra Plains Camp."},
+          {"day": 6, "title": "Masai Mara - Full Day Game Drive", "description": "Full day game viewing."},
+          {"day": 7, "title": "Masai Mara - Nairobi - Departure", "description": "Return to Nairobi with Giraffe Centre visit."}
+        ],
+        "included": [
+          "Arrival/departure transfers",
+          "Bed and breakfast at Emara Ole Sereni",
+          "Full board at Kibo Safari Camp",
+          "Full board at Lake Naivasha Sopa Lodge",
+          "Full board at Zebra Plains main Mara Camp",
+          "English speaking driver guide",
+          "Unlimited drinking water",
+          "Game viewing drives",
+          "Park entrance fees",
+          "01 Hour boat ride",
+          "Lunch at Tamarind Brassiere",
+          "Complimentary Maasai village visit"
+        ],
+        "notIncluded": [
+          "International airfares",
+          "Visa fees",
+          "Meals not mentioned",
+          "Personal items",
+          "Travel insurance",
+          "Tips and gratuities"
+        ],
+        "pricing": {
+          "prices": [
+            {"season": "05th Jan - 28th Feb", "price": 2635, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "March", "price": 2580, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "April - May (excluding Easter)", "price": 2555, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "Easter", "price": 2745, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st - 14th June", "price": 2635, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "15th - 30th June", "price": 2740, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st - 14th July", "price": 3300, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "15th July - 15th Sept", "price": 3390, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "16th Sept - 30th Sept", "price": 3300, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st - 31st Oct", "price": 2985, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "Nov - 22nd Dec", "price": 2870, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "23rd Dec - 05th Jan 2027", "price": 3455, "currency": "USD", "minPax": 2, "type": "perPerson"}
+          ]
+        },
+        "accommodation": ["Emara Ole Sereni", "Kibo Safari Camp", "Lake Naivasha Sopa Lodge", "Zebra Plains main Mara Camp"],
+        "travelInfo": {
+          "clothes": "Lightweight clothing, warm layers for early mornings.",
+          "food": "Full board meals included."
+        },
+        "note": "Optional day room at Hilton Garden Inn: $120 per person."
+      },
+      {
+        "id": "expansive-kenya-safari",
+        "title": "EXPANSIVE KENYA SAFARI",
+        "country": "Kenya",
+        "duration": "9 Days / 8 Nights",
+        "price": 2685,
+        "description": "An expansive Kenya safari covering Ol Pejeta, Lake Nakuru, Masai Mara, Lake Naivasha, and Amboseli for a comprehensive wildlife experience.",
+        "image": "https://images.unsplash.com/photo-1549366021-9f761d450615?w=600&h=400&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&h=500&fit=crop"
+        ],
+        "category": "mid-range",
+        "experience": "extended",
+        "highlights": [
+          "Ol Pejeta Conservancy",
+          "Lake Nakuru",
+          "Masai Mara",
+          "Lake Naivasha boat ride",
+          "Amboseli National Park"
+        ],
+        "itinerary": [
+          {"day": 1, "title": "Arrival - Nairobi", "description": "Transfer to Hilton Garden Inn."},
+          {"day": 2, "title": "Nairobi - Ol Pejeta", "description": "Drive to Ol Pejeta."},
+          {"day": 3, "title": "Ol Pejeta - Lake Nakuru", "description": "Drive to Lake Nakuru."},
+          {"day": 4, "title": "Lake Nakuru - Masai Mara", "description": "Travel to Masai Mara with Maasai village visit."},
+          {"day": 5, "title": "Masai Mara - Full Day Game Drive", "description": "Full day game viewing."},
+          {"day": 6, "title": "Masai Mara - Lake Naivasha", "description": "Boat ride on Lake Naivasha."},
+          {"day": 7, "title": "Lake Naivasha - Amboseli", "description": "Drive to Amboseli."},
+          {"day": 8, "title": "Amboseli - Full Day Game Drive", "description": "Elephants with Kilimanjaro backdrop."},
+          {"day": 9, "title": "Amboseli - Nairobi - Departure", "description": "Return to Nairobi for departure."}
+        ],
+        "included": [
+          "Arrival/departure transfers",
+          "Bed and breakfast at Hilton Garden Inn",
+          "Full board at all safari lodges",
+          "English speaking driver guide",
+          "Unlimited drinking water",
+          "Game viewing drives",
+          "Park entrance fees",
+          "Boat ride on Lake Naivasha"
+        ],
+        "notIncluded": [
+          "International airfares",
+          "Visa fees",
+          "Meals not mentioned",
+          "Personal items",
+          "Travel insurance",
+          "Tips and gratuities"
+        ],
+        "pricing": {
+          "prices": [
+            {"season": "Jan - 2nd April", "price": 3315, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "07th April - 31st May (excl Easter)", "price": 3090, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "Easter", "price": 3535, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st - 14th June", "price": 3260, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "15th - 30th June", "price": 3725, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "July - 30th August", "price": 4155, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st - 15th Sept", "price": 4150, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "16th - 30th Sept", "price": 4150, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "October", "price": 3685, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "November", "price": 3180, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st - 15th December", "price": 3180, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "16th Dec - 05th Jan 2027", "price": 4590, "currency": "USD", "minPax": 2, "type": "perPerson"}
+          ]
+        },
+        "accommodation": ["Hilton Garden Inn", "Maisha Sweetwaters Camp", "Lake Nakuru Lodge", "Mara Maisha Camp", "Lake Naivasha Sopa Resort", "Kibo Safari Camp"],
+        "travelInfo": {
+          "clothes": "Lightweight clothing, warm layers for early mornings.",
+          "food": "Full board meals included."
+        },
+        "note": "Prices are per person sharing. Upgrade to Landcruiser available."
+      },
+      {
+        "id": "great-value-kenya",
+        "title": "GREAT VALUE KENYA SAFARI",
+        "country": "Kenya",
+        "duration": "7 Days / 6 Nights",
+        "price": 2210,
+        "description": "A great value Kenya safari covering Amboseli, Lake Nakuru, and Masai Mara with superior accommodations.",
+        "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600&h=400&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&h=500&fit=crop"
+        ],
+        "category": "mid-range",
+        "experience": "classic",
+        "highlights": [
+          "Amboseli National Park",
+          "Lake Nakuru",
+          "Full day game drive in Masai Mara",
+          "Complimentary Maasai village visit",
+          "Included lunch at Tamarind Brassiere"
+        ],
+        "itinerary": [
+          {"day": 1, "title": "Arrival - Nairobi", "description": "Transfer to Emara Ole Sereni."},
+          {"day": 2, "title": "Nairobi - Amboseli", "description": "Drive to Kibo Safari Camp."},
+          {"day": 3, "title": "Amboseli - Full Day", "description": "Full day game viewing."},
+          {"day": 4, "title": "Amboseli - Lake Nakuru", "description": "Via Nairobi, lunch at Tamarind Brassiere."},
+          {"day": 5, "title": "Lake Nakuru - Masai Mara", "description": "Drive to Zebra Plains Camp with Maasai village visit."},
+          {"day": 6, "title": "Masai Mara - Full Day Game Drive", "description": "Full day game viewing."},
+          {"day": 7, "title": "Masai Mara - Nairobi - Departure", "description": "Return to Nairobi with Giraffe Centre visit."}
+        ],
+        "included": [
+          "Arrival/departure transfers",
+          "Bed and breakfast at Emara Ole Sereni",
+          "Full board at Kibo Safari Camp",
+          "Full board at Sarova Lion Hill Lodge",
+          "Full board at Zebra Plains main Mara Camp",
+          "English speaking driver guide",
+          "Unlimited drinking water",
+          "Game viewing drives",
+          "Park entrance fees",
+          "Lunch at Tamarind Brassiere",
+          "Complimentary Maasai village visit"
+        ],
+        "notIncluded": [
+          "International airfares",
+          "Visa fees",
+          "Meals not mentioned",
+          "Personal items",
+          "Travel insurance",
+          "Tips and gratuities"
+        ],
+        "pricing": {
+          "prices": [
+            {"season": "05th Jan - 28th Feb", "price": 2690, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "March", "price": 2605, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "April - May (excluding Easter)", "price": 2585, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "Easter", "price": 2790, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st - 14th June", "price": 2660, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "15th - 30th June", "price": 2885, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st - 14th July", "price": 3385, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "15th July - 15th Sept", "price": 3475, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "16th Sept - 30th Sept", "price": 3385, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st - 31st Oct", "price": 2980, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "Nov - 22nd Dec", "price": 2890, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "23rd Dec - 05th Jan 2027", "price": 3525, "currency": "USD", "minPax": 2, "type": "perPerson"}
+          ]
+        },
+        "accommodation": ["Emara Ole Sereni", "Kibo Safari Camp", "Sarova Lion Hill Lodge", "Zebra Plains main Mara Camp"],
+        "travelInfo": {
+          "clothes": "Lightweight clothing, warm layers for early mornings.",
+          "food": "Full board meals included."
+        },
+        "note": "Optional day room at Hilton Garden Inn: $120 per person."
+      },
+      {
+        "id": "great-value-kenya-budget",
+        "title": "GREAT VALUE KENYA SAFARI - Budget Traveler",
+        "country": "Kenya",
+        "duration": "7 Days / 6 Nights",
+        "price": 1990,
+        "description": "A budget-friendly great value Kenya safari covering Amboseli, Lake Nakuru, and Masai Mara with comfortable accommodations.",
+        "image": "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=600&h=400&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&h=500&fit=crop"
+        ],
+        "category": "budget",
+        "experience": "classic",
+        "highlights": [
+          "Amboseli National Park",
+          "Lake Nakuru",
+          "Full day game drive in Masai Mara",
+          "Complimentary Maasai village visit",
+          "Included lunch at Tamarind Brassiere"
+        ],
+        "itinerary": [
+          {"day": 1, "title": "Arrival - Nairobi", "description": "Transfer to Ibis Styles Hotel."},
+          {"day": 2, "title": "Nairobi - Amboseli", "description": "Drive to Hunters Luxury Manor."},
+          {"day": 3, "title": "Amboseli - Full Day", "description": "Full day game viewing."},
+          {"day": 4, "title": "Amboseli - Lake Nakuru", "description": "Via Nairobi, lunch at Tamarind Brassiere."},
+          {"day": 5, "title": "Lake Nakuru - Masai Mara", "description": "Drive to Mtito Safari Camp with Maasai village visit."},
+          {"day": 6, "title": "Masai Mara - Full Day Game Drive", "description": "Full day game viewing."},
+          {"day": 7, "title": "Masai Mara - Nairobi - Departure", "description": "Return to Nairobi with Giraffe Centre visit."}
+        ],
+        "included": [
+          "Arrival/departure transfers",
+          "Bed and breakfast at Ibis Styles Hotel",
+          "Full board at Hunters Luxury Manor",
+          "Full board at Lake Nakuru Lodge",
+          "Full board at Mtito Safari Camp",
+          "English speaking driver guide",
+          "Unlimited drinking water",
+          "Game viewing drives",
+          "Park entrance fees",
+          "Lunch at Tamarind Brassiere",
+          "Complimentary Maasai village visit"
+        ],
+        "notIncluded": [
+          "International airfares",
+          "Visa fees",
+          "Meals not mentioned",
+          "Personal items",
+          "Travel insurance",
+          "Tips and gratuities"
+        ],
+        "pricing": {
+          "prices": [
+            {"season": "05th Jan - 28th Feb", "price": 2470, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "March", "price": 2470, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "April - May (excluding Easter)", "price": 2345, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "Easter", "price": 2610, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "June", "price": 2345, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "July - August", "price": 3120, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "September", "price": 2980, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "October", "price": 2830, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "Nov - 15th Dec", "price": 2830, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "16th Dec - 05th Jan 2027", "price": 3120, "currency": "USD", "minPax": 2, "type": "perPerson"}
+          ]
+        },
+        "accommodation": ["Ibis Styles Hotel", "Hunters Luxury Manor", "Lake Nakuru Lodge", "Mtito Safari Camp"],
+        "travelInfo": {
+          "clothes": "Lightweight clothing, warm layers for early mornings.",
+          "food": "Full board meals included."
+        },
+        "note": "Optional day room at Hilton Garden Inn: $120 per person."
+      },
+      {
+        "id": "highlights-of-kenya",
+        "title": "HIGHLIGHTS OF KENYA SAFARI",
+        "country": "Kenya",
+        "duration": "8 Days / 7 Nights",
+        "price": 2330,
+        "description": "A comprehensive highlights safari covering Samburu, Ol Pejeta, Lake Elementeita, and Masai Mara with premium accommodations.",
+        "image": "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=600&h=400&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&h=500&fit=crop"
+        ],
+        "category": "mid-range",
+        "experience": "extended",
+        "highlights": [
+          "Samburu Game Reserve",
+          "Ol Pejeta Conservancy",
+          "Lake Elementeita",
+          "Masai Mara Game Reserve",
+          "Maasai village cultural visit"
+        ],
+        "itinerary": [
+          {"day": 1, "title": "Arrival - Nairobi", "description": "Transfer to Hilton Garden Inn."},
+          {"day": 2, "title": "Nairobi - Samburu", "description": "Drive to Samburu."},
+          {"day": 3, "title": "Samburu - Full Day", "description": "Game drives."},
+          {"day": 4, "title": "Samburu - Ol Pejeta", "description": "Drive to Ol Pejeta."},
+          {"day": 5, "title": "Ol Pejeta - Lake Elementeita", "description": "Drive to Lake Elementeita."},
+          {"day": 6, "title": "Lake Elementeita - Masai Mara", "description": "Travel to Masai Mara with Maasai village visit."},
+          {"day": 7, "title": "Masai Mara - Full Day Game Drive", "description": "Full day game viewing."},
+          {"day": 8, "title": "Masai Mara - Nairobi - Departure", "description": "Return to Nairobi with Giraffe Centre visit."}
+        ],
+        "included": [
+          "Arrival/departure transfers",
+          "Bed and breakfast at Hilton Garden Inn",
+          "Full board at Ashnil Samburu Camp",
+          "Full board at Maisha Sweetwaters Camp",
+          "Full board at Lake Elementeita Mountain Lodge",
+          "Full board at Mara Maisha Camp",
+          "English speaking driver guide",
+          "Unlimited drinking water",
+          "Game viewing drives",
+          "Park entrance fees"
+        ],
+        "notIncluded": [
+          "International airfares",
+          "Visa fees",
+          "Meals not mentioned",
+          "Personal items",
+          "Travel insurance",
+          "Tips and gratuities"
+        ],
+        "pricing": {
+          "prices": [
+            {"season": "Jan - 2nd April", "price": 2880, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "07th April - 31st May (excl Easter)", "price": 2650, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "Easter", "price": 3045, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st - 14th June", "price": 2850, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "15th - 30th June", "price": 3215, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "July - 30th August", "price": 3720, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "September", "price": 3720, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "October", "price": 3180, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "November", "price": 3095, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st - 15th December", "price": 3095, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "16th Dec - 05th Jan 2027", "price": 3985, "currency": "USD", "minPax": 2, "type": "perPerson"}
+          ]
+        },
+        "accommodation": ["Hilton Garden Inn", "Ashnil Samburu Camp", "Maisha Sweetwaters Camp", "Lake Elementeita Mountain Lodge", "Mara Maisha Camp"],
+        "travelInfo": {
+          "clothes": "Lightweight clothing, warm layers for early mornings.",
+          "food": "Full board meals included."
+        },
+        "note": "Different supplement applies for Lake Elementeita Mountain Lodge during World Safari Rally dates."
+      },
+      {
+        "id": "honeymooners-low-budget",
+        "title": "HONEYMOONERS - LOW BUDGET PACKAGE",
+        "country": "Kenya",
+        "duration": "8 Days / 7 Nights",
+        "price": 2040,
+        "description": "A romantic low-budget honeymoon safari covering Amboseli, Lake Elementeita, Lake Nakuru, and Masai Mara with special touches for couples.",
+        "image": "https://images.unsplash.com/photo-1549366021-9f761d450615?w=600&h=400&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&h=500&fit=crop"
+        ],
+        "category": "budget",
+        "experience": "extended",
+        "highlights": [
+          "Amboseli National Park",
+          "Lake Elementeita",
+          "Lake Nakuru",
+          "Full day game drive in Masai Mara",
+          "Lunch at Carnivore Restaurant",
+          "Romantic safari experience"
+        ],
+        "itinerary": [
+          {"day": 1, "title": "Arrival - Nairobi", "description": "Transfer to Novotel Nairobi."},
+          {"day": 2, "title": "Nairobi - Amboseli", "description": "Drive to Hunters Luxury Manor."},
+          {"day": 3, "title": "Amboseli - Full Day", "description": "Full day game viewing."},
+          {"day": 4, "title": "Amboseli - Lake Elementeita", "description": "Via Nairobi, lunch at Carnivore Restaurant."},
+          {"day": 5, "title": "Lake Elementeita - Lake Nakuru", "description": "Full day visit to Lake Nakuru with box lunch."},
+          {"day": 6, "title": "Lake Elementeita - Masai Mara", "description": "Drive to Mtito Safari Camp."},
+          {"day": 7, "title": "Masai Mara - Full Day Game Drive", "description": "Full day game viewing."},
+          {"day": 8, "title": "Masai Mara - Nairobi - Departure", "description": "Return to Nairobi with Giraffe Centre visit."}
+        ],
+        "included": [
+          "Arrival/departure transfers",
+          "Bed and breakfast at Novotel Nairobi",
+          "Full board at Hunters Luxury Manor",
+          "Full board at Sentrim Lake Elementeita",
+          "Full board at Mtito Safari Camp",
+          "Lunch at Carnivore Restaurant",
+          "Box lunch from Sentrim",
+          "Giraffe centre visit",
+          "English speaking driver guide",
+          "Unlimited drinking water",
+          "Game viewing drives",
+          "Park entrance fee for 01 day in Mara",
+          "Complimentary Maasai village visit"
+        ],
+        "notIncluded": [
+          "International airfares",
+          "Visa fees",
+          "Meals not mentioned",
+          "Personal items",
+          "Balloon ride",
+          "Travel insurance",
+          "Tips and gratuities"
+        ],
+        "pricing": {
+          "prices": [
+            {"season": "05th Jan - 31st March", "price": 2590, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "April - May", "price": 2495, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "Easter", "price": 2685, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st - 30th June", "price": 2495, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "July - August", "price": 3295, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "September", "price": 3170, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "October", "price": 3020, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "November", "price": 2910, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st - 19th December", "price": 2920, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "20th Dec - 05th Jan 2027", "price": 3335, "currency": "USD", "minPax": 2, "type": "perPerson"}
+          ]
+        },
+        "accommodation": ["Novotel Nairobi", "Hunters Luxury Manor", "Sentrim Lake Elementeita", "Mtito Safari Camp"],
+        "travelInfo": {
+          "clothes": "Lightweight clothing, warm layers for early mornings.",
+          "food": "Full board meals included."
+        },
+        "note": "This package is also ideal for any clients not necessarily honeymooners only."
+      },
+      {
+        "id": "honeymooners-package",
+        "title": "HONEYMOONERS PACKAGE",
+        "country": "Kenya",
+        "duration": "9 Days / 8 Nights",
+        "price": 3975,
+        "description": "A luxurious honeymoon safari featuring Nairobi Serena Hotel, Amboseli Serena Lodge, Lake Elementeita Serena Camp, and Mara Serena Safari Lodge.",
+        "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600&h=400&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&h=500&fit=crop"
+        ],
+        "category": "luxury",
+        "experience": "extended",
+        "highlights": [
+          "Luxury Serena properties",
+          "Nairobi city tour",
+          "Amboseli National Park",
+          "Lake Elementeita - all-inclusive with drinks",
+          "Masai Mara Game Reserve",
+          "Lunch at Carnivore Restaurant",
+          "Romantic luxury experience"
+        ],
+        "itinerary": [
+          {"day": 1, "title": "Arrival - Nairobi", "description": "Transfer to Nairobi Serena Hotel."},
+          {"day": 2, "title": "Nairobi City Tour", "description": "David Sheldrick, Giraffe Centre, city tour."},
+          {"day": 3, "title": "Nairobi - Amboseli", "description": "Drive to Amboseli Serena Lodge."},
+          {"day": 4, "title": "Amboseli - Full Day", "description": "Full day game viewing."},
+          {"day": 5, "title": "Amboseli - Lake Elementeita", "description": "Via Nairobi, lunch at Carnivore Restaurant."},
+          {"day": 6, "title": "Lake Elementeita - Lake Nakuru", "description": "Full day visit to Lake Nakuru with box lunch."},
+          {"day": 7, "title": "Lake Elementeita - Masai Mara", "description": "Drive to Mara Serena Lodge."},
+          {"day": 8, "title": "Masai Mara - Full Day Game Drive", "description": "Full day game viewing."},
+          {"day": 9, "title": "Masai Mara - Nairobi - Departure", "description": "Return to Nairobi with Karen Blixen Museum visit."}
+        ],
+        "included": [
+          "Arrival/departure transfers",
+          "Bed and breakfast at Nairobi Serena Hotel",
+          "Full board at Amboseli Serena Lodge",
+          "Full board at Lake Elementeita Serena Camp (All Inclusive)",
+          "Full board at Mara Serena Lodge",
+          "Lunch at Carnivore Restaurant",
+          "Box lunch from Serena",
+          "Giraffe centre visit",
+          "David Sheldrick visit",
+          "Karen Blixen museum visit",
+          "English speaking driver guide",
+          "Unlimited drinking water",
+          "Game viewing drives",
+          "Complimentary Maasai village visit"
+        ],
+        "notIncluded": [
+          "International airfares",
+          "Visa fees",
+          "Meals not mentioned",
+          "Personal items",
+          "Balloon ride",
+          "Travel insurance",
+          "Tips and gratuities"
+        ],
+        "pricing": {
+          "prices": [
+            {"season": "January - March", "price": 3975, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "April - May (excluding Easter)", "price": 3820, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "Easter", "price": 4250, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st - 15th June", "price": 3975, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "16th - 30th June", "price": 4815, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "July - September", "price": 4945, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "October", "price": 4325, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "Nov - 22nd December", "price": 4325, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "23rd Dec - 05th Jan 2027", "price": 5110, "currency": "USD", "minPax": 2, "type": "perPerson"}
+          ]
+        },
+        "accommodation": ["Nairobi Serena Hotel", "Amboseli Serena Lodge", "Lake Elementeita Serena Camp", "Mara Serena Lodge"],
+        "travelInfo": {
+          "clothes": "Lightweight clothing, warm layers for early mornings.",
+          "food": "All-inclusive at Lake Elementeita Serena Camp includes drinks."
+        },
+        "note": "Lake Elmenteita Serena Camp All Inclusive Rate includes Full Board Accommodation, Selection of Local Beers, Soft Drinks, Spirits & Soysambu Conservancy Fee. Offer based on 2 pax only (couples/honeymooners)."
+      },
+      {
+        "id": "kenya-awesome-naivasha-low-budget",
+        "title": "KENYA IS AWESOME WITH LAKE NAIVASHA! - Low Budget Clients",
+        "country": "Kenya",
+        "duration": "7 Days / 6 Nights",
+        "price": 1610,
+        "description": "A low-budget Kenya safari covering Lake Nakuru, Masai Mara, and Lake Naivasha with budget-friendly accommodations.",
+        "image": "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=600&h=400&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&h=500&fit=crop"
+        ],
+        "category": "budget",
+        "experience": "classic",
+        "highlights": [
+          "Lake Nakuru National Park",
+          "Full day game drive in Masai Mara",
+          "Complimentary Maasai village visit",
+          "Boat ride on Lake Naivasha",
+          "Giraffe Centre visit"
+        ],
+        "itinerary": [
+          {"day": 1, "title": "Arrival - Nairobi", "description": "Transfer to Ibis Styles Hotel."},
+          {"day": 2, "title": "Nairobi - Lake Nakuru", "description": "Drive to Egret Savanna Camp."},
+          {"day": 3, "title": "Lake Nakuru - Masai Mara", "description": "Drive to Mtito Safari Camp with Maasai village visit."},
+          {"day": 4, "title": "Masai Mara - Full Day Game Drive", "description": "Full day game viewing."},
+          {"day": 5, "title": "Masai Mara - Lake Naivasha", "description": "Drive to Lake Naivasha Sopa Resort with boat ride."},
+          {"day": 6, "title": "Lake Naivasha - Nairobi", "description": "Return to Nairobi with Giraffe Centre visit."},
+          {"day": 7, "title": "Nairobi - Departure", "description": "Transfer to airport."}
+        ],
+        "included": [
+          "Arrival/departure transfers",
+          "Bed and breakfast at Ibis Styles Nairobi",
+          "Full board at Egret Savannah Camp",
+          "Full board at Mtito Mara Camp",
+          "Full board at Lake Naivasha Sopa Resort",
+          "English speaking driver guide",
+          "Unlimited drinking water",
+          "01 hour boat ride on Lake Naivasha",
+          "Game viewing drives",
+          "Park entrance fees for Lake Nakuru",
+          "Park entrance fee for 01 day in Mara",
+          "Complimentary Maasai village visit"
+        ],
+        "notIncluded": [
+          "International airfares",
+          "Visa fees",
+          "Meals not mentioned",
+          "Personal items",
+          "Travel insurance",
+          "Tips and gratuities"
+        ],
+        "pricing": {
+          "prices": [
+            {"season": "05th Jan - 31st March", "price": 2020, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "Easter", "price": 2060, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "April - May (excluding Easter)", "price": 1900, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "June", "price": 1930, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st July - 30th September", "price": 2575, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st - 09th October", "price": 2500, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "10th - 30th October", "price": 2460, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "01st Nov - 20th Dec", "price": 2395, "currency": "USD", "minPax": 2, "type": "perPerson"},
+            {"season": "21st Dec - 05th Jan 2027", "price": 2805, "currency": "USD", "minPax": 2, "type": "perPerson"}
+          ]
+        },
+        "accommodation": ["Ibis Styles Hotel", "Egret Savanna Camp", "Mtito Safari Camp", "Lake Naivasha Sopa Resort"],
+        "travelInfo": {
+          "clothes": "Lightweight clothing, warm layers for early mornings.",
+          "food": "Full board meals included."
+        },
+        "note": "Prices are per person sharing. Optional balloon ride available at $520 per adult."
       }
     ]
   }

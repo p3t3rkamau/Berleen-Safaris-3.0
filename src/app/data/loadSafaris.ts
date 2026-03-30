@@ -1,5 +1,13 @@
 import type { Safari } from '../../types/safari'
-import combinedSafaris from '../data/json/safari-experiences/berleen-safaris-combined.json'
+import combinedBerleenSafaris from '../data/json/safari-experiences/berleen-safaris-combined.json'
+
+/**
+ * Vite automatically discovers all JSON safari files
+ * inside src/data/json/** folders (excluding the combined file)
+ */
+const safariModules = import.meta.glob('./json/**/*.json', {
+  eager: true
+}) as Record<string, { default?: Safari }>
 
 /**
  * Internal cached safari list
@@ -7,18 +15,31 @@ import combinedSafaris from '../data/json/safari-experiences/berleen-safaris-com
 const safaris: Safari[] = []
 
 /**
- * Load safaris from combined JSON file
+ * Load safaris safely.
+ * Combines individual JSON files with the Berleen combined file
  */
 function initSafaris() {
-  try {
-    const safariList = combinedSafaris.safaris
-    
-    if (!safariList || !Array.isArray(safariList)) {
-      console.warn('⚠️ Invalid combined safaris data')
-      return
-    }
+  let loadedCount = 0
+  let skippedCount = 0
 
-    for (const safari of safariList) {
+  // 1. Load all individual JSON files from the json folder
+  for (const path in safariModules) {
+    // Skip the combined file to avoid duplicates
+    if (path.includes('berleen-safaris-combined')) {
+      continue
+    }
+    
+    try {
+      const mod = safariModules[path]
+
+      if (!mod || !mod.default) {
+        console.warn(`⚠️ Safari file skipped (no default export): ${path}`)
+        skippedCount++
+        continue
+      }
+
+      const safari = mod.default
+
       // Basic validation
       if (
         !safari.id ||
@@ -26,21 +47,58 @@ function initSafaris() {
         !safari.country ||
         typeof safari.price !== 'number'
       ) {
-        console.warn(`⚠️ Invalid safari data skipped: ${safari.id}`)
+        console.warn(`⚠️ Invalid safari data skipped: ${path}`)
+        skippedCount++
         continue
       }
 
       safaris.push(safari)
+      loadedCount++
+
+    } catch (error) {
+      console.warn(`⚠️ Failed to load safari JSON: ${path}`, error)
+      skippedCount++
     }
-
-    // Sort once after loading
-    safaris.sort((a, b) => a.price - b.price)
-    
-    console.log(`✅ Loaded ${safaris.length} safaris from combined file`)
-
-  } catch (error) {
-    console.warn('⚠️ Failed to load combined safaris JSON', error)
   }
+
+  // 2. Load all Berleen safaris from the combined file
+  try {
+    const berleenSafaris = combinedBerleenSafaris.safaris
+    
+    if (berleenSafaris && Array.isArray(berleenSafaris)) {
+      for (const safari of berleenSafaris) {
+        // Basic validation
+        if (
+          !safari.id ||
+          !safari.title ||
+          !safari.country ||
+          typeof safari.price !== 'number'
+        ) {
+          console.warn(`⚠️ Invalid Berleen safari data skipped: ${safari.id}`)
+          continue
+        }
+        
+        // Check for duplicate IDs to avoid adding the same safari twice
+        const exists = safaris.some(s => s.id === safari.id)
+        if (!exists) {
+          safaris.push(safari)
+          loadedCount++
+        }
+      }
+      console.log(`✅ Loaded ${berleenSafaris.length} Berleen safaris from combined file`)
+    } else {
+      console.warn('⚠️ No Berleen safaris found in combined file')
+    }
+  } catch (error) {
+    console.warn('⚠️ Failed to load Berleen combined safaris JSON', error)
+  }
+
+  // Sort once after loading
+  safaris.sort((a, b) => a.price - b.price)
+  
+  console.log(`📁 Total loaded: ${loadedCount} safaris (${skippedCount} skipped)`)
+  console.log(`📊 Countries: ${Array.from(new Set(safaris.map(s => s.country))).join(', ')}`)
+  console.log(`📊 Categories: ${Array.from(new Set(safaris.map(s => s.category))).join(', ')}`)
 }
 
 // initialize once
