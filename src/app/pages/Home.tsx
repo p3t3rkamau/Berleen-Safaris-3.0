@@ -7,6 +7,8 @@ import { Award, Users, Headphones, MapPin, Star, Quote } from 'lucide-react'
 import { StatsBand } from '../components/StatsBand'
 import PopularSafaris from '../components/PopularSafaris'
 import ReviewsSection from '../components/ReviewsSection'
+import QuickBookingForm from '../components/quick-booking-form'
+import PopularCategories from '../components/categories'
 
 const allDestinations = loadDestinations()
 
@@ -62,6 +64,12 @@ export function Home() {
     <div>
       {/* Hero Slider */}
       <HeroSlider />
+      <section>
+        <QuickBookingForm />
+      </section>
+      {/* <section>
+        <PopularCategories />
+      </section> */}
 
       {/* Featured Destinations */}
       <section className="py-20 px-4 bg-[var(--safari-cream)]">
@@ -117,6 +125,7 @@ export function Home() {
           </div>
         </div>
       </section>
+      
 
       {/* Why Choose Us */}
       <section className="py-20 px-4 bg-white">
@@ -165,7 +174,7 @@ export function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20 px-4 bg-[var(--safari-brown-dark)] text-white">
+      {/* <section className="py-20 px-4 bg-[var(--safari-brown-dark)] text-white">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -212,7 +221,7 @@ export function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Add the Reviews Section */}
       <section className="py-16 px-4 bg-gray-900/50">

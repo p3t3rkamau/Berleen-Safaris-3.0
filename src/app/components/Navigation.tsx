@@ -75,7 +75,7 @@ export function Navigation() {
             ))}
             
             {/* Admin Section - Desktop */}
-            {user ? (
+            {/* {user ? (
               <div className="flex items-center gap-3">
                 {isAdmin && (
                   <div className="flex items-center gap-1 text-green-600 text-sm font-medium">
@@ -99,7 +99,7 @@ export function Navigation() {
                 <Shield size={18} />
                 Admin Login
               </Link>
-            )}
+            )} */}
             
             <Link
               to="/contact"
@@ -143,8 +143,8 @@ export function Navigation() {
                   </Link>
                 ))}
                 
-                {/* Admin Section - Mobile */}
-                {user ? (
+            
+                {/* {user ? (
                   <>
                     {isAdmin && (
                       <div className="flex items-center gap-1 text-green-600 text-sm font-medium py-2">
@@ -168,7 +168,7 @@ export function Navigation() {
                     <Shield size={18} />
                     Admin Login
                   </Link>
-                )}
+                )} */}
                 
                 <Link
                   to="/contact"

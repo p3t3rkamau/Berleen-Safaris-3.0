@@ -67,13 +67,10 @@ export function Footer() {
                 <MapPin className="w-4 h-4 mt-1 flex-shrink-0" />
                 <span>Wilson Airport,Nairobi, Kenya</span>
               </li>
-              <li className="flex items-center gap-2">
-                <Phone className="w-4 h-4 flex-shrink-0" />
-                <a href="tel:+254714018914" className="hover:text-[var(--safari-gold)] transition-colors">+254 722 371 171 / +254 721 949 410</a>
-              </li>
+        
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 flex-shrink-0" />
-                <a href="mailto:info@adventuresconnect.com" className="hover:text-[var(--safari-gold)] transition-colors">info@adventuresconnect.co.ke</a>
+                <a href="mailto:tours@berleensafaris.com" className="hover:text-[var(--safari-gold)] transition-colors">tours@berleensafaris.com</a>
               </li>
             </ul>
             

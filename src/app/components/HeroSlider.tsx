@@ -4,30 +4,62 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const slides = [
+  
   {
-    image: 'https://images.unsplash.com/photo-1724581777107-c132d05753a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXNhaSUyMG1hcmElMjB3aWxkbGlmZSUyMHNhZmFyaXxlbnwxfHx8fDE3NzIzNTAwOTV8MA&ixlib=rb-4.1.0&q=80&w=1080',
-    title: 'Discover the Wild Masai Mara',
-    tagline: 'Witness the greatest wildlife spectacle on Earth',
+    image: 'https://ik.imagekit.io/6cga8hi9z/JaeTravels/africa-big-5-animals-found-in-uganda_zZfyMJ8hE.webp?',
+    title: 'Kenya Big Five Expedition',
+    tagline: 'Get up close with Africa’s most iconic wildlife',
     destination: 'kenya'
   },
   {
-    image: 'https://images.unsplash.com/photo-1560440293-855922f9cc7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzZXJlbmdldGklMjBzdW5zZXQlMjBhZnJpY2F8ZW58MXx8fHwxNzcyMzUwMDk1fDA&ixlib=rb-4.1.0&q=80&w=1080',
-    title: 'Serengeti Sunset Safari',
-    tagline: 'Experience the endless plains of Tanzania',
+    image: 'https://ik.imagekit.io/6cga8hi9z/JaeTravels/Kenyanimals_CheetahPack_VmyCOwxPP.png',
+    title: 'Cheetah Plains Adventure',
+    tagline: 'Feel the thrill of speed on the open savannah',
     destination: 'tanzania'
   },
   {
-    image: 'https://images.unsplash.com/photo-1667504319000-8133f9021cf8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb3VudGFpbiUyMGdvcmlsbGElMjByd2FuZGF8ZW58MXx8fHwxNzcyMzUwMDk2fDA&ixlib=rb-4.1.0&q=80&w=1080',
-    title: 'Rwanda Gorilla Trekking',
-    tagline: 'An unforgettable encounter with mountain gorillas',
+    image: 'https://ik.imagekit.io/6cga8hi9z/JaeTravels/mara-crossing-wildebeest-tanzania-wildlife-yellow-zebra-safaris_2N2fdRbt_.jpg',
+    title: 'Great Migration Experience',
+    tagline: 'Witness nature’s most dramatic river crossings',
     destination: 'rwanda'
   },
   {
-    image: 'https://images.unsplash.com/photo-1671830018944-eb7622e8b8f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtdXJjaGlzb24lMjBmYWxscyUyMHVnYW5kYXxlbnwxfHx8fDE3NzIzNTAwOTZ8MA&ixlib=rb-4.1.0&q=80&w=1080',
-    title: 'Murchison Falls Uganda',
-    tagline: 'Explore the Pearl of Africa\'s natural wonders',
+    image: 'https://ik.imagekit.io/6cga8hi9z/JaeTravels/images_5-UMlcDj6.jpg',
+    title: 'Uganda Wildlife Discovery',
+    tagline: 'Explore lush parks and hidden natural gems',
+    destination: 'uganda'
+  },
+  {
+    image: 'https://ik.imagekit.io/6cga8hi9z/JaeTravels/tt-768x512_noSyzwwOv.png',
+    title: 'Safari & Culture Escape',
+    tagline: 'Blend wildlife adventure with local traditions',
+    destination: 'uganda'
+  },
+  {
+    image: 'https://ik.imagekit.io/6cga8hi9z/JaeTravels/dophine-768x388_K2Ybsyxwk.png',
+    title: 'Dolphin Coast Experience',
+    tagline: 'Discover playful marine life along pristine shores',
+    destination: 'uganda'
+  },
+  {
+    image: 'https://ik.imagekit.io/6cga8hi9z/JaeTravels/zanzi_7mYF2fYCM.jpg',
+    title: 'Zanzibar Beach Retreat',
+    tagline: 'Relax on white sands with crystal-clear waters',
+    destination: 'uganda'
+  },
+  {
+    image: 'https://ik.imagekit.io/6cga8hi9z/JaeTravels/istockphoto-817219148-612x612_Idnqcj_CE.jpg',
+    title: 'Luxury Safari Moments',
+    tagline: 'Experience comfort in the heart of the wild',
+    destination: 'uganda'
+  },
+  {
+    image: 'https://ik.imagekit.io/6cga8hi9z/JaeTravels/TZ3_8yp4pSL1R.jpg',
+    title: 'Tanzania Scenic Journey',
+    tagline: 'From savannahs to sunsets, travel beyond limits',
     destination: 'uganda'
   }
+
 ];
 
 function NextArrow(props: any) {

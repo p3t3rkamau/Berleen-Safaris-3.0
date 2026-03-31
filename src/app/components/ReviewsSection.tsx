@@ -78,9 +78,9 @@ export default function ReviewsSection() {
   return (
     <div className="space-y-12">
       {/* Live Reviews Slider Section */}
-      <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-2xl p-8 border border-gray-700">
+      {/* <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-2xl p-8 border border-gray-700">
         <LiveReviewsSlider />
-      </div>
+      </div> */}
 
       {/* Add Review Form */}
       <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-6 shadow-xl border border-gray-700">
@@ -163,7 +163,7 @@ export default function ReviewsSection() {
           <div className="text-center mt-6">
             <button
               onClick={() => setShowAllReviews(!showAllReviews)}
-              className="px-6 py-2 bg-yellow-600 hover:bg-yellow-700 text-white rounded-lg transition-colors"
+              className="px-6 py-2 bg-yellow-700 hover:bg-yellow-600 text-white rounded-lg transition-colors"
             >
               {showAllReviews ? 'Show Less' : `View All ${reviews.length} Reviews`}
             </button>
