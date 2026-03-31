@@ -1,16 +1,17 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { HeroSlider } from '../components/HeroSlider'
-import { motion } from 'motion/react'
-import { loadDestinations } from '../data/loadDestinations'
-import { Award, Users, Headphones, MapPin, Star, Quote } from 'lucide-react'
-import { StatsBand } from '../components/StatsBand'
-import PopularSafaris from '../components/PopularSafaris'
-import ReviewsSection from '../components/ReviewsSection'
-import QuickBookingForm from '../components/quick-booking-form'
-import PopularCategories from '../components/categories'
+// Home.tsx (complete updated version)
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { HeroSlider } from '../components/HeroSlider';
+import { motion } from 'motion/react';
+import { loadDestinations } from '../data/loadDestinations';
+import { Award, Users, Headphones, MapPin } from 'lucide-react';
+import { StatsBand } from '../components/StatsBand';
+import PopularSafaris from '../components/PopularSafaris';
+import QuickBookingForm from '../components/quick-booking-form';
+import LiveReviewsSlider from '../components/LiveReviewsSlider';
+import { supabase } from '../imports/supabase';
 
-const allDestinations = loadDestinations()
+const allDestinations = loadDestinations();
 
 const features = [
   {
@@ -33,43 +34,47 @@ const features = [
     title: 'Custom Tours',
     description: 'Personalized itineraries designed to match your interests and schedule',
   },
-]
-
-const testimonials = [
-  {
-    name: 'Sarah & John Mitchell',
-    location: 'United States',
-    text: 'Our Masai Mara safari was absolutely incredible! The guides were knowledgeable, the accommodations were perfect, and we saw all the Big Five. Adventures Connect made our dream safari a reality!',
-    rating: 5,
-    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop',
-  },
-  {
-    name: 'Emma Thompson',
-    location: 'United Kingdom',
-    text: 'The gorilla trekking in Rwanda was a once-in-a-lifetime experience. The entire trip was flawlessly organized, and the team went above and beyond to ensure we had an amazing time.',
-    rating: 5,
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop',
-  },
-  {
-    name: 'Hans Weber',
-    location: 'Germany',
-    text: 'Professional, friendly, and reliable. Our Tanzania safari exceeded all expectations. The Serengeti is even more spectacular in person, and the Ngorongoro Crater was breathtaking!',
-    rating: 5,
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop',
-  },
-]
+];
 
 export function Home() {
+  const [isAdmin, setIsAdmin] = useState(false);
+
+  useEffect(() => {
+    checkAdminStatus();
+  }, []);
+
+  const checkAdminStatus = async () => {
+    try {
+      const { data: { user } } = await supabase.auth.getUser();
+      
+      if (user) {
+        const { data: profile, error } = await supabase
+          .from('profiles')
+          .select('role')
+          .eq('id', user.id)
+          .single();
+        
+        if (!error && profile && profile.role === 'admin') {
+          setIsAdmin(true);
+        }
+      }
+    } catch (error) {
+      console.error('Error checking admin status:', error);
+    }
+  };
+
+  const handleReviewDeleted = () => {
+    console.log('Review was deleted');
+  };
+
   return (
     <div>
       {/* Hero Slider */}
       <HeroSlider />
+      
       <section>
         <QuickBookingForm />
       </section>
-      {/* <section>
-        <PopularCategories />
-      </section> */}
 
       {/* Featured Destinations */}
       <section className="py-20 px-4 bg-[var(--safari-cream)]">
@@ -126,7 +131,6 @@ export function Home() {
         </div>
       </section>
       
-
       {/* Why Choose Us */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
@@ -166,67 +170,20 @@ export function Home() {
         </div>
       </section>
 
-      {/* Popular Safaris - Now using the actual data */}
+      {/* Popular Safaris */}
       <PopularSafaris />
 
       <section>
         <StatsBand />
       </section>
 
-      {/* Testimonials */}
-      {/* <section className="py-20 px-4 bg-[var(--safari-brown-dark)] text-white">
-        <div className="max-w-7xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">What Our Travelers Say</h2>
-            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-              Read reviews from our satisfied clients who experienced the adventure of a lifetime
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10"
-              >
-                <Quote className="w-10 h-10 text-[var(--safari-gold)] mb-4" />
-                <p className="text-gray-200 mb-6 italic">"{testimonial.text}"</p>
-                <div className="flex items-center gap-4">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="w-12 h-12 rounded-full object-cover"
-                  />
-                  <div className="flex-1">
-                    <div className="font-bold">{testimonial.name}</div>
-                    <div className="text-sm text-gray-400">{testimonial.location}</div>
-                  </div>
-                  <div className="flex gap-1">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-[var(--safari-gold)] text-[var(--safari-gold)]" />
-                    ))}
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section> */}
-
-      {/* Add the Reviews Section */}
-      <section className="py-16 px-4 bg-gray-900/50">
+      {/* Live Reviews Slider - Visible to EVERYONE with Add Review Button */}
+      <section className="py-16 px-4 bg-gradient-to-b from-gray-900 to-gray-800">
         <div className="container mx-auto max-w-6xl">
-          <ReviewsSection />
+          <LiveReviewsSlider 
+            isAdmin={isAdmin}
+            onReviewDeleted={handleReviewDeleted}
+          />
         </div>
       </section>
 
@@ -263,5 +220,5 @@ export function Home() {
         </div>
       </section>
     </div>
-  )
+  );
 }
