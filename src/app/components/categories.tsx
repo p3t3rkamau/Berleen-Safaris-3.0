@@ -1,119 +1,134 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Tilt from "react-parallax-tilt";
+import { useNavigate } from "react-router-dom";
 
-// 🔹 Categories + placeholder filter key
-const categories = [
-  { key: "all", name: "All", image: "https://source.unsplash.com/200x200/?safari" },
-  { key: "4x4", name: "4x4 Safari", image: "https://source.unsplash.com/200x200/?safari,jeep" },
-  { key: "wildlife", name: "Wildlife", image: "https://source.unsplash.com/200x200/?africa,wildlife" },
-  { key: "amboseli", name: "Amboseli", image: "https://source.unsplash.com/200x200/?elephant" },
-  { key: "zanzibar", name: "Zanzibar", image: "https://source.unsplash.com/200x200/?zanzibar,beach" },
-  { key: "beach", name: "Beach", image: "https://source.unsplash.com/200x200/?beach,ocean" },
-  { key: "culture", name: "Culture", image: "https://source.unsplash.com/200x200/?african,culture" },
-  { key: "gorilla", name: "Gorilla", image: "https://source.unsplash.com/200x200/?gorilla" },
-];
+// 🔥 slugify helper
+const slugify = (text: string) =>
+  text.toLowerCase().replace(/\s+/g, "-");
 
-// 🔹 Placeholder safaris (simulate list below)
-const safaris = [
-  { id: 1, title: "Masai Mara Experience", category: "wildlife" },
-  { id: 2, title: "Zanzibar Beach Holiday", category: "beach" },
-  { id: 3, title: "Gorilla Trekking", category: "gorilla" },
-  { id: 4, title: "Amboseli Elephants", category: "amboseli" },
-  { id: 5, title: "Cultural Kenya Tour", category: "culture" },
-];
+export function PopularCategories() {
+  const navigate = useNavigate();
+  const [loading, setLoading] = useState(true);
 
-export default function PopularCategories() {
-  const [active, setActive] = useState("all");
-  const [filtered, setFiltered] = useState(safaris);
-  const scrollRef = useRef<HTMLDivElement>(null);
+  const categories = [
+    {
+      title: "Big Five Safaris",
+      image: "https://images.unsplash.com/photo-1508672019048-805c876b67e2",
+    },
+    {
+      title: "Beach Holidays",
+      image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+    },
+    {
+      title: "Gorilla Trekking",
+      image: "https://images.unsplash.com/photo-1546182990-dffeafbe841d",
+    },
+    {
+      title: "Luxury Safaris",
+      image: "https://images.unsplash.com/photo-1516426122078-c23e76319801",
+    },
+    {
+      title: "Cultural Tours",
+      image: "https://images.unsplash.com/photo-1526779259212-756e7c3f0d4b",
+    },
+    {
+      title: "Adventure Trips",
+      image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+    },
+  ];
 
-  // 🔹 Filter logic
+  // simulate loading (replace with API later)
   useEffect(() => {
-    if (active === "all") setFiltered(safaris);
-    else setFiltered(safaris.filter((s) => s.category === active));
-  }, [active]);
-
-  // 🔹 Auto-scroll (Netflix style)
-  useEffect(() => {
-    const el = scrollRef.current;
-    if (!el) return;
-
-    let scrollAmount = 0;
-    const step = 1;
-
-    const interval = setInterval(() => {
-      if (el.scrollWidth - el.clientWidth <= scrollAmount) {
-        scrollAmount = 0;
-        el.scrollTo({ left: 0, behavior: "smooth" });
-      } else {
-        scrollAmount += step;
-        el.scrollTo({ left: scrollAmount, behavior: "smooth" });
-      }
-    }, 30);
-
-    return () => clearInterval(interval);
+    const t = setTimeout(() => setLoading(false), 1200);
+    return () => clearTimeout(t);
   }, []);
 
   return (
-    <section className="w-full py-10 px-4 md:px-10">
-      <h2 className="text-center text-xl md:text-2xl font-semibold mb-8 text-[#1f2d2f]">
-        Popular Categories
-      </h2>
+    <section className="w-full py-14 px-4 md:px-8 bg-gradient-to-b from-white to-gray-50">
+      <div className="max-w-6xl mx-auto">
 
-      {/* 🔹 Categories Slider */}
-      <div
-        ref={scrollRef}
-        className="flex gap-6 overflow-x-auto scroll-smooth"
-      >
-        {categories.map((cat) => (
-          <motion.div
-            key={cat.key}
-            whileHover={{ scale: 1.08 }}
-            onClick={() => setActive(cat.key)}
-            className={`flex flex-col items-center cursor-pointer min-w-[100px] ${
-              active === cat.key ? "opacity-100" : "opacity-60"
-            }`}
-          >
-            <div
-              className={`relative w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden shadow-lg border-4 ${
-                active === cat.key ? "border-[#1f2d2f]" : "border-[#b88a4a]"
-              }`}
+        {/* Title */}
+        <motion.h2
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          className="text-2xl md:text-3xl font-semibold mb-8 text-center"
+        >
+          Explore Popular Categories
+        </motion.h2>
+
+        {/* Mobile scroll + Desktop grid */}
+        <div className="flex md:grid md:grid-cols-6 gap-6 overflow-x-auto no-scrollbar pb-2">
+
+          {(loading ? Array(6).fill(null) : categories).map((cat, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: i * 0.08 }}
+              viewport={{ once: true }}
+              className="flex-shrink-0 flex flex-col items-center cursor-pointer group"
+              onClick={() =>
+                !loading &&
+                navigate(`/category/${slugify(cat.title)}`)
+              }
             >
-              {/* IMAGE */}
-              <img
-                src={cat.image}
-                alt={cat.name}
-                className="w-full h-full object-cover"
-              />
+              {/* Skeleton */}
+              {loading ? (
+                <div className="w-24 h-24 md:w-28 md:h-28 rounded-full bg-gray-200 animate-pulse" />
+              ) : (
+                <Tilt
+                  glareEnable
+                  glareMaxOpacity={0.3}
+                  scale={1.05}
+                  transitionSpeed={400}
+                  className="rounded-full"
+                >
+                  <div className="relative w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden shadow-lg">
+                    
+                    {/* Image */}
+                    <motion.img
+                      src={cat.image}
+                      alt={cat.title}
+                      className="w-full h-full object-cover"
+                      whileHover={{ scale: 1.15 }}
+                      transition={{ duration: 0.4 }}
+                    />
 
-              {/* 🔥 Gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-            </div>
+                    {/* Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-70 group-hover:opacity-30 transition" />
 
-            <span className="mt-3 text-sm md:text-base text-center text-[#1f2d2f] font-medium">
-              {cat.name}
-            </span>
-          </motion.div>
-        ))}
+                    {/* Glow */}
+                    <div className="absolute inset-0 rounded-full border border-white/20 group-hover:border-white/60 transition" />
+                  </div>
+                </Tilt>
+              )}
+
+              {/* Text */}
+              {loading ? (
+                <div className="w-16 h-3 bg-gray-200 animate-pulse mt-3 rounded" />
+              ) : (
+                <p className="mt-3 text-xs md:text-sm text-center font-medium text-gray-700 group-hover:text-black transition">
+                  {cat.title}
+                </p>
+              )}
+            </motion.div>
+          ))}
+        </div>
       </div>
 
-      {/* 🔹 Filtered Safari List (placeholder) */}
-      <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-4">
-        {filtered.map((item) => (
-          <div
-            key={item.id}
-            className="p-4 rounded-xl shadow bg-white border"
-          >
-            {item.title}
-          </div>
-        ))}
-      </div>
-
-      <style jsx>{`
-        div::-webkit-scrollbar {
-          display: none;
-        }
-      `}</style>
+      {/* Hide scrollbar */}
+      <style>
+        {`
+          .no-scrollbar::-webkit-scrollbar {
+            display: none;
+          }
+          .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+          }
+        `}
+      </style>
     </section>
   );
 }

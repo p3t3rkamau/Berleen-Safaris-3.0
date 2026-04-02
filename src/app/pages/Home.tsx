@@ -10,6 +10,8 @@ import PopularSafaris from '../components/PopularSafaris';
 import QuickBookingForm from '../components/quick-booking-form';
 import LiveReviewsSlider from '../components/LiveReviewsSlider';
 import { supabase } from '../imports/supabase';
+import { PopularCategories } from '../components/categories';
+import { FeaturedSafaris } from '../components/featuredsafaris';
 
 const allDestinations = loadDestinations();
 
@@ -75,6 +77,10 @@ export function Home() {
       <section>
         <QuickBookingForm />
       </section>
+      <section>
+        <PopularCategories />
+      </section>
+
 
       {/* Featured Destinations */}
       <section className="py-20 px-4 bg-[var(--safari-cream)]">
@@ -130,6 +136,7 @@ export function Home() {
           </div>
         </div>
       </section>
+      <FeaturedSafaris />
       
       {/* Why Choose Us */}
       <section className="py-20 px-4 bg-white">
@@ -171,7 +178,7 @@ export function Home() {
       </section>
 
       {/* Popular Safaris */}
-      <PopularSafaris />
+      
 
       <section>
         <StatsBand />
