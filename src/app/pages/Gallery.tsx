@@ -160,7 +160,7 @@ const galleryFaqs = [
 const galleryProduct = {
   name: 'Safari Photography Collection',
   description: 'Stunning collection of wildlife and landscape photography from East African safaris. Capturing the beauty of Kenya, Tanzania, Rwanda, and Uganda.',
-  image: 'https://berleensafaris.com/images/gallery-collection.jpg',
+  image: 'https://www.berleensafaris.com/images/gallery-collection.jpg',
   sku: 'BS-GALLERY-2024',
   brand: 'Berleen Safaris',
   offers: {
@@ -173,8 +173,8 @@ const galleryProduct = {
 
 // Video data for gallery
 const galleryVideo = {
-  url: 'https://berleensafaris.com/videos/safari-gallery-showcase.mp4',
-  thumbnail: 'https://berleensafaris.com/videos/gallery-thumbnail.jpg',
+  url: 'https://www.berleensafaris.com/videos/safari-gallery-showcase.mp4',
+  thumbnail: 'https://www.berleensafaris.com/videos/gallery-thumbnail.jpg',
   duration: 'PT2M45S'
 };
 
@@ -351,11 +351,11 @@ export function Gallery() {
         description="Explore our stunning safari gallery featuring incredible wildlife photography, breathtaking landscapes, and authentic cultural experiences from East Africa."
         keywords="safari gallery, wildlife photography, african safari photos, masai mara pictures, kenya wildlife photos"
         canonicalUrl="/gallery"
-        ogImage="https://berleensafaris.com/images/gallery-og-image.jpg"
+        ogImage="https://www.berleensafaris.com/images/gallery-og-image.jpg"
         ogImageWidth={1200}
         ogImageHeight={630}
         ogImageAlt="Berleen Safaris Gallery - Stunning wildlife and landscape photography"
-        twitterImage="https://berleensafaris.com/images/gallery-twitter-card.jpg"
+        twitterImage="https://www.berleensafaris.com/images/gallery-twitter-card.jpg"
         ogVideo={galleryVideo.url}
         ogVideoType="video/mp4"
         ogVideoWidth={1920}
@@ -368,7 +368,7 @@ export function Gallery() {
         product={galleryProduct}
         merchant={{
           name: 'Berleen Safaris - Photo Gallery',
-          image: 'https://berleensafaris.com/logo-large.png',
+          image: 'https://www.berleensafaris.com/logo-large.png',
           priceRange: 'Free to view',
           telephone: '+254-714-018-914',
           address: 'Wilson Airport, Nairobi, Kenya',

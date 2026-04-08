@@ -80,7 +80,7 @@ const destinationsReviews = [
 const destinationsProduct = {
   name: 'East Africa Safari Destinations Collection',
   description: 'Explore the most spectacular safari destinations in Kenya and East Africa. From the Great Migration in Maasai Mara to elephant encounters in Amboseli.',
-  image: 'https://berleensafaris.com/images/destinations-collage.jpg',
+  image: 'https://www.berleensafaris.com/images/destinations-collage.jpg',
   sku: 'BS-DEST-2024',
   brand: 'Berleen Safaris',
   offers: {
@@ -95,7 +95,7 @@ const destinationsProduct = {
 // Merchant listing for destinations
 const destinationsMerchant = {
   name: 'Berleen Safaris - Kenya Safari Destinations',
-  image: 'https://berleensafaris.com/logo-large.png',
+  image: 'https://www.berleensafaris.com/logo-large.png',
   priceRange: '$$$',
   telephone: '+254-714-018-914',
   address: 'Wilson Airport, Nairobi, Kenya',
@@ -106,8 +106,8 @@ const destinationsMerchant = {
 
 // Video for destinations overview
 const destinationsVideo = {
-  url: 'https://berleensafaris.com/videos/kenya-destinations-overview.mp4',
-  thumbnail: 'https://berleensafaris.com/videos/destinations-thumbnail.jpg',
+  url: 'https://www.berleensafaris.com/videos/kenya-destinations-overview.mp4',
+  thumbnail: 'https://www.berleensafaris.com/videos/destinations-thumbnail.jpg',
   duration: 'PT3M15S'
 }
 
@@ -126,11 +126,11 @@ export function Destinations() {
         canonicalUrl="/destinations"
         
         /* Meta Images */
-        ogImage="https://berleensafaris.com/images/destinations-og-image.jpg"
+        ogImage="https://www.berleensafaris.com/images/destinations-og-image.jpg"
         ogImageWidth={1200}
         ogImageHeight={630}
         ogImageAlt="Collage of Kenya's top safari destinations - Maasai Mara, Amboseli, Tsavo, and Diani Beach"
-        twitterImage="https://berleensafaris.com/images/destinations-twitter-card.jpg"
+        twitterImage="https://www.berleensafaris.com/images/destinations-twitter-card.jpg"
         
         /* Meta Video */
         ogVideo={destinationsVideo.url}

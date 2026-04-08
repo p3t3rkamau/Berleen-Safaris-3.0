@@ -68,7 +68,7 @@ const getDestinationReviews = (destinationName: string) => [
 const getDestinationProduct = (destinationName: string, safaris: any[]) => ({
   name: `${destinationName} Safari Packages`,
   description: `Explore ${destinationName} with our carefully curated safari packages. Experience incredible wildlife, stunning landscapes, and unforgettable adventures.`,
-  image: safaris[0]?.image || 'https://berleensafaris.com/images/default-safari.jpg',
+  image: safaris[0]?.image || 'https://www.berleensafaris.com/images/default-safari.jpg',
   sku: `BS-${destinationName.toUpperCase()}-2024`,
   brand: 'Berleen Safaris',
   offers: {
@@ -82,8 +82,8 @@ const getDestinationProduct = (destinationName: string, safaris: any[]) => ({
 
 // Generate video data for destination
 const getDestinationVideo = (destinationName: string) => ({
-  url: `https://berleensafaris.com/videos/${destinationName.toLowerCase().replace(/\s+/g, '-')}.mp4`,
-  thumbnail: `https://berleensafaris.com/videos/${destinationName.toLowerCase().replace(/\s+/g, '-')}-thumb.jpg`,
+  url: `https://www.berleensafaris.com/videos/${destinationName.toLowerCase().replace(/\s+/g, '-')}.mp4`,
+  thumbnail: `https://www.berleensafaris.com/videos/${destinationName.toLowerCase().replace(/\s+/g, '-')}-thumb.jpg`,
   duration: 'PT3M30S'
 })
 

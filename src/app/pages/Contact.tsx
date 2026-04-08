@@ -70,7 +70,7 @@ const contactReviews = [
 const contactProduct = {
   name: 'Custom Safari Planning & Consultation Service',
   description: 'Professional safari planning and consultation services for East African adventures. Get personalized itinerary planning, expert advice, and booking assistance.',
-  image: 'https://berleensafaris.com/images/contact-service.jpg',
+  image: 'https://www.berleensafaris.com/images/contact-service.jpg',
   sku: 'BS-CONSULT-2024',
   brand: 'Berleen Safaris',
   offers: {
@@ -85,7 +85,7 @@ const contactProduct = {
 // Contact Merchant Schema
 const contactMerchant = {
   name: 'Berleen Safaris - Nairobi Office',
-  image: 'https://berleensafaris.com/logo-large.png',
+  image: 'https://www.berleensafaris.com/logo-large.png',
   priceRange: '$$$',
   telephone: '+254-714-018-914',
   address: 'Wilson Airport, Nairobi, Kenya',
@@ -96,8 +96,8 @@ const contactMerchant = {
 
 // Contact Video
 const contactVideo = {
-  url: 'https://berleensafaris.com/videos/contact-berleen-safaris.mp4',
-  thumbnail: 'https://berleensafaris.com/videos/contact-thumbnail.jpg',
+  url: 'https://www.berleensafaris.com/videos/contact-berleen-safaris.mp4',
+  thumbnail: 'https://www.berleensafaris.com/videos/contact-thumbnail.jpg',
   duration: 'PT2M30S'
 };
 
@@ -168,11 +168,11 @@ export function Contact() {
         canonicalUrl="/contact"
         
         /* Meta Images */
-        ogImage="https://berleensafaris.com/images/contact-og-image.jpg"
+        ogImage="https://www.berleensafaris.com/images/contact-og-image.jpg"
         ogImageWidth={1200}
         ogImageHeight={630}
         ogImageAlt="Contact Berleen Safaris - Safari planning team at work in Nairobi office"
-        twitterImage="https://berleensafaris.com/images/contact-twitter-card.jpg"
+        twitterImage="https://www.berleensafaris.com/images/contact-twitter-card.jpg"
         
         /* Meta Video */
         ogVideo={contactVideo.url}

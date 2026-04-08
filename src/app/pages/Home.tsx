@@ -1,10 +1,10 @@
-// Home.tsx (Complete Updated Version with Full SEO Features)
+// Home.tsx (Complete Updated Version with Fixed SEO Issues)
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { HeroSlider } from '../components/HeroSlider';
 import { motion } from 'motion/react';
 import { loadDestinations } from '../data/loadDestinations';
-import { Award, Users, Headphones, MapPin, Calendar, Clock, Phone, Mail, MapPin as MapPinIcon, CreditCard, Shield, Star, Camera, Compass, Coffee, Wifi } from 'lucide-react';
+import { Award, Users, Headphones, MapPin, Calendar, Clock, Phone, Mail, MapPin as MapPinIcon, CreditCard, Shield, Star, Camera, Compass, Coffee, Wifi, ChevronDown } from 'lucide-react';
 import { StatsBand } from '../components/StatsBand';
 import QuickBookingForm from '../components/quick-booking-form';
 import LiveReviewsSlider from '../components/LiveReviewsSlider';
@@ -12,7 +12,6 @@ import { supabase } from '../imports/supabase';
 import { PopularCategories } from '../components/categories';
 import { FeaturedSafaris } from '../components/featuredsafaris';
 import { UltimateSEO } from '../components/UltimateSEO';
-import { FaqSection } from '../components/FaqSection';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 import { ReviewSnippet } from '../components/ReviewSnippet';
 
@@ -48,7 +47,7 @@ const additionalFeatures = [
   { icon: Coffee, title: 'Luxury Amenities', description: 'Comfortable lodges and premium camping equipment' },
 ];
 
-// Comprehensive FAQ Data
+// Comprehensive FAQ Data - Used only for UltimateSEO (not for separate FaqSection)
 const homeFaqs = [
   {
     question: 'What is the best time to go on a safari in Kenya?',
@@ -76,7 +75,7 @@ const homeFaqs = [
   }
 ];
 
-// Review Data for Snippet
+// Review Data for Snippet - With proper itemReviewed field
 const homeReviews = [
   { 
     author: 'Sarah Johnson', 
@@ -113,7 +112,7 @@ const homeEvents = [
     location: 'Maasai Mara National Reserve', 
     description: 'Witness the greatest wildlife spectacle on earth as millions of wildebeest and zebras cross the Mara River. Includes 5-day safari package with luxury camping.', 
     price: '2500', 
-    image: 'https://berleensafaris.com/images/migration-event.jpg' 
+    image: 'https://www.berleensafaris.com/images/migration-event.jpg' 
   },
   { 
     name: 'Amboseli Elephant Research Safari', 
@@ -122,7 +121,7 @@ const homeEvents = [
     location: 'Amboseli National Park', 
     description: 'Join conservation experts to study elephant families against the backdrop of Mount Kilimanjaro. Special photography workshops included.', 
     price: '1800', 
-    image: 'https://berleensafaris.com/images/amboseli-event.jpg' 
+    image: 'https://www.berleensafaris.com/images/amboseli-event.jpg' 
   },
   { 
     name: 'Tsavo Conservation Week', 
@@ -131,15 +130,15 @@ const homeEvents = [
     location: 'Tsavo East & West', 
     description: 'Participate in wildlife conservation efforts while enjoying game drives in Kenya\'s largest national park.', 
     price: '1500', 
-    image: 'https://berleensafaris.com/images/tsavo-event.jpg' 
+    image: 'https://www.berleensafaris.com/images/tsavo-event.jpg' 
   }
 ];
 
-// Product Schema Data
+// Product Schema Data - With proper itemReviewed for aggregateRating
 const homeProduct = {
   name: 'Kenya Ultimate Safari Package',
   description: 'Complete safari experience package including 7-day game drives in Maasai Mara, Amboseli, and Tsavo. Includes luxury accommodation, meals, park fees, and airport transfers.',
-  image: 'https://berleensafaris.com/images/ultimate-safari-package.jpg',
+  image: 'https://www.berleensafaris.com/images/ultimate-safari-package.jpg',
   sku: 'BS-KENYA-ULT-2024',
   brand: 'Berleen Safaris',
   offers: { 
@@ -149,13 +148,18 @@ const homeProduct = {
     priceValidUntil: '2024-12-31',
     validFrom: '2024-01-01'
   },
-  aggregateRating: { ratingValue: 4.8, reviewCount: 156 }
+  aggregateRating: { 
+    ratingValue: 4.8, 
+    reviewCount: 156,
+    bestRating: 5,
+    worstRating: 1
+  }
 };
 
 // Merchant Listing Data
 const homeMerchant = {
   name: 'Berleen Safaris - Premier Kenya Safari Operator',
-  image: 'https://berleensafaris.com/logo-large.png',
+  image: 'https://www.berleensafaris.com/logo-large.png',
   priceRange: '$$$',
   telephone: '+254-700-000-000',
   address: 'Nairobi, Kenya, Westlands, Waiyaki Way',
@@ -166,9 +170,85 @@ const homeMerchant = {
 
 // Video Data
 const homeVideo = {
-  url: 'https://berleensafaris.com/videos/kenya-safari-2024-promo.mp4',
-  thumbnail: 'https://berleensafaris.com/videos/kenya-safari-thumbnail.jpg',
+  url: 'https://www.berleensafaris.com/videos/kenya-safari-2024-promo.mp4',
+  thumbnail: 'https://www.berleensafaris.com/videos/kenya-safari-thumbnail.jpg',
   duration: 'PT3M45S'
+};
+
+// FAQ Data for visual display (not for schema - to avoid duplication)
+const visualFaqs = [
+  {
+    question: 'What is the best time to go on a safari in Kenya?',
+    answer: 'The best time for wildlife viewing in Kenya is during the dry season from June to October and January to February. The Great Migration typically occurs between July and October in the Maasai Mara.'
+  },
+  {
+    question: 'Do I need a visa for Kenya?',
+    answer: 'Yes, most international visitors need a visa to enter Kenya. You can apply for an e-visa online at least 2 weeks before your trip. The cost is approximately $51 USD.'
+  },
+  {
+    question: 'What vaccinations do I need for Kenya?',
+    answer: 'Yellow fever vaccination is mandatory. Other recommended vaccinations include Hepatitis A, Typhoid, Tetanus, and Malaria prophylaxis. Consult your doctor 4-6 weeks before travel.'
+  },
+  {
+    question: 'What should I pack for a safari?',
+    answer: 'Essential items include neutral-colored clothing, comfortable walking shoes, sun hat, sunscreen, insect repellent, binoculars, camera with extra batteries, and warm layers for early mornings.'
+  },
+  {
+    question: 'Are your safari packages customizable?',
+    answer: 'Absolutely! All our safaris can be customized to fit your preferences, budget, and schedule. Contact us to create your perfect itinerary.'
+  },
+  {
+    question: 'What is your cancellation policy?',
+    answer: 'Free cancellation up to 30 days before departure. Cancellations 15-29 days before incur a 25% fee, 7-14 days before incur a 50% fee, and less than 7 days are non-refundable.'
+  }
+];
+
+// Visual FAQ Component (without schema to avoid duplication)
+const VisualFaqSection = ({ items, title }: { items: typeof visualFaqs; title: string }) => {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  return (
+    <section className="py-20 px-4 bg-[var(--safari-cream)]">
+      <div className="max-w-4xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-[var(--safari-brown-dark)] mb-4">
+            {title}
+          </h2>
+          <p className="text-lg text-gray-600">
+            Find answers to common questions about safari travel
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          {items.map((item, index) => (
+            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+              <button
+                onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors"
+              >
+                <span className="font-semibold text-lg text-[var(--safari-brown-dark)]">
+                  {item.question}
+                </span>
+                <ChevronDown 
+                  className={`w-5 h-5 text-[var(--safari-gold)] transition-transform duration-200 ${
+                    openIndex === index ? 'transform rotate-180' : ''
+                  }`} 
+                />
+              </button>
+              
+              {openIndex === index && (
+                <div className="px-6 pb-4">
+                  <div className="text-gray-700 leading-relaxed">
+                    {item.answer}
+                  </div>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export function Home() {
@@ -176,7 +256,6 @@ export function Home() {
 
   useEffect(() => {
     checkAdminStatus();
-    // Scroll to top on page load
     window.scrollTo(0, 0);
   }, []);
 
@@ -206,49 +285,58 @@ export function Home() {
 
   return (
     <>
-      {/* Ultimate SEO Component with ALL Features */}
+      {/* Ultimate SEO Component - SINGLE SOURCE OF TRUTH for all schemas */}
       <UltimateSEO
         title="Home"
         description="Experience the thrill of safari adventures in Kenya with Berleen Safaris - your gateway to unforgettable wildlife encounters and cultural experiences. Book your dream safari today with Kenya's most trusted tour operator!"
         keywords="safari kenya, maasai mara safari, kenya wildlife tours, berleen safaris, african safari packages, kenya tour operator, best safari company kenya, kenya travel agency, african safari deals, great migration kenya"
         canonicalUrl="/"
         
-        /* Meta Images */
-        ogImage="https://berleensafaris.com/images/home-og-image.jpg"
+        // Meta Images
+        ogImage="https://www.berleensafaris.com/images/home-og-image.jpg"
         ogImageWidth={1200}
         ogImageHeight={630}
         ogImageAlt="African safari landscape with elephants at sunset in Maasai Mara, Kenya"
-        twitterImage="https://berleensafaris.com/images/home-twitter-card.jpg"
+        twitterImage="https://www.berleensafaris.com/images/home-twitter-card.jpg"
         
-        /* Meta Video */
+        // Meta Video
         ogVideo={homeVideo.url}
         ogVideoType="video/mp4"
         ogVideoWidth={1920}
         ogVideoHeight={1080}
         ogVideoAlt="Amazing Kenya Safari Experience - Witness the Great Migration and Big Five"
         
-        /* FAQ Schema */
+        // FAQ Schema - Only here, not in visual component
         faqs={homeFaqs}
         
-        /* Review Snippets */
+        // Review Snippets with proper itemReviewed
         reviews={homeReviews}
-        aggregateRating={{ ratingValue: 4.8, reviewCount: 156, bestRating: 5, worstRating: 1 }}
+        aggregateRating={{ 
+          ratingValue: 4.8, 
+          reviewCount: 156, 
+          bestRating: 5, 
+          worstRating: 1,
+          itemReviewed: {
+            name: 'Berleen Safaris Kenya Safari Packages',
+            type: 'Product'
+          }
+        }}
         
-        /* Events Schema */
+        // Events Schema
         events={homeEvents}
         
-        /* Breadcrumbs */
+        // Breadcrumbs
         breadcrumbs={[
           { name: 'Home', item: '/' }
         ]}
         
-        /* Product Schema */
+        // Product Schema
         product={homeProduct}
         
-        /* Merchant Schema */
+        // Merchant Schema
         merchant={homeMerchant}
         
-
+        // Additional Meta Tags
         ogType="website"
         twitterCard="summary_large_image"
         publishedTime="2024-01-01T00:00:00Z"
@@ -398,7 +486,6 @@ export function Home() {
       {/* Live Reviews Slider with Review Snippet Display */}
       <section className="py-16 px-4 bg-gradient-to-b from-gray-900 to-gray-800">
         <div className="container mx-auto max-w-6xl">
-          {/* Display Aggregate Rating */}
           <div className="text-center mb-8">
             <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur rounded-full px-6 py-3 mb-4">
               <ReviewSnippet rating={4.8} reviewCount={156} size="lg" />
@@ -415,8 +502,8 @@ export function Home() {
         </div>
       </section>
 
-      {/* FAQ Section with Schema Markup */}
-      <FaqSection items={homeFaqs} title="Frequently Asked Questions About Kenya Safaris" />
+      {/* FAQ Section - VISUAL ONLY (no schema to avoid duplication) */}
+      <VisualFaqSection items={visualFaqs} title="Frequently Asked Questions About Kenya Safaris" />
 
       {/* Trust Badges Section */}
       <section className="py-12 bg-gray-50 border-y border-gray-200">
@@ -456,19 +543,19 @@ export function Home() {
           <div className="flex flex-wrap justify-center gap-8">
             <div className="flex items-center gap-2">
               <Phone className="w-5 h-5" />
-              <span>+254 700 000 000</span>
+              <span>+254 714 018 914</span>
             </div>
             <div className="flex items-center gap-2">
               <Mail className="w-5 h-5" />
-              <span>info@berleensafaris.com</span>
+              <span>tours@berleensafaris.com</span>
             </div>
             <div className="flex items-center gap-2">
               <MapPinIcon className="w-5 h-5" />
-              <span>Nairobi, Kenya</span>
+              <span>Wilson Airport, Nairobi, Kenya</span>
             </div>
             <div className="flex items-center gap-2">
               <Clock className="w-5 h-5" />
-              <span>Mon-Sat: 9AM - 6PM</span>
+              <span>Mon-Sat: 8AM - 6PM</span>
             </div>
           </div>
         </div>

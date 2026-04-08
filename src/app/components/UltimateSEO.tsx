@@ -154,10 +154,10 @@ export const UltimateSEO: React.FC<UltimateSEOProps> = ({
 }) => {
   const siteTitle = 'Berleen Safaris';
   const fullTitle = title === 'Home' ? siteTitle : `${title} | ${siteTitle}`;
-  const siteUrl = 'https://berleensafaris.com';
+  const siteUrl = 'https://www.berleensafaris.com';
   const canonical = canonicalUrl ? `${siteUrl}${canonicalUrl}` : `${siteUrl}${window.location.pathname}`;
   
-  const finalOgImage = ogImage || 'https://berleensafaris.com/images/og-default.jpg';
+  const finalOgImage = ogImage || 'https://www.berleensafaris.com/images/og-default.jpg';
   const finalTwitterImage = twitterImage || finalOgImage;
 
   // Generate all JSON-LD schemas
@@ -170,7 +170,7 @@ export const UltimateSEO: React.FC<UltimateSEOProps> = ({
       '@type': 'TravelAgency',
       name: 'Berleen Safaris',
       url: siteUrl,
-      logo: 'https://berleensafaris.com/logo.png',
+      logo: 'https://www.berleensafaris.com/logo.png',
       sameAs: [
         'https://www.facebook.com/berleensafaris',
         'https://www.instagram.com/berleensafaris',

@@ -65,7 +65,7 @@ const aggregateRating = calculateAggregateRating()
 const safarisProduct = {
   name: 'East Africa Safari Packages Collection',
   description: 'Complete collection of safari packages across Kenya, Tanzania, Rwanda, and Uganda. Including budget, mid-range, and luxury options for all travelers.',
-  image: 'https://berleensafaris.com/images/safaris-collection.jpg',
+  image: 'https://www.berleensafaris.com/images/safaris-collection.jpg',
   sku: 'BS-SAFARIS-2024',
   brand: 'Berleen Safaris',
   offers: {
@@ -79,8 +79,8 @@ const safarisProduct = {
 
 // Video for safaris overview
 const safarisVideo = {
-  url: 'https://berleensafaris.com/videos/safaris-overview.mp4',
-  thumbnail: 'https://berleensafaris.com/videos/safaris-thumbnail.jpg',
+  url: 'https://www.berleensafaris.com/videos/safaris-overview.mp4',
+  thumbnail: 'https://www.berleensafaris.com/videos/safaris-thumbnail.jpg',
   duration: 'PT3M30S'
 }
 
@@ -181,11 +181,11 @@ export function Safaris() {
         canonicalUrl="/safaris"
         
         /* Meta Images */
-        ogImage="https://berleensafaris.com/images/safaris-og-image.jpg"
+        ogImage="https://www.berleensafaris.com/images/safaris-og-image.jpg"
         ogImageWidth={1200}
         ogImageHeight={630}
         ogImageAlt="Collection of safari packages - Wildlife, landscapes, and safari vehicles in East Africa"
-        twitterImage="https://berleensafaris.com/images/safaris-twitter-card.jpg"
+        twitterImage="https://www.berleensafaris.com/images/safaris-twitter-card.jpg"
         
         /* Meta Video */
         ogVideo={safarisVideo.url}
@@ -213,7 +213,7 @@ export function Safaris() {
         /* Merchant Listing */
         merchant={{
           name: 'Berleen Safaris - Safari Packages',
-          image: 'https://berleensafaris.com/logo-large.png',
+          image: 'https://www.berleensafaris.com/logo-large.png',
           priceRange: `$${Math.min(...allSafaris.map(s => s.price))} - $${Math.max(...allSafaris.map(s => s.price))}`,
           telephone: '+254-714-018-914',
           address: 'Wilson Airport, Nairobi, Kenya',

@@ -44,7 +44,7 @@ const team = [
   {
     name: 'Beth Nampaso',
     role: 'Founder & Lead Guide',
-    image: 'https://berleensafaris.com/images/team/beth-nampaso.jpg',
+    image: 'https://www.berleensafaris.com/images/team/beth-nampaso.jpg',
     bio: '15+ years of safari experience across East Africa. Beth started Berleen Safaris with a vision to share Kenya\'s wildlife heritage with the world.',
     email: 'beth@berleensafaris.com',
     phone: '+254-700-000-001',
@@ -53,7 +53,7 @@ const team = [
   {
     name: 'James Mwangi',
     role: 'Senior Safari Guide',
-    image: 'https://berleensafaris.com/images/team/james-mwangi.jpg',
+    image: 'https://www.berleensafaris.com/images/team/james-mwangi.jpg',
     bio: 'Expert birder and wildlife photographer with 12 years of guiding experience. James speaks 5 languages including English, French, and German.',
     email: 'james@berleensafaris.com',
     phone: '+254-700-000-002',
@@ -62,7 +62,7 @@ const team = [
   {
     name: 'Sarah Kimani',
     role: 'Operations Manager',
-    image: 'https://berleensafaris.com/images/team/sarah-kimani.jpg',
+    image: 'https://www.berleensafaris.com/images/team/sarah-kimani.jpg',
     bio: 'Ensures every safari runs smoothly from booking to drop-off. Sarah has a degree in Tourism Management and 8 years of industry experience.',
     email: 'sarah@berleensafaris.com',
     phone: '+254-700-000-003',
@@ -71,7 +71,7 @@ const team = [
   {
     name: 'David Omondi',
     role: 'Conservation Officer',
-    image: 'https://berleensafaris.com/images/team/david-omondi.jpg',
+    image: 'https://www.berleensafaris.com/images/team/david-omondi.jpg',
     bio: 'Leads our sustainable tourism initiatives and community outreach programs. David works closely with local wildlife trusts.',
     email: 'david@berleensafaris.com',
     phone: '+254-700-000-004',
@@ -80,7 +80,7 @@ const team = [
   {
     name: 'Maria Santos',
     role: 'Customer Experience Manager',
-    image: 'https://berleensafaris.com/images/team/maria-santos.jpg',
+    image: 'https://www.berleensafaris.com/images/team/maria-santos.jpg',
     bio: 'Ensures every guest has an unforgettable experience. Maria handles all customer inquiries and satisfaction.',
     email: 'maria@berleensafaris.com',
     phone: '+254-700-000-005',
@@ -169,7 +169,7 @@ const companyEvents = [
     location: 'Maasai Mara National Reserve',
     description: 'Join professional wildlife photographers for a 7-day workshop capturing the Great Migration. Includes expert guidance, editing sessions, and prime photography locations.',
     price: '3500',
-    image: 'https://berleensafaris.com/images/events/photography-workshop.jpg'
+    image: 'https://www.berleensafaris.com/images/events/photography-workshop.jpg'
   },
   {
     name: 'Conservation Safari Week',
@@ -178,7 +178,7 @@ const companyEvents = [
     location: 'Amboseli & Tsavo',
     description: 'Participate in conservation activities including elephant tracking, tree planting, and community visits. Perfect for eco-conscious travelers.',
     price: '2800',
-    image: 'https://berleensafaris.com/images/events/conservation-week.jpg'
+    image: 'https://www.berleensafaris.com/images/events/conservation-week.jpg'
   }
 ];
 
@@ -186,7 +186,7 @@ const companyEvents = [
 const companyProduct = {
   name: 'Premium East Africa Safari Packages',
   description: 'Complete safari experiences across Kenya, Tanzania, Rwanda, and Uganda. Includes luxury accommodation, expert guides, game drives, and cultural experiences.',
-  image: 'https://berleensafaris.com/images/safari-packages.jpg',
+  image: 'https://www.berleensafaris.com/images/safari-packages.jpg',
   sku: 'BS-PREMIUM-2024',
   brand: 'Berleen Safaris',
   offers: {
@@ -202,7 +202,7 @@ const companyProduct = {
 // Merchant Listing (Detailed)
 const companyMerchant = {
   name: 'Berleen Safaris Ltd - Premier Safari Operator',
-  image: 'https://berleensafaris.com/logo-large.png',
+  image: 'https://www.berleensafaris.com/logo-large.png',
   priceRange: '$$$',
   telephone: '+254-700-000-000',
   address: 'Westlands Business Park, 3rd Floor, Nairobi, Kenya',
@@ -213,8 +213,8 @@ const companyMerchant = {
 
 // Video Data
 const companyVideo = {
-  url: 'https://berleensafaris.com/videos/about-berleen-safaris.mp4',
-  thumbnail: 'https://berleensafaris.com/videos/about-thumbnail.jpg',
+  url: 'https://www.berleensafaris.com/videos/about-berleen-safaris.mp4',
+  thumbnail: 'https://www.berleensafaris.com/videos/about-thumbnail.jpg',
   duration: 'PT4M30S'
 };
 
@@ -229,11 +229,11 @@ export function About() {
         canonicalUrl="/about"
         
         /* Meta Images */
-        ogImage="https://berleensafaris.com/images/about-og-image.jpg"
+        ogImage="https://www.berleensafaris.com/images/about-og-image.jpg"
         ogImageWidth={1200}
         ogImageHeight={630}
         ogImageAlt="Berleen Safaris team and safari vehicles in the Maasai Mara - Professional safari guides with guests"
-        twitterImage="https://berleensafaris.com/images/about-twitter-card.jpg"
+        twitterImage="https://www.berleensafaris.com/images/about-twitter-card.jpg"
         
         /* Meta Video */
         ogVideo={companyVideo.url}
