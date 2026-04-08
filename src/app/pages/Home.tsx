@@ -152,6 +152,10 @@ const homeProduct = {
     ratingValue: 4.8, 
     reviewCount: 156,
     bestRating: 5,
+    itemReviewed: {
+      name: 'Kenya Ultimate Safari Package',
+      type: 'Product'
+    },
     worstRating: 1
   }
 };
