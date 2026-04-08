@@ -37,13 +37,15 @@ interface ProductOffer {
   priceValidUntil?: string;
 }
 
-interface VideoObject {
-  name: string;
-  description: string;
-  thumbnailUrl: string;
-  contentUrl: string;
-  uploadDate: string;
-  duration?: string;
+interface AggregateRatingWithItemReviewed {
+  ratingValue: number;
+  reviewCount: number;
+  bestRating?: number;
+  worstRating?: number;
+  itemReviewed?: {
+    name: string;
+    type?: string;
+  };
 }
 
 interface UltimateSEOProps {
@@ -72,12 +74,7 @@ interface UltimateSEOProps {
   
   // Review Snippet
   reviews?: ReviewSnippet[];
-  aggregateRating?: {
-    ratingValue: number;
-    reviewCount: number;
-    bestRating?: number;
-    worstRating?: number;
-  };
+  aggregateRating?: AggregateRatingWithItemReviewed;
   
   // Events Schema
   events?: EventData[];
@@ -97,6 +94,10 @@ interface UltimateSEOProps {
     aggregateRating?: {
       ratingValue: number;
       reviewCount: number;
+      itemReviewed?: {
+        name: string;
+        type?: string;
+      };
     };
   };
   
@@ -122,36 +123,38 @@ interface UltimateSEOProps {
   locale?: string;
 }
 
-export const UltimateSEO: React.FC<UltimateSEOProps> = ({
-  title,
-  description,
-  keywords = 'safari kenya, maasai mara, amboseli, tsavo, diani beach, berleen safaris',
-  canonicalUrl,
-  ogImage,
-  ogImageWidth = 1200,
-  ogImageHeight = 630,
-  ogImageAlt,
-  twitterImage,
-  ogVideo,
-  ogVideoType = 'video/mp4',
-  ogVideoWidth = 1280,
-  ogVideoHeight = 720,
-  ogVideoAlt,
-  faqs = [],
-  reviews = [],
-  aggregateRating,
-  events = [],
-  breadcrumbs = [],
-  product,
-  merchant,
-  ogType = 'website',
-  twitterCard = 'summary_large_image',
-  publishedTime,
-  modifiedTime,
-  author = 'Berleen Safaris',
-  noIndex = false,
-  locale = 'en_US',
-}) => {
+export function UltimateSEO(props: UltimateSEOProps) {
+  const {
+    title,
+    description,
+    keywords = 'safari kenya, maasai mara, amboseli, tsavo, diani beach, berleen safaris',
+    canonicalUrl,
+    ogImage,
+    ogImageWidth = 1200,
+    ogImageHeight = 630,
+    ogImageAlt,
+    twitterImage,
+    ogVideo,
+    ogVideoType = 'video/mp4',
+    ogVideoWidth = 1280,
+    ogVideoHeight = 720,
+    ogVideoAlt,
+    faqs = [],
+    reviews = [],
+    aggregateRating,
+    events = [],
+    breadcrumbs = [],
+    product,
+    merchant,
+    ogType = 'website',
+    twitterCard = 'summary_large_image',
+    publishedTime,
+    modifiedTime,
+    author = 'Berleen Safaris',
+    noIndex = false,
+    locale = 'en_US',
+  } = props;
+
   const siteTitle = 'Berleen Safaris';
   const fullTitle = title === 'Home' ? siteTitle : `${title} | ${siteTitle}`;
   const siteUrl = 'https://www.berleensafaris.com';
@@ -176,8 +179,8 @@ export const UltimateSEO: React.FC<UltimateSEOProps> = ({
         'https://www.instagram.com/berleensafaris',
         'https://twitter.com/berleensafaris',
       ],
-      telephone: '+254-XXX-XXX',
-      email: 'info@berleensafaris.com',
+      telephone: '+254-714-018-914',
+      email: 'tours@berleensafaris.com',
       priceRange: '$$$',
       address: {
         '@type': 'PostalAddress',
@@ -202,7 +205,7 @@ export const UltimateSEO: React.FC<UltimateSEOProps> = ({
       });
     }
 
-    // Review Snippet Schema
+    // Review Snippet Schema with FIXED itemReviewed
     if (reviews.length > 0 || aggregateRating) {
       const reviewSchema: any = {
         '@context': 'https://schema.org',
@@ -212,13 +215,30 @@ export const UltimateSEO: React.FC<UltimateSEOProps> = ({
       };
 
       if (aggregateRating) {
-        reviewSchema.aggregateRating = {
+        // Create the aggregate rating object with itemReviewed
+        const aggregateRatingObj: any = {
           '@type': 'AggregateRating',
           ratingValue: aggregateRating.ratingValue,
           reviewCount: aggregateRating.reviewCount,
           bestRating: aggregateRating.bestRating || 5,
           worstRating: aggregateRating.worstRating || 1,
         };
+        
+        // CRITICAL FIX: Add itemReviewed field to AggregateRating
+        if (aggregateRating.itemReviewed) {
+          aggregateRatingObj.itemReviewed = {
+            '@type': aggregateRating.itemReviewed.type || 'Product',
+            name: aggregateRating.itemReviewed.name
+          };
+        } else {
+          // Default itemReviewed if not provided
+          aggregateRatingObj.itemReviewed = {
+            '@type': 'Product',
+            name: title || 'Berleen Safaris Safari Packages'
+          };
+        }
+        
+        reviewSchema.aggregateRating = aggregateRatingObj;
       }
 
       if (reviews.length > 0) {
@@ -284,7 +304,7 @@ export const UltimateSEO: React.FC<UltimateSEOProps> = ({
 
     // Product Schema
     if (product) {
-      schemas.push({
+      const productSchema: any = {
         '@context': 'https://schema.org',
         '@type': 'Product',
         name: product.name,
@@ -303,25 +323,45 @@ export const UltimateSEO: React.FC<UltimateSEOProps> = ({
           validFrom: product.offers.validFrom,
           priceValidUntil: product.offers.priceValidUntil,
         },
-        ...(product.aggregateRating && {
-          aggregateRating: {
-            '@type': 'AggregateRating',
-            ratingValue: product.aggregateRating.ratingValue,
-            reviewCount: product.aggregateRating.reviewCount,
+      };
+      
+      if (product.aggregateRating) {
+        const productAggregateRating: any = {
+          '@type': 'AggregateRating',
+          ratingValue: product.aggregateRating.ratingValue,
+          reviewCount: product.aggregateRating.reviewCount,
+          bestRating: 5,
+          worstRating: 1,
+        };
+        
+        if (product.aggregateRating.itemReviewed) {
+          productAggregateRating.itemReviewed = {
+            '@type': product.aggregateRating.itemReviewed.type || 'Product',
+            name: product.aggregateRating.itemReviewed.name
+          };
+        } else {
+          productAggregateRating.itemReviewed = {
+            '@type': 'Product',
+            name: product.name
+          };
+        }
+        
+        productSchema.aggregateRating = productAggregateRating;
+      }
+      
+      if (product.reviews && product.reviews.length > 0) {
+        productSchema.review = product.reviews.map((review: ReviewSnippet) => ({
+          '@type': 'Review',
+          author: review.author,
+          reviewRating: {
+            '@type': 'Rating',
+            ratingValue: review.ratingValue,
           },
-        }),
-        ...(product.reviews && product.reviews.length > 0 && {
-          review: product.reviews.map(review => ({
-            '@type': 'Review',
-            author: review.author,
-            reviewRating: {
-              '@type': 'Rating',
-              ratingValue: review.ratingValue,
-            },
-            reviewBody: review.reviewBody,
-          })),
-        }),
-      });
+          reviewBody: review.reviewBody,
+        }));
+      }
+      
+      schemas.push(productSchema);
     }
 
     // Merchant Listing Schema (LocalBusiness)
@@ -437,9 +477,9 @@ export const UltimateSEO: React.FC<UltimateSEOProps> = ({
       {/* All JSON-LD Schemas */}
       {schemas.map((schema, index) => (
         <script key={index} type="application/ld+json">
-          {JSON.stringify(schema)}
+          {JSON.stringify(schema, null, 2)}
         </script>
       ))}
     </Helmet>
   );
-};
+}
