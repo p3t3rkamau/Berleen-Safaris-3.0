@@ -107,7 +107,7 @@ function generateSitemapIndex() {
 </sitemapindex>`;
 }
 
-// Generate sitemap-images.xml
+// Generate image sitemap
 function generateImageSitemap() {
   const images = [
     { url: '/images/maasai-mara-hero.jpg', title: 'Maasai Mara Safari', caption: 'Wildlife safari in Maasai Mara' },
@@ -122,6 +122,7 @@ function generateImageSitemap() {
   sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n';
   sitemap += '        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n\n';
 
+  // Create a separate URL entry for each image
   images.forEach(image => {
     sitemap += `  <url>\n`;
     sitemap += `    <loc>${SITE_URL}${image.url}</loc>\n`;
@@ -137,23 +138,45 @@ function generateImageSitemap() {
   return sitemap;
 }
 
-// Generate sitemap-videos.xml
+// Generate video sitemap - CORRECTED VERSION
 function generateVideoSitemap() {
   const videos = [
     { 
-      url: '/videos/kenya-safari-promo.mp4', 
+      id: 'kenya-safari-promo',
       title: 'Kenya Safari Experience', 
-      description: 'Experience the magic of African safaris with Berleen Safaris',
+      description: 'Experience the magic of African safaris with Berleen Safaris. Watch wildlife in their natural habitat including lions, elephants, giraffes, and more.',
       thumbnail: '/videos/thumbnails/safari-promo.jpg',
-      duration: 180
+      content_url: 'https://www.youtube.com/watch?v=example1', // YouTube URL or direct video file
+      player_loc: 'https://www.youtube.com/embed/example1', // Embed URL for YouTube/Vimeo
+      duration: 180,
+      publication_date: new Date().toISOString().split('T')[0],
+      family_friendly: 'yes',
+      live: 'no'
     },
     { 
-      url: '/videos/great-migration.mp4', 
-      title: 'Great Migration', 
-      description: 'Witness the greatest wildlife spectacle on earth',
+      id: 'great-migration',
+      title: 'The Great Migration', 
+      description: 'Witness the greatest wildlife spectacle on earth - millions of wildebeest and zebras crossing the Mara River.',
       thumbnail: '/videos/thumbnails/migration.jpg',
-      duration: 240
+      content_url: 'https://www.youtube.com/watch?v=example2',
+      player_loc: 'https://www.youtube.com/embed/example2',
+      duration: 240,
+      publication_date: new Date().toISOString().split('T')[0],
+      family_friendly: 'yes',
+      live: 'no'
     },
+    { 
+      id: 'amboseli-elephants',
+      title: 'Elephants of Amboseli', 
+      description: 'Watch majestic elephants roam against the backdrop of Mount Kilimanjaro in Amboseli National Park.',
+      thumbnail: '/videos/thumbnails/amboseli-elephants.jpg',
+      content_url: 'https://www.youtube.com/watch?v=example3',
+      player_loc: 'https://www.youtube.com/embed/example3',
+      duration: 195,
+      publication_date: new Date().toISOString().split('T')[0],
+      family_friendly: 'yes',
+      live: 'no'
+    }
   ];
 
   let sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n';
@@ -162,13 +185,17 @@ function generateVideoSitemap() {
 
   videos.forEach(video => {
     sitemap += `  <url>\n`;
-    sitemap += `    <loc>${SITE_URL}${video.url}</loc>\n`;
+    sitemap += `    <loc>${SITE_URL}/videos/${video.id}</loc>\n`;
     sitemap += `    <video:video>\n`;
     sitemap += `      <video:thumbnail_loc>${SITE_URL}${video.thumbnail}</video:thumbnail_loc>\n`;
-    sitemap += `      <video:title>${video.title}</video:title>\n`;
-    sitemap += `      <video:description>${video.description}</video:description>\n`;
-    sitemap += `      <video:player_loc>${SITE_URL}${video.url}</video:player_loc>\n`;
+    sitemap += `      <video:title><![CDATA[${video.title}]]></video:title>\n`;
+    sitemap += `      <video:description><![CDATA[${video.description}]]></video:description>\n`;
+    sitemap += `      <video:content_loc>${video.content_url}</video:content_loc>\n`;
+    sitemap += `      <video:player_loc allow_embed="yes" autoplay="ap=1">${video.player_loc}</video:player_loc>\n`;
     sitemap += `      <video:duration>${video.duration}</video:duration>\n`;
+    sitemap += `      <video:publication_date>${video.publication_date}</video:publication_date>\n`;
+    sitemap += `      <video:family_friendly>${video.family_friendly}</video:family_friendly>\n`;
+    sitemap += `      <video:live>${video.live}</video:live>\n`;
     sitemap += `    </video:video>\n`;
     sitemap += `  </url>\n\n`;
   });

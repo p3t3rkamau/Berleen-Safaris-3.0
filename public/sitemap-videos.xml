@@ -3,24 +3,47 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 
   <url>
-    <loc>https://www.berleensafaris.com/videos/kenya-safari-promo.mp4</loc>
+    <loc>https://www.berleensafaris.com/videos/kenya-safari-promo</loc>
     <video:video>
       <video:thumbnail_loc>https://www.berleensafaris.com/videos/thumbnails/safari-promo.jpg</video:thumbnail_loc>
-      <video:title>Kenya Safari Experience</video:title>
-      <video:description>Experience the magic of African safaris with Berleen Safaris</video:description>
-      <video:player_loc>https://www.berleensafaris.com/videos/kenya-safari-promo.mp4</video:player_loc>
+      <video:title><![CDATA[Kenya Safari Experience]]></video:title>
+      <video:description><![CDATA[Experience the magic of African safaris with Berleen Safaris. Watch wildlife in their natural habitat including lions, elephants, giraffes, and more.]]></video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=example1</video:content_loc>
+      <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/example1</video:player_loc>
       <video:duration>180</video:duration>
+      <video:publication_date>2026-04-08</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
     </video:video>
   </url>
 
   <url>
-    <loc>https://www.berleensafaris.com/videos/great-migration.mp4</loc>
+    <loc>https://www.berleensafaris.com/videos/great-migration</loc>
     <video:video>
       <video:thumbnail_loc>https://www.berleensafaris.com/videos/thumbnails/migration.jpg</video:thumbnail_loc>
-      <video:title>Great Migration</video:title>
-      <video:description>Witness the greatest wildlife spectacle on earth</video:description>
-      <video:player_loc>https://www.berleensafaris.com/videos/great-migration.mp4</video:player_loc>
+      <video:title><![CDATA[The Great Migration]]></video:title>
+      <video:description><![CDATA[Witness the greatest wildlife spectacle on earth - millions of wildebeest and zebras crossing the Mara River.]]></video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=example2</video:content_loc>
+      <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/example2</video:player_loc>
       <video:duration>240</video:duration>
+      <video:publication_date>2026-04-08</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
+  </url>
+
+  <url>
+    <loc>https://www.berleensafaris.com/videos/amboseli-elephants</loc>
+    <video:video>
+      <video:thumbnail_loc>https://www.berleensafaris.com/videos/thumbnails/amboseli-elephants.jpg</video:thumbnail_loc>
+      <video:title><![CDATA[Elephants of Amboseli]]></video:title>
+      <video:description><![CDATA[Watch majestic elephants roam against the backdrop of Mount Kilimanjaro in Amboseli National Park.]]></video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=example3</video:content_loc>
+      <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/example3</video:player_loc>
+      <video:duration>195</video:duration>
+      <video:publication_date>2026-04-08</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
     </video:video>
   </url>
 
