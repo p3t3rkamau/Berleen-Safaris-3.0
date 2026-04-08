@@ -1,4 +1,31 @@
+# https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /api/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /_internal/
 
+# Sitemaps
 Sitemap: https://www.berleensafaris.com/sitemap.xml
+Sitemap: https://www.berleensafaris.com/sitemap-images.xml
+Sitemap: https://www.berleensafaris.com/sitemap-videos.xml
+Sitemap: https://www.berleensafaris.com/sitemap-index.xml
+
+# Crawl delay - be respectful to the server
+Crawl-delay: 1
+
+# Host directive
+Host: https://www.berleensafaris.com
+
+# Allow Googlebot to crawl all content
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0.5
+
+# Allow Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1

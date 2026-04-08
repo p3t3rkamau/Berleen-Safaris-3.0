@@ -4,6 +4,8 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
+    "generate-sitemap": "node scripts/generate-sitemap.js",
+    "prebuild": "pnpm run generate-sitemap",
     "build": "vite build",
     "dev": "vite"
   },

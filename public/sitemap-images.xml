@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://www.berleensafaris.com/images/maasai-mara-hero.jpg</loc>
+    <image:image>
+      <image:loc>https://www.berleensafaris.com/images/maasai-mara-hero.jpg</image:loc>
+      <image:title>Maasai Mara Safari</image:title>
+      <image:caption>Wildlife safari in Maasai Mara</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.berleensafaris.com/images/amboseli-elephants.jpg</loc>
+    <image:image>
+      <image:loc>https://www.berleensafaris.com/images/amboseli-elephants.jpg</image:loc>
+      <image:title>Amboseli Elephants</image:title>
+      <image:caption>Elephants with Kilimanjaro backdrop</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.berleensafaris.com/images/tsavo-lions.jpg</loc>
+    <image:image>
+      <image:loc>https://www.berleensafaris.com/images/tsavo-lions.jpg</image:loc>
+      <image:title>Tsavo Lions</image:title>
+      <image:caption>Lions in Tsavo National Park</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.berleensafaris.com/images/diani-beach.jpg</loc>
+    <image:image>
+      <image:loc>https://www.berleensafaris.com/images/diani-beach.jpg</image:loc>
+      <image:title>Diani Beach</image:title>
+      <image:caption>Beautiful Diani Beach Kenya</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.berleensafaris.com/images/safari-jeep.jpg</loc>
+    <image:image>
+      <image:loc>https://www.berleensafaris.com/images/safari-jeep.jpg</image:loc>
+      <image:title>Safari Vehicle</image:title>
+      <image:caption>4x4 safari vehicle</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.berleensafaris.com/images/cultural-visit.jpg</loc>
+    <image:image>
+      <image:loc>https://www.berleensafaris.com/images/cultural-visit.jpg</image:loc>
+      <image:title>Cultural Experience</image:title>
+      <image:caption>Maasai cultural visit</image:caption>
+    </image:image>
+  </url>
+
+</urlset>

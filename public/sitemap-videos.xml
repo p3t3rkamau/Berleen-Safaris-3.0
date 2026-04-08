@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+
+  <url>
+    <loc>https://www.berleensafaris.com/videos/kenya-safari-promo.mp4</loc>
+    <video:video>
+      <video:thumbnail_loc>https://www.berleensafaris.com/videos/thumbnails/safari-promo.jpg</video:thumbnail_loc>
+      <video:title>Kenya Safari Experience</video:title>
+      <video:description>Experience the magic of African safaris with Berleen Safaris</video:description>
+      <video:player_loc>https://www.berleensafaris.com/videos/kenya-safari-promo.mp4</video:player_loc>
+      <video:duration>180</video:duration>
+    </video:video>
+  </url>
+
+  <url>
+    <loc>https://www.berleensafaris.com/videos/great-migration.mp4</loc>
+    <video:video>
+      <video:thumbnail_loc>https://www.berleensafaris.com/videos/thumbnails/migration.jpg</video:thumbnail_loc>
+      <video:title>Great Migration</video:title>
+      <video:description>Witness the greatest wildlife spectacle on earth</video:description>
+      <video:player_loc>https://www.berleensafaris.com/videos/great-migration.mp4</video:player_loc>
+      <video:duration>240</video:duration>
+    </video:video>
+  </url>
+
+</urlset>
