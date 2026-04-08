@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { Phone, Mail, MapPin, Send, MessageCircle, Clock } from 'lucide-react';
 import * as Accordion from '@radix-ui/react-accordion';
 import { ChevronDown } from 'lucide-react';
+import SEO from '../components/Seo';
 
 const faqs = [
   {
@@ -33,8 +34,13 @@ const faqs = [
 
 export function Contact() {
   return (
-    <div>
-      {/* Hero Section */}
+    <>
+      <SEO 
+        title="Contact | Berleen Safaris"
+        description="Get in touch with Berleen Safaris for inquiries about safari adventures in Kenya"
+      />
+      <div>
+        {/* Hero Section */}
       <div className="relative h-[300px] md:h-[400px] bg-gradient-to-r from-[var(--safari-brown-dark)] to-[var(--safari-brown)]">
         <div className="absolute inset-0 opacity-20" style={{
           backgroundImage: 'url(https://images.unsplash.com/photo-1669557673726-293309494c20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxrZW55YSUyMHNhZmFyaSUyMGxhbmRzY2FwZXxlbnwxfHx8fDE3NzIzMTQ0MzZ8MA&ixlib=rb-4.1.0&q=80&w=1080)',
@@ -206,7 +212,7 @@ export function Contact() {
                     <div>
                       <div className="font-semibold mb-1">Phone</div>
                       <a href="tel:+254714018914" className="text-gray-300 hover:text-[var(--safari-gold)] transition-colors">
-                        254 722 371 171 / +254 721 949 410
+                        ...
                       </a>
                     </div>
                   </div>
@@ -218,7 +224,7 @@ export function Contact() {
                     <div>
                       <div className="font-semibold mb-1">Email</div>
                       <a href="mailto:info@adventuresconnect.com" className="text-gray-300 hover:text-[var(--safari-gold)] transition-colors">
-                        info@adventuresconnect.co.ke
+                        tours@berleensafaris.com
                       </a>
                     </div>
                   </div>
@@ -344,6 +350,7 @@ export function Contact() {
           </motion.div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 }

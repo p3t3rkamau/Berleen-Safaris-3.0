@@ -5,6 +5,7 @@ import { motion } from 'motion/react'
 import { getDestinationById } from '../data/loadDestinations'
 import { loadSafaris } from '../data/loadSafaris'
 import { Clock, DollarSign, ArrowRight } from 'lucide-react'
+import SEO from '../components/Seo'
 
 // Loaded once synchronously
 const allSafaris = loadSafaris()
@@ -34,6 +35,7 @@ export function DestinationDetail() {
   return (
     <div>
       {/* Hero */}
+      
       <div className="relative h-[400px] md:h-[500px]">
         <div
           className="absolute inset-0 bg-cover bg-center"

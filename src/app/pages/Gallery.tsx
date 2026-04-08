@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import Masonry from 'react-responsive-masonry';
 import { X } from 'lucide-react';
+import SEO from '../components/Seo';
 
 const galleryImages = [
   {
@@ -95,6 +96,10 @@ export function Gallery() {
   return (
     <div>
       {/* Hero Section */}
+       <SEO 
+              title="Gallery | Berleen Safaris"
+              description="Explore our stunning safari gallery featuring wildlife, landscapes, and cultural experiences across East Africa"
+            />
       <div className="relative h-[300px] md:h-[400px] bg-gradient-to-r from-[var(--safari-brown-dark)] to-[var(--safari-brown)]">
         <div className="absolute inset-0 opacity-20" style={{
           backgroundImage: 'url(https://images.unsplash.com/photo-1645264206324-8146a951ef57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnaXJhZmZlJTIwc3Vuc2V0JTIwYWZyaWNhfGVufDF8fHx8MTc3MjM1MDA5OXww&ixlib=rb-4.1.0&q=80&w=1080)',
