@@ -1,18 +1,20 @@
-// Home.tsx (complete updated version)
+// Home.tsx (Complete Updated Version with Full SEO Features)
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { HeroSlider } from '../components/HeroSlider';
 import { motion } from 'motion/react';
 import { loadDestinations } from '../data/loadDestinations';
-import { Award, Users, Headphones, MapPin } from 'lucide-react';
+import { Award, Users, Headphones, MapPin, Calendar, Clock, Phone, Mail, MapPin as MapPinIcon, CreditCard, Shield, Star, Camera, Compass, Coffee, Wifi } from 'lucide-react';
 import { StatsBand } from '../components/StatsBand';
-import PopularSafaris from '../components/PopularSafaris';
 import QuickBookingForm from '../components/quick-booking-form';
 import LiveReviewsSlider from '../components/LiveReviewsSlider';
 import { supabase } from '../imports/supabase';
 import { PopularCategories } from '../components/categories';
 import { FeaturedSafaris } from '../components/featuredsafaris';
-import SEO from '../components/Seo';
+import { UltimateSEO } from '../components/UltimateSEO';
+import { FaqSection } from '../components/FaqSection';
+import { Breadcrumbs } from '../components/Breadcrumbs';
+import { ReviewSnippet } from '../components/ReviewSnippet';
 
 const allDestinations = loadDestinations();
 
@@ -39,11 +41,143 @@ const features = [
   },
 ];
 
+const additionalFeatures = [
+  { icon: Shield, title: 'Safe & Secure', description: 'Your safety is our top priority with fully insured packages' },
+  { icon: Camera, title: 'Photo Opportunities', description: 'Prime locations for capturing incredible wildlife moments' },
+  { icon: Compass, title: 'Expert Navigation', description: 'GPS-tracked vehicles with experienced drivers' },
+  { icon: Coffee, title: 'Luxury Amenities', description: 'Comfortable lodges and premium camping equipment' },
+];
+
+// Comprehensive FAQ Data
+const homeFaqs = [
+  {
+    question: 'What is the best time to go on a safari in Kenya?',
+    answer: 'The best time for wildlife viewing in Kenya is during the dry season from June to October and January to February. The Great Migration typically occurs between July and October in the Maasai Mara. For bird watching, November to April is ideal when migratory birds are present.'
+  },
+  {
+    question: 'Do I need a visa for Kenya?',
+    answer: 'Yes, most international visitors need a visa to enter Kenya. You can apply for an e-visa online at least 2 weeks before your trip. The cost is approximately $51 USD. Some nationalities may be eligible for visa on arrival, but it\'s recommended to get the e-visa in advance.'
+  },
+  {
+    question: 'What vaccinations do I need for Kenya?',
+    answer: 'Yellow fever vaccination is mandatory and you will need to show your certificate upon arrival. Other recommended vaccinations include Hepatitis A, Typhoid, Tetanus, and Malaria prophylaxis. Consult your doctor 4-6 weeks before travel.'
+  },
+  {
+    question: 'What should I pack for a safari?',
+    answer: 'Essential items include: neutral-colored clothing (khaki, beige, olive), comfortable walking shoes, sun hat, sunscreen (SPF 50+), insect repellent, binoculars, camera with extra batteries, warm layers for early morning game drives, and a reusable water bottle.'
+  },
+  {
+    question: 'Are your safari packages customizable?',
+    answer: 'Absolutely! All our safaris can be customized to fit your preferences, budget, and schedule. We offer private and group options, different accommodation levels, and can add or remove activities based on your interests.'
+  },
+  {
+    question: 'What is the cancellation policy?',
+    answer: 'We offer free cancellation up to 30 days before departure. Cancellations 15-29 days before incur a 25% fee, 7-14 days before incur a 50% fee, and less than 7 days before are non-refundable. We recommend travel insurance for full protection.'
+  }
+];
+
+// Review Data for Snippet
+const homeReviews = [
+  { 
+    author: 'Sarah Johnson', 
+    ratingValue: 5, 
+    reviewBody: 'Amazing experience! The guides were knowledgeable and we saw the Big Five including lions, elephants, and rhinos. The accommodations were comfortable and the food was excellent.', 
+    datePublished: '2024-01-15' 
+  },
+  { 
+    author: 'Michael Chen', 
+    ratingValue: 5, 
+    reviewBody: 'Well organized safari from start to finish. Everything was perfect from airport pickup to drop-off. The vehicle was comfortable with charging ports for our cameras.', 
+    datePublished: '2024-01-10' 
+  },
+  { 
+    author: 'Emma Williams', 
+    ratingValue: 4, 
+    reviewBody: 'Great value for money. The Maasai Mara exceeded our expectations. Would definitely recommend Berleen Safaris to friends and family!', 
+    datePublished: '2024-01-05' 
+  },
+  { 
+    author: 'David Thompson', 
+    ratingValue: 5, 
+    reviewBody: 'Once in a lifetime experience! Our guide James was fantastic - he knew exactly where to find the animals. The hot air balloon ride was unforgettable.', 
+    datePublished: '2023-12-28' 
+  }
+];
+
+// Upcoming Events
+const homeEvents = [
+  { 
+    name: 'Great Migration Safari Experience', 
+    startDate: '2024-07-15T06:00:00', 
+    endDate: '2024-10-15T20:00:00', 
+    location: 'Maasai Mara National Reserve', 
+    description: 'Witness the greatest wildlife spectacle on earth as millions of wildebeest and zebras cross the Mara River. Includes 5-day safari package with luxury camping.', 
+    price: '2500', 
+    image: 'https://berleensafaris.com/images/migration-event.jpg' 
+  },
+  { 
+    name: 'Amboseli Elephant Research Safari', 
+    startDate: '2024-06-01T08:00:00', 
+    endDate: '2024-06-07T18:00:00', 
+    location: 'Amboseli National Park', 
+    description: 'Join conservation experts to study elephant families against the backdrop of Mount Kilimanjaro. Special photography workshops included.', 
+    price: '1800', 
+    image: 'https://berleensafaris.com/images/amboseli-event.jpg' 
+  },
+  { 
+    name: 'Tsavo Conservation Week', 
+    startDate: '2024-08-10T09:00:00', 
+    endDate: '2024-08-17T17:00:00', 
+    location: 'Tsavo East & West', 
+    description: 'Participate in wildlife conservation efforts while enjoying game drives in Kenya\'s largest national park.', 
+    price: '1500', 
+    image: 'https://berleensafaris.com/images/tsavo-event.jpg' 
+  }
+];
+
+// Product Schema Data
+const homeProduct = {
+  name: 'Kenya Ultimate Safari Package',
+  description: 'Complete safari experience package including 7-day game drives in Maasai Mara, Amboseli, and Tsavo. Includes luxury accommodation, meals, park fees, and airport transfers.',
+  image: 'https://berleensafaris.com/images/ultimate-safari-package.jpg',
+  sku: 'BS-KENYA-ULT-2024',
+  brand: 'Berleen Safaris',
+  offers: { 
+    price: 2499, 
+    priceCurrency: 'USD', 
+    availability: 'InStock' as const, 
+    priceValidUntil: '2024-12-31',
+    validFrom: '2024-01-01'
+  },
+  aggregateRating: { ratingValue: 4.8, reviewCount: 156 }
+};
+
+// Merchant Listing Data
+const homeMerchant = {
+  name: 'Berleen Safaris - Premier Kenya Safari Operator',
+  image: 'https://berleensafaris.com/logo-large.png',
+  priceRange: '$$$',
+  telephone: '+254-700-000-000',
+  address: 'Nairobi, Kenya, Westlands, Waiyaki Way',
+  openingHours: ['Mon-Fri 9:00-18:00', 'Sat 10:00-16:00', 'Sun Closed'],
+  paymentAccepted: ['Visa', 'Mastercard', 'American Express', 'Bank Transfer', 'M-Pesa', 'Cash'],
+  areaServed: ['Nairobi', 'Mombasa', 'Kisumu', 'Maasai Mara', 'Amboseli', 'Tsavo', 'Diani Beach', 'Lamu', 'Naivasha', 'Nakuru']
+};
+
+// Video Data
+const homeVideo = {
+  url: 'https://berleensafaris.com/videos/kenya-safari-2024-promo.mp4',
+  thumbnail: 'https://berleensafaris.com/videos/kenya-safari-thumbnail.jpg',
+  duration: 'PT3M45S'
+};
+
 export function Home() {
   const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
     checkAdminStatus();
+    // Scroll to top on page load
+    window.scrollTo(0, 0);
   }, []);
 
   const checkAdminStatus = async () => {
@@ -71,21 +205,73 @@ export function Home() {
   };
 
   return (
-    <div>
-       <SEO 
-              title="Home | Berleen Safaris"
-              description="Experience the thrill of safari adventures in Kenya with Berleen Safaris - your gateway to unforgettable wildlife encounters and cultural experiences"
-            />
+    <>
+      {/* Ultimate SEO Component with ALL Features */}
+      <UltimateSEO
+        title="Home"
+        description="Experience the thrill of safari adventures in Kenya with Berleen Safaris - your gateway to unforgettable wildlife encounters and cultural experiences. Book your dream safari today with Kenya's most trusted tour operator!"
+        keywords="safari kenya, maasai mara safari, kenya wildlife tours, berleen safaris, african safari packages, kenya tour operator, best safari company kenya, kenya travel agency, african safari deals, great migration kenya"
+        canonicalUrl="/"
+        
+        /* Meta Images */
+        ogImage="https://berleensafaris.com/images/home-og-image.jpg"
+        ogImageWidth={1200}
+        ogImageHeight={630}
+        ogImageAlt="African safari landscape with elephants at sunset in Maasai Mara, Kenya"
+        twitterImage="https://berleensafaris.com/images/home-twitter-card.jpg"
+        
+        /* Meta Video */
+        ogVideo={homeVideo.url}
+        ogVideoType="video/mp4"
+        ogVideoWidth={1920}
+        ogVideoHeight={1080}
+        ogVideoAlt="Amazing Kenya Safari Experience - Witness the Great Migration and Big Five"
+        
+        /* FAQ Schema */
+        faqs={homeFaqs}
+        
+        /* Review Snippets */
+        reviews={homeReviews}
+        aggregateRating={{ ratingValue: 4.8, reviewCount: 156, bestRating: 5, worstRating: 1 }}
+        
+        /* Events Schema */
+        events={homeEvents}
+        
+        /* Breadcrumbs */
+        breadcrumbs={[
+          { name: 'Home', item: '/' }
+        ]}
+        
+        /* Product Schema */
+        product={homeProduct}
+        
+        /* Merchant Schema */
+        merchant={homeMerchant}
+        
+
+        ogType="website"
+        twitterCard="summary_large_image"
+        publishedTime="2024-01-01T00:00:00Z"
+        modifiedTime={new Date().toISOString()}
+        author="Berleen Safaris Team"
+        locale="en_US"
+      />
+      
+      {/* Visible Breadcrumbs for Users */}
+      <Breadcrumbs />
+      
       {/* Hero Slider */}
       <HeroSlider />
       
-      <section>
+      {/* Quick Booking Form Section */}
+      <section className="relative z-10 -mt-16 mb-8">
         <QuickBookingForm />
       </section>
+      
+      {/* Popular Categories */}
       <section>
         <PopularCategories />
       </section>
-
 
       {/* Featured Destinations */}
       <section className="py-20 px-4 bg-[var(--safari-cream)]">
@@ -97,11 +283,11 @@ export function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-[var(--safari-brown-dark)] mb-4">
-              Featured Destinations
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Explore the most spectacular wildlife destinations in East Africa
+            <h1 className="text-3xl md:text-4xl font-bold text-[var(--safari-brown-dark)] mb-4">
+              Featured Destinations in Kenya
+            </h1>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Explore the most spectacular wildlife destinations in East Africa, from the iconic Maasai Mara to the majestic Amboseli
             </p>
           </motion.div>
 
@@ -117,18 +303,19 @@ export function Home() {
                 <Link
                   to={`/destinations/${destination.id}`}
                   className="group relative block overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
+                  aria-label={`Explore ${destination.name} - ${destination.description}`}
                 >
                   <div className="aspect-[3/4] relative">
                     <img
                       src={destination.image}
-                      alt={destination.name}
+                      alt={`${destination.name} - ${destination.description.substring(0, 100)}`}
                       loading="lazy"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
                     <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                      <div className="text-4xl mb-2">{destination.flag}</div>
-                      <h3 className="text-2xl font-bold mb-2">{destination.name}</h3>
+                      <div className="text-4xl mb-2" role="img" aria-label={`Flag of ${destination.name}`}>{destination.flag}</div>
+                      <h2 className="text-2xl font-bold mb-2">{destination.name}</h2>
                       <p className="text-sm text-gray-200 mb-4 line-clamp-2">{destination.description}</p>
                       <span className="inline-block bg-gradient-to-r from-[var(--safari-gold)] to-[var(--safari-orange)] text-white px-6 py-2 rounded-full group-hover:shadow-lg transition-all duration-300 text-sm font-semibold">
                         View Tours
@@ -141,9 +328,11 @@ export function Home() {
           </div>
         </div>
       </section>
+      
+      {/* Featured Safaris Component */}
       <FeaturedSafaris />
       
-      {/* Why Choose Us */}
+      {/* Why Choose Us Section */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <motion.div
@@ -154,14 +343,14 @@ export function Home() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--safari-brown-dark)] mb-4">
-              Why Choose Adventures Connect
+              Why Choose Berleen Safaris
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              We are committed to providing exceptional safari experiences with unmatched service
+              We are committed to providing exceptional safari experiences with unmatched service and expertise
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {features.map((feature, index) => (
               <motion.div
                 key={index}
@@ -169,9 +358,9 @@ export function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="text-center"
+                className="text-center group"
               >
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[var(--safari-gold)] to-[var(--safari-orange)] rounded-full mb-4">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[var(--safari-gold)] to-[var(--safari-orange)] rounded-full mb-4 group-hover:scale-110 transition-transform duration-300">
                   <feature.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-[var(--safari-brown-dark)] mb-2">{feature.title}</h3>
@@ -179,19 +368,46 @@ export function Home() {
               </motion.div>
             ))}
           </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {additionalFeatures.map((feature, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 + 0.4 }}
+                className="flex items-start gap-3 p-4 rounded-lg hover:bg-gray-50 transition-colors"
+              >
+                <feature.icon className="w-6 h-6 text-[var(--safari-gold)] flex-shrink-0 mt-1" />
+                <div>
+                  <h4 className="font-semibold text-[var(--safari-brown-dark)] mb-1">{feature.title}</h4>
+                  <p className="text-sm text-gray-600">{feature.description}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* Popular Safaris */}
-      
-
+      {/* Stats Band */}
       <section>
         <StatsBand />
       </section>
 
-      {/* Live Reviews Slider - Visible to EVERYONE with Add Review Button */}
+      {/* Live Reviews Slider with Review Snippet Display */}
       <section className="py-16 px-4 bg-gradient-to-b from-gray-900 to-gray-800">
         <div className="container mx-auto max-w-6xl">
+          {/* Display Aggregate Rating */}
+          <div className="text-center mb-8">
+            <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur rounded-full px-6 py-3 mb-4">
+              <ReviewSnippet rating={4.8} reviewCount={156} size="lg" />
+              <span className="text-white text-sm">Trusted by 5000+ travelers</span>
+            </div>
+            <h2 className="text-3xl font-bold text-white mb-2">What Our Guests Say</h2>
+            <p className="text-gray-300">Real reviews from real adventurers</p>
+          </div>
+          
           <LiveReviewsSlider 
             isAdmin={isAdmin}
             onReviewDeleted={handleReviewDeleted}
@@ -199,7 +415,66 @@ export function Home() {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* FAQ Section with Schema Markup */}
+      <FaqSection items={homeFaqs} title="Frequently Asked Questions About Kenya Safaris" />
+
+      {/* Trust Badges Section */}
+      <section className="py-12 bg-gray-50 border-y border-gray-200">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div className="flex flex-col items-center">
+              <div className="bg-green-100 rounded-full p-3 mb-2">
+                <Shield className="w-6 h-6 text-green-600" />
+              </div>
+              <span className="text-sm font-semibold text-gray-700">Fully Insured</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <div className="bg-blue-100 rounded-full p-3 mb-2">
+                <CreditCard className="w-6 h-6 text-blue-600" />
+              </div>
+              <span className="text-sm font-semibold text-gray-700">Secure Payments</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <div className="bg-purple-100 rounded-full p-3 mb-2">
+                <Clock className="w-6 h-6 text-purple-600" />
+              </div>
+              <span className="text-sm font-semibold text-gray-700">24/7 Support</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <div className="bg-orange-100 rounded-full p-3 mb-2">
+                <Wifi className="w-6 h-6 text-orange-600" />
+              </div>
+              <span className="text-sm font-semibold text-gray-700">Free WiFi</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Info Bar */}
+      <section className="py-8 bg-[var(--safari-brown-dark)] text-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex flex-wrap justify-center gap-8">
+            <div className="flex items-center gap-2">
+              <Phone className="w-5 h-5" />
+              <span>+254 700 000 000</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Mail className="w-5 h-5" />
+              <span>info@berleensafaris.com</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <MapPinIcon className="w-5 h-5" />
+              <span>Nairobi, Kenya</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Clock className="w-5 h-5" />
+              <span>Mon-Sat: 9AM - 6PM</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
       <section className="py-20 px-4 bg-gradient-to-r from-[var(--safari-gold)] to-[var(--safari-orange)] text-white">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
@@ -218,12 +493,14 @@ export function Home() {
               <Link
                 to="/safaris"
                 className="bg-white text-[var(--safari-brown-dark)] px-8 py-3 rounded-full font-semibold hover:shadow-xl transition-all duration-300 hover:scale-105"
+                aria-label="Browse all safari packages"
               >
                 Browse Safaris
               </Link>
               <Link
                 to="/contact"
                 className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-[var(--safari-brown-dark)] transition-all duration-300"
+                aria-label="Contact us for safari inquiries"
               >
                 Contact Us
               </Link>
@@ -231,6 +508,6 @@ export function Home() {
           </motion.div>
         </div>
       </section>
-    </div>
+    </>
   );
 }

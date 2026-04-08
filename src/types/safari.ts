@@ -23,6 +23,7 @@ export interface TravelInfo {
 }
 
 export interface Safari {
+  bestSeller: any
   price: any
   id: string
   title: string
@@ -39,6 +40,17 @@ export interface Safari {
 
   highlights: string[]
   itinerary: ItineraryDay[]
+
+  rating: number;
+  reviewCount: number;
+
+  destinations: string[];
+  departureDates: string[];
+  durationDays: number;
+  videoUrl?: string;
+  createdAt: string;
+  updatedAt: string;
+  maxGroupSize: number;
 
   included: string[]
   notIncluded: string[]
