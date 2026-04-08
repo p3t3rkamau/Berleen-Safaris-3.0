@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'motion/react'
 import { loadSafaris } from '../data/loadSafaris'
 import type { Safari } from '../types/safari'
 import { Clock, DollarSign, ArrowRight, Filter, X, Search } from 'lucide-react'
+import SEO from '../components/Seo'
 
 const allSafaris = loadSafaris()
 
@@ -99,6 +100,10 @@ export function Safaris() {
 
   return (
     <div>
+       <SEO 
+              title="Safaris | Berleen Safaris"
+              description="Explore our range of safari packages across East Africa, from luxury lodges to immersive wildlife experiences"
+            />
       {/* Hero with search bar embedded */}
       <div className="relative h-[360px] md:h-[440px] bg-gradient-to-r from-[var(--safari-brown-dark)] to-[var(--safari-brown)]">
         <div

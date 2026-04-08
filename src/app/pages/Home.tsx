@@ -12,6 +12,7 @@ import LiveReviewsSlider from '../components/LiveReviewsSlider';
 import { supabase } from '../imports/supabase';
 import { PopularCategories } from '../components/categories';
 import { FeaturedSafaris } from '../components/featuredsafaris';
+import SEO from '../components/Seo';
 
 const allDestinations = loadDestinations();
 
@@ -71,6 +72,10 @@ export function Home() {
 
   return (
     <div>
+       <SEO 
+              title="Home | Berleen Safaris"
+              description="Experience the thrill of safari adventures in Kenya with Berleen Safaris - your gateway to unforgettable wildlife encounters and cultural experiences"
+            />
       {/* Hero Slider */}
       <HeroSlider />
       

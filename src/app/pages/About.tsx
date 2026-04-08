@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Award, Users, Headphones, MapPin, Shield, Heart } from 'lucide-react';
+import SEO from '../components/Seo';
 
 const features = [
   {
@@ -36,23 +37,21 @@ const features = [
 
 const team = [
   {
-    name: 'Kith Allen Mworia',
+    name: 'Beth Nampaso',
     role: 'Founder & Lead Guide',
     image: '',
     bio: '15+ years of safari experience across East Africa'
-  },
-  {
-    name: 'Juliet Mueni',
-    role: 'Safari Planner',
-    image: '',
-    bio: 'Expert in safari logistics and customer satisfaction'
-  },
+  }
  
 ];
 
 export function About() {
   return (
     <div>
+      <SEO 
+        title="About | Berleen Safaris"
+        description="Learn about Berleen Safaris and our commitment to providing exceptional safari experiences in Kenya"
+      />
       {/* Hero Section */}
       <div className="relative h-[400px] md:h-[500px]">
         <div 
