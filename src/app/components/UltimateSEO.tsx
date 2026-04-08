@@ -123,6 +123,48 @@ interface UltimateSEOProps {
   locale?: string;
 }
 
+// Helper function to normalize URLs (remove trailing slashes)
+const normalizeUrl = (url: string): string => {
+  // List of root domain patterns that should keep trailing slash
+  const rootDomains = [
+    'https://www.berleensafaris.com',
+    'https://berleensafaris.com',
+    'http://www.berleensafaris.com',
+    'http://berleensafaris.com'
+  ];
+  
+  // Check if it's a root domain (no path after domain)
+  const isRootDomain = rootDomains.some(domain => url === domain || url === domain + '/');
+  
+  // Keep trailing slash for root domain
+  if (isRootDomain) {
+    return 'https://www.berleensafaris.com/';
+  }
+  
+  // Remove trailing slash for all other paths
+  if (url.endsWith('/')) {
+    return url.slice(0, -1);
+  }
+  
+  return url;
+};
+
+// Helper to ensure www prefix consistency
+const ensureWww = (url: string): string => {
+  if (url.includes('berleensafaris.com') && !url.includes('www.berleensafaris.com')) {
+    return url.replace('berleensafaris.com', 'www.berleensafaris.com');
+  }
+  return url;
+};
+
+// Helper to ensure HTTPS
+const ensureHttps = (url: string): string => {
+  if (url.startsWith('http://')) {
+    return url.replace('http://', 'https://');
+  }
+  return url;
+};
+
 export function UltimateSEO(props: UltimateSEOProps) {
   const {
     title,
@@ -158,7 +200,18 @@ export function UltimateSEO(props: UltimateSEOProps) {
   const siteTitle = 'Berleen Safaris';
   const fullTitle = title === 'Home' ? siteTitle : `${title} | ${siteTitle}`;
   const siteUrl = 'https://www.berleensafaris.com';
-  const canonical = canonicalUrl ? `${siteUrl}${canonicalUrl}` : `${siteUrl}${window.location.pathname}`;
+  
+  // Build the canonical URL with proper normalization
+  let canonical = canonicalUrl 
+    ? `${siteUrl}${canonicalUrl.startsWith('/') ? canonicalUrl : `/${canonicalUrl}`}`
+    : `${siteUrl}${window.location.pathname}`;
+  
+  // Apply all normalizations
+  canonical = normalizeUrl(ensureWww(ensureHttps(canonical)));
+  
+  // Build the current URL for og:url
+  let currentUrl = `${siteUrl}${window.location.pathname}${window.location.search}`;
+  currentUrl = normalizeUrl(ensureWww(ensureHttps(currentUrl)));
   
   const finalOgImage = ogImage || 'https://www.berleensafaris.com/images/og-default.jpg';
   const finalTwitterImage = twitterImage || finalOgImage;
@@ -422,7 +475,7 @@ export function UltimateSEO(props: UltimateSEOProps) {
       
       {/* Open Graph / Facebook */}
       <meta property="og:type" content={ogType} />
-      <meta property="og:url" content={canonical} />
+      <meta property="og:url" content={currentUrl} />
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={finalOgImage} />
@@ -445,7 +498,7 @@ export function UltimateSEO(props: UltimateSEOProps) {
       
       {/* Twitter Card */}
       <meta name="twitter:card" content={twitterCard} />
-      <meta name="twitter:url" content={canonical} />
+      <meta name="twitter:url" content={currentUrl} />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={finalTwitterImage} />
@@ -464,7 +517,7 @@ export function UltimateSEO(props: UltimateSEOProps) {
       )}
       <meta property="article:publisher" content="https://www.facebook.com/berleensafaris" />
       
-      {/* Canonical URL */}
+      {/* Canonical URL - FIXED with proper normalization */}
       <link rel="canonical" href={canonical} />
       
       {/* Alternate language versions */}
