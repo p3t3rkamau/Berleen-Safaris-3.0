@@ -24,7 +24,7 @@ export function Footer() {
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--safari-gold)] transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--safari-gold)] transition-colors">
+              <a href="https://www.instagram.com/berleen_safaris?igsh=bTZydWlzNGI5NmMw" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--safari-gold)] transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
               <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--safari-gold)] transition-colors">

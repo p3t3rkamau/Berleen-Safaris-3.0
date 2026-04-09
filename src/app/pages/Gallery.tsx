@@ -576,7 +576,7 @@ export function Gallery() {
               Get daily safari inspiration and behind-the-scenes content
             </p>
             <a
-              href="https://instagram.com/berleensafaris"
+              href="https://www.instagram.com/berleen_safaris?igsh=bTZydWlzNGI5NmMw"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-xl transition-all hover:scale-105"

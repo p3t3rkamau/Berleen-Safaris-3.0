@@ -229,7 +229,7 @@ export function UltimateSEO(props: UltimateSEOProps) {
       logo: 'https://www.berleensafaris.com/logo.png',
       sameAs: [
         'https://www.facebook.com/berleensafaris',
-        'https://www.instagram.com/berleensafaris',
+        'https://www.instagram.com/berleen_safaris?igsh=bTZydWlzNGI5NmMw',
         'https://twitter.com/berleensafaris',
       ],
       telephone: '+254-714-018-914',
