@@ -294,7 +294,7 @@ export function Home() {
         title="Home"
         description="Experience the thrill of safari adventures in Kenya with Berleen Safaris - your gateway to unforgettable wildlife encounters and cultural experiences. Book your dream safari today with Kenya's most trusted tour operator!"
         keywords="safari kenya, maasai mara safari, kenya wildlife tours, berleen safaris, african safari packages, kenya tour operator, best safari company kenya, kenya travel agency, african safari deals, great migration kenya"
-        canonicalUrl="/"
+        canonicalUrl="https://www.berleensafaris.com"
         
         // Meta Images
         ogImage="https://www.berleensafaris.com/images/home-og-image.jpg"
