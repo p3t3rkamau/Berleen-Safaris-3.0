@@ -1,4 +1,4 @@
-// src/components/safari-detail/SafariBookingSidebar.tsx
+// src/components/SafariBookingSidebar.tsx
 import React, { useState } from 'react'
 import { Users, Calendar, MessageCircle, Download, Loader2 } from 'lucide-react'
 import type { Safari } from '../../types/safari'
@@ -59,15 +59,15 @@ export function SafariBookingSidebar({ safari }: Props) {
         setSubmitted(true)
         
         // Track booking conversion (optional)
-        if (typeof window.gtag !== 'undefined') {
-          window.gtag('event', 'booking_request', {
+        if (typeof window !== 'undefined' && (window as any).gtag) {
+          (window as any).gtag('event', 'booking_request', {
             'event_category': 'Safari Booking',
             'event_label': safari.title,
             'value': safari.price
           })
         }
       } else {
-        throw new Error(data.message)
+        throw new Error(data.message || 'Booking failed')
       }
     } catch (error) {
       console.error('Booking failed:', error)
@@ -81,18 +81,10 @@ export function SafariBookingSidebar({ safari }: Props) {
     if (!bookingRef) return
     
     try {
-      const response = await fetch(`/api/bookings/download/${bookingRef}`)
-      const blob = await response.blob()
-      const url = window.URL.createObjectURL(blob)
-      const a = document.createElement('a')
-      a.href = url
-      a.download = `Safari-Booking-${bookingRef}.pdf`
-      document.body.appendChild(a)
-      a.click()
-      window.URL.revokeObjectURL(url)
-      document.body.removeChild(a)
+      // Since PDF is emailed, show a message
+      alert('Your booking confirmation PDF has been sent to your email. Please check your inbox (and spam folder).')
     } catch (error) {
-      console.error('PDF download failed:', error)
+      console.error('PDF notification failed:', error)
     }
   }
 
@@ -115,7 +107,7 @@ export function SafariBookingSidebar({ safari }: Props) {
               Request Sent Successfully!
             </p>
             <p className="text-sm text-gray-600 mb-4">
-              We've sent a confirmation email with your booking details.
+              We've sent a confirmation email with your booking details to <strong>{formData.email}</strong>.
             </p>
             <div className="bg-white p-4 rounded-lg mb-4">
               <p className="text-xs text-gray-500 mb-1">Booking Reference</p>
@@ -128,7 +120,7 @@ export function SafariBookingSidebar({ safari }: Props) {
               className="w-full bg-[var(--safari-brown-dark)] text-white py-2 rounded-lg font-semibold hover:bg-[var(--safari-brown)] transition-colors flex items-center justify-center gap-2"
             >
               <Download className="w-4 h-4" />
-              Download PDF Confirmation
+              PDF Sent to Email
             </button>
             <p className="text-xs text-gray-500 mt-3">
               We'll be in touch within 24 hours to confirm your dates.
@@ -172,6 +164,7 @@ export function SafariBookingSidebar({ safari }: Props) {
                 Number of Travelers *
               </label>
               <select
+                title="Number of travelers"
                 name="travelers"
                 required
                 value={formData.travelers}
@@ -191,6 +184,7 @@ export function SafariBookingSidebar({ safari }: Props) {
                 Preferred Date *
               </label>
               <input
+                title="Preferred Date"
                 type="date"
                 name="preferredDate"
                 required
@@ -251,7 +245,6 @@ export function SafariBookingSidebar({ safari }: Props) {
         
         <button 
           onClick={() => {
-            // Download safari itinerary PDF (pre-generated)
             window.open(`/api/safaris/${safari.id}/itinerary-pdf`, '_blank')
           }}
           className="w-full flex items-center justify-center gap-2 bg-[var(--safari-brown-dark)] text-white py-3 rounded-lg font-semibold hover:bg-[var(--safari-brown)] transition-colors"
@@ -273,8 +266,8 @@ export function SafariBookingSidebar({ safari }: Props) {
           <a href="tel:+254714018914" className="block text-[var(--safari-gold)] hover:underline">
             📞 +254 714 018 914
           </a>
-          <a href="mailto:info@adventuresconnect.com" className="block text-[var(--safari-gold)] hover:underline">
-            ✉️tours@berleensafaris.com
+          <a href="mailto:tours@berleensafaris.com" className="block text-[var(--safari-gold)] hover:underline">
+            ✉️ tours@berleensafaris.com
           </a>
         </div>
       </div>

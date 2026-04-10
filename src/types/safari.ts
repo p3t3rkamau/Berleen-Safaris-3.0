@@ -23,6 +23,8 @@ export interface TravelInfo {
 }
 
 export interface Safari {
+  days: any
+  location: any
   bestSeller: any
   price: any
   id: string
