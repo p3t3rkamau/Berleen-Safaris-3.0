@@ -198,8 +198,14 @@ export function UltimateSEO(props: UltimateSEOProps) {
   } = props;
 
   const siteTitle = 'Berleen Safaris';
+  const defaultSiteUrl = 'https://www.berleensafaris.com';
+  const homeSiteUrl = 'https://berleensafaris.com';
+
+  const isHomePage = canonicalUrl === '/' || window.location.pathname === '/';
+
+
   const fullTitle = title === 'Home' ? siteTitle : `${title} | ${siteTitle}`;
-  const siteUrl = 'https://www.berleensafaris.com';
+  const siteUrl = isHomePage ? homeSiteUrl : defaultSiteUrl;
   
   // Build the canonical URL with proper normalization
   let canonical = canonicalUrl 
@@ -207,11 +213,15 @@ export function UltimateSEO(props: UltimateSEOProps) {
     : `${siteUrl}${window.location.pathname}`;
   
   // Apply all normalizations
-  canonical = normalizeUrl(ensureWww(ensureHttps(canonical)));
+  canonical = isHomePage
+  ? normalizeUrl(ensureHttps(canonical)) // NO www
+  : normalizeUrl(ensureWww(ensureHttps(canonical)));
   
   // Build the current URL for og:url
   let currentUrl = `${siteUrl}${window.location.pathname}${window.location.search}`;
-  currentUrl = normalizeUrl(ensureWww(ensureHttps(currentUrl)));
+  currentUrl = isHomePage
+  ? normalizeUrl(ensureHttps(currentUrl))
+  : normalizeUrl(ensureWww(ensureHttps(currentUrl)));
   
   const finalOgImage = ogImage || 'https://www.berleensafaris.com/images/og-default.jpg';
   const finalTwitterImage = twitterImage || finalOgImage;
