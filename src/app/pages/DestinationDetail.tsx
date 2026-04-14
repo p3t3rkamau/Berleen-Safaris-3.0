@@ -177,7 +177,7 @@ export function DestinationDetail() {
           name: `Berleen Safaris - ${destination.name} Tours`,
           image: destination.image,
           priceRange: '$$$',
-          telephone: '+254-714-018-914',
+          telephone: '+254755690133',
           address: `${destination.name}, Kenya`,
           openingHours: ['Mon-Sun 24/7 for tours'],
           paymentAccepted: ['Visa', 'Mastercard', 'Bank Transfer', 'M-Pesa', 'Cash'],

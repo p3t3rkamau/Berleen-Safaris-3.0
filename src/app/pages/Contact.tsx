@@ -87,7 +87,7 @@ const contactMerchant = {
   name: 'Berleen Safaris - Nairobi Office',
   image: 'https://www.berleensafaris.com/logo-large.png',
   priceRange: '$$$',
-  telephone: '+254-714-018-914',
+  telephone: '+254755690133',
   address: 'Wilson Airport, Nairobi, Kenya',
   openingHours: ['Mon-Fri 8:00-18:00', 'Sat 9:00-16:00'],
   paymentAccepted: ['Visa', 'Mastercard', 'Bank Transfer', 'M-Pesa', 'Cash'],
@@ -153,7 +153,7 @@ export function Contact() {
   };
 
   const handleWhatsApp = () => {
-    const phoneNumber = '254714018914';
+    const phoneNumber = '254755690133';
     const message = encodeURIComponent('Hello! I\'m interested in planning a safari with Berleen Safaris. Could you please help me with more information?');
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
   };
@@ -455,7 +455,7 @@ export function Contact() {
               >
                 <meta itemProp="name" content="Berleen Safaris" />
                 <meta itemProp="priceRange" content="$$$" />
-                <meta itemProp="telephone" content="+254714018914" />
+                <meta itemProp="telephone" content="+254755690133" />
                 
                 <h3 className="text-xl font-bold mb-6">Contact Information</h3>
                 
@@ -466,8 +466,8 @@ export function Contact() {
                     </div>
                     <div>
                       <div className="font-semibold mb-1">Phone / WhatsApp</div>
-                      <a href="tel:+254714018914" className="text-gray-300 hover:text-[var(--safari-gold)] transition-colors" itemProp="telephone">
-                        +254 714 018 914
+                      <a href="tel:+254755690133" className="text-gray-300 hover:text-[var(--safari-gold)] transition-colors" itemProp="telephone">
+                        +254755690133
                       </a>
                     </div>
                   </div>
@@ -646,7 +646,7 @@ export function Contact() {
                     <div>
                       <p className="font-semibold text-sm">Berleen Safaris Office</p>
                       <p className="text-xs text-gray-600">Wilson Airport, Nairobi, Kenya</p>
-                      <p className="text-xs text-gray-500 mt-1">📞 +254 714 018 914</p>
+                      <p className="text-xs text-gray-500 mt-1">📞 +254755690133</p>
                     </div>
                   </div>
                 </div>

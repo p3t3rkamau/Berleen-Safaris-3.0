@@ -88,7 +88,7 @@ export function SafariBookingSidebar({ safari }: Props) {
     }
   }
 
-  const whatsappUrl = `https://wa.me/254714018914?text=${encodeURIComponent(
+  const whatsappUrl = `https://wa.me/254755690133?text=${encodeURIComponent(
     `Hi! I'm interested in the "${safari.title}" safari. Could you send me more details?`
   )}`
 
@@ -263,8 +263,8 @@ export function SafariBookingSidebar({ safari }: Props) {
           Our safari experts are here to help you plan the perfect adventure.
         </p>
         <div className="space-y-2 text-sm">
-          <a href="tel:+254714018914" className="block text-[var(--safari-gold)] hover:underline">
-            📞 +254 714 018 914
+          <a href="tel:+2540755690133" className="block text-[var(--safari-gold)] hover:underline">
+            📞 +254755 690133
           </a>
           <a href="mailto:tours@berleensafaris.com" className="block text-[var(--safari-gold)] hover:underline">
             ✉️ tours@berleensafaris.com

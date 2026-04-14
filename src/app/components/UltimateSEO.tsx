@@ -242,7 +242,7 @@ export function UltimateSEO(props: UltimateSEOProps) {
         'https://www.instagram.com/berleen_safaris?igsh=bTZydWlzNGI5NmMw',
         'https://twitter.com/berleensafaris',
       ],
-      telephone: '+254-714-018-914',
+      telephone: '+254755 690133',
       email: 'tours@berleensafaris.com',
       priceRange: '$$$',
       address: {

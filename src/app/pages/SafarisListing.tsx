@@ -278,7 +278,7 @@ export function SafarisListing() {
           name: 'Berleen Safaris - Safari Packages',
           image: 'https://www.berleensafaris.com/logo-large.png',
           priceRange: `$${Math.min(...allSafaris.map(s => s.price))} - $${Math.max(...allSafaris.map(s => s.price))}`,
-          telephone: '+254-714-018-914',
+          telephone: '+254755690133',
           address: 'Wilson Airport, Nairobi, Kenya',
           openingHours: ['Mon-Fri 9:00-18:00', 'Sat 10:00-16:00'],
           paymentAccepted: ['Visa', 'Mastercard', 'Bank Transfer', 'M-Pesa', 'Cash'],

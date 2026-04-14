@@ -5,7 +5,7 @@ export function TopBar() {
     <div className="bg-[var(--safari-black)] text-white py-2 px-4">
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-sm">
         <div className="flex flex-wrap gap-4 items-center justify-center sm:justify-start">
-          <a href="tel:+254714018914" className="flex items-center gap-2 hover:text-[var(--safari-gold)] transition-colors">
+          <a href="tel:+254755 690133" className="flex items-center gap-2 hover:text-[var(--safari-gold)] transition-colors">
             <Phone className="w-4 h-4" />
             <span>Currency: USD</span>
           </a>

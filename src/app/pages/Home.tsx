@@ -165,7 +165,7 @@ const homeMerchant = {
   name: 'Berleen Safaris - Premier Kenya Safari Operator',
   image: 'https://www.berleensafaris.com/logo-large.png',
   priceRange: '$$$',
-  telephone: '+254-700-000-000',
+  telephone: '+254755690133',
   address: 'Nairobi, Kenya, Westlands, Waiyaki Way',
   openingHours: ['Mon-Fri 9:00-18:00', 'Sat 10:00-16:00', 'Sun Closed'],
   paymentAccepted: ['Visa', 'Mastercard', 'American Express', 'Bank Transfer', 'M-Pesa', 'Cash'],
@@ -547,7 +547,7 @@ export function Home() {
           <div className="flex flex-wrap justify-center gap-8">
             <div className="flex items-center gap-2">
               <Phone className="w-5 h-5" />
-              <span>+254 714 018 914</span>
+              <span>+254755690133</span>
             </div>
             <div className="flex items-center gap-2">
               <Mail className="w-5 h-5" />

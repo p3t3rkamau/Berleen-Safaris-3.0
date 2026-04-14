@@ -370,7 +370,7 @@ export function Gallery() {
           name: 'Berleen Safaris - Photo Gallery',
           image: 'https://www.berleensafaris.com/logo-large.png',
           priceRange: 'Free to view',
-          telephone: '+254-714-018-914',
+          telephone: '+254755690133',
           address: 'Wilson Airport, Nairobi, Kenya',
           openingHours: ['Mon-Sun 24/7'],
           paymentAccepted: ['N/A - Free Gallery'],

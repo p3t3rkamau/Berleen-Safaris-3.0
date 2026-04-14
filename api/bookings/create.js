@@ -251,7 +251,7 @@ async function generateBookingPDF(bookingData) {
       doc.fontSize(9)
          .font('Helvetica')
          .fillColor('#6c757d')
-         .text('📞 +254 714 018 914 | ✉️ tours@berleensafaris.com | 🌐 www.berleensafaris.com', { align: 'center' });
+         .text('📞 +254755 690133 | ✉️ tours@berleensafaris.com | 🌐 www.berleensafaris.com', { align: 'center' });
       
       doc.moveDown(0.5);
       
@@ -477,7 +477,7 @@ function getCustomerEmailHtml(bookingData) {
         <div class="footer">
           <h3 style="margin-top: 0; color: white;">Berleen Safaris</h3>
           <p>
-            📞 +254 714 018 914<br>
+            📞 +254755 690133<br>
             ✉️ tours@berleensafaris.com<br>
             🌐 www.berleensafaris.com
           </p>

@@ -47,7 +47,7 @@ const team = [
     image: 'https://www.berleensafaris.com/images/team/beth-nampaso.jpg',
     bio: '15+ years of safari experience across East Africa. Beth started Berleen Safaris with a vision to share Kenya\'s wildlife heritage with the world.',
     email: 'beth@berleensafaris.com',
-    phone: '+254-700-000-001',
+    phone: '+254755 690133',
     social: { linkedin: '#', twitter: '#', instagram: '#' }
   },
   {
@@ -56,7 +56,7 @@ const team = [
     image: 'https://www.berleensafaris.com/images/team/james-mwangi.jpg',
     bio: 'Expert birder and wildlife photographer with 12 years of guiding experience. James speaks 5 languages including English, French, and German.',
     email: 'james@berleensafaris.com',
-    phone: '+254-700-000-002',
+    phone: '+254755 690133',
     social: { linkedin: '#', twitter: '#', instagram: '#' }
   },
   {
@@ -65,7 +65,7 @@ const team = [
     image: 'https://www.berleensafaris.com/images/team/sarah-kimani.jpg',
     bio: 'Ensures every safari runs smoothly from booking to drop-off. Sarah has a degree in Tourism Management and 8 years of industry experience.',
     email: 'sarah@berleensafaris.com',
-    phone: '+254-700-000-003',
+    phone: '+254755 690133',
     social: { linkedin: '#', twitter: '#', instagram: '#' }
   },
   {
@@ -74,7 +74,7 @@ const team = [
     image: 'https://www.berleensafaris.com/images/team/david-omondi.jpg',
     bio: 'Leads our sustainable tourism initiatives and community outreach programs. David works closely with local wildlife trusts.',
     email: 'david@berleensafaris.com',
-    phone: '+254-700-000-004',
+    phone: '+254755690133',
     social: { linkedin: '#', twitter: '#', instagram: '#' }
   },
   {
@@ -83,7 +83,7 @@ const team = [
     image: 'https://www.berleensafaris.com/images/team/maria-santos.jpg',
     bio: 'Ensures every guest has an unforgettable experience. Maria handles all customer inquiries and satisfaction.',
     email: 'maria@berleensafaris.com',
-    phone: '+254-700-000-005',
+    phone: '+254755690133',
     social: { linkedin: '#', twitter: '#', instagram: '#' }
   }
 ];
@@ -204,7 +204,7 @@ const companyMerchant = {
   name: 'Berleen Safaris Ltd - Premier Safari Operator',
   image: 'https://www.berleensafaris.com/logo-large.png',
   priceRange: '$$$',
-  telephone: '+254-700-000-000',
+  telephone: '+254755690133',
   address: 'Westlands Business Park, 3rd Floor, Nairobi, Kenya',
   openingHours: ['Mon-Fri 9:00-18:00', 'Sat 10:00-16:00', 'Sun: By Appointment'],
   paymentAccepted: ['Visa', 'Mastercard', 'American Express', 'Bank Transfer', 'M-Pesa', 'PayPal', 'Cryptocurrency'],

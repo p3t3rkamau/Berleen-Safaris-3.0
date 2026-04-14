@@ -208,7 +208,7 @@ export function SafariDetail() {
           name: `Berleen Safaris - ${safari.title}`,
           image: safari.image,
           priceRange: `$${safari.price} - $${safari.price + 1000}`,
-          telephone: '+254-714-018-914',
+          telephone: '+254755690133',
           address: safari.destinations?.[0] || 'Nairobi, Kenya',
           openingHours: ['Mon-Sun 24/7 for tours'],
           paymentAccepted: ['Visa', 'Mastercard', 'Bank Transfer', 'M-Pesa', 'Cash'],
