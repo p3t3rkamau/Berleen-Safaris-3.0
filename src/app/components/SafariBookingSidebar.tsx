@@ -7,7 +7,10 @@ interface Props {
   safari: Safari
 }
 
+
 export function SafariBookingSidebar({ safari }: Props) {
+
+
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
   const [formData, setFormData] = useState({
