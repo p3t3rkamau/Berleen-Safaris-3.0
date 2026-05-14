@@ -11,7 +11,7 @@
       <video:content_loc>https://www.youtube.com/watch?v=example1</video:content_loc>
       <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/example1</video:player_loc>
       <video:duration>180</video:duration>
-      <video:publication_date>2026-04-08</video:publication_date>
+      <video:publication_date>2026-05-14</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
       <video:live>no</video:live>
     </video:video>
@@ -26,7 +26,7 @@
       <video:content_loc>https://www.youtube.com/watch?v=example2</video:content_loc>
       <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/example2</video:player_loc>
       <video:duration>240</video:duration>
-      <video:publication_date>2026-04-08</video:publication_date>
+      <video:publication_date>2026-05-14</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
       <video:live>no</video:live>
     </video:video>
@@ -41,7 +41,7 @@
       <video:content_loc>https://www.youtube.com/watch?v=example3</video:content_loc>
       <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/example3</video:player_loc>
       <video:duration>195</video:duration>
-      <video:publication_date>2026-04-08</video:publication_date>
+      <video:publication_date>2026-05-14</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
       <video:live>no</video:live>
     </video:video>

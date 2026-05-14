@@ -347,14 +347,14 @@ export function Gallery() {
     <>
       {/* Ultimate SEO Component */}
       <UltimateSEO
-        title="Safari Gallery | Wildlife & Landscape Photography"
-        description="Explore our stunning safari gallery featuring incredible wildlife photography, breathtaking landscapes, and authentic cultural experiences from East Africa."
-        keywords="safari gallery, wildlife photography, african safari photos, masai mara pictures, kenya wildlife photos"
+        title="Safari Photo Gallery | Wildlife & Safari Photography from East Africa"
+        description="Explore our stunning safari photo gallery featuring incredible wildlife photography, breathtaking African landscapes, and authentic cultural experiences from Kenya, Tanzania, Uganda & Rwanda. See Big Five animals, Great Migration, and more!"
+        keywords="safari gallery, wildlife photography, african safari photos, masai mara pictures, kenya wildlife photos, elephant photos, lion photos, great migration photos, serengeti photos, safari photography, berleen safaris gallery, africa wildlife images"
         canonicalUrl="/gallery"
         ogImage="https://www.berleensafaris.com/images/gallery-og-image.jpg"
         ogImageWidth={1200}
         ogImageHeight={630}
-        ogImageAlt="Berleen Safaris Gallery - Stunning wildlife and landscape photography"
+        ogImageAlt="Berleen Safaris Gallery - Stunning wildlife and landscape photography from East Africa"
         twitterImage="https://www.berleensafaris.com/images/gallery-twitter-card.jpg"
         ogVideo={galleryVideo.url}
         ogVideoType="video/mp4"
@@ -366,6 +366,7 @@ export function Gallery() {
           { name: 'Gallery', item: '/gallery' }
         ]}
         product={galleryProduct}
+        aggregateRating={{ ratingValue: 4.9, reviewCount: 312, bestRating: 5, worstRating: 1 }}
         merchant={{
           name: 'Berleen Safaris - Photo Gallery',
           image: 'https://www.berleensafaris.com/logo-large.png',

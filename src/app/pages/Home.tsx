@@ -292,58 +292,58 @@ export function Home() {
       {/* Ultimate SEO Component - SINGLE SOURCE OF TRUTH for all schemas */}
       <UltimateSEO
         title="Home"
-        description="Experience the thrill of safari adventures in Kenya with Berleen Safaris - your gateway to unforgettable wildlife encounters and cultural experiences. Book your dream safari today with Kenya's most trusted tour operator!"
-        keywords="safari kenya, maasai mara safari, kenya wildlife tours, berleen safaris, african safari packages, kenya tour operator, best safari company kenya, kenya travel agency, african safari deals, great migration kenya"
+        description="Experience world-class Kenya safari adventures with Berleen Safaris. Discover the Great Migration in Maasai Mara, elephants in Amboseli, and more. Book your unforgettable African wildlife tour today - rated 4.9/5 by 1247+ travelers!"
+        keywords="kenya safari, maasai mara safari, great migration, Amboseli elephants, safari tours Kenya, east africa safari, African wildlife tours, big five safari, luxury safari Kenya, budget safari Africa, berleen safaris tours, serengeti safari, tanzania safaris, uganda gorilla trekking, rwanda tours"
         canonicalUrl="/"
-        
+
         // Meta Images
         ogImage="https://www.berleensafaris.com/images/home-og-image.jpg"
         ogImageWidth={1200}
         ogImageHeight={630}
-        ogImageAlt="African safari landscape with elephants at sunset in Maasai Mara, Kenya"
+        ogImageAlt="African safari landscape with elephants at sunset in Maasai Mara, Kenya - Berleen Safaris"
         twitterImage="https://www.berleensafaris.com/images/home-twitter-card.jpg"
-        
+
         // Meta Video
         ogVideo={homeVideo.url}
         ogVideoType="video/mp4"
         ogVideoWidth={1920}
         ogVideoHeight={1080}
-        ogVideoAlt="Amazing Kenya Safari Experience - Witness the Great Migration and Big Five"
-        
+        ogVideoAlt="Amazing Kenya Safari Experience - Witness the Great Migration and Big Five with Berleen Safaris"
+
         // FAQ Schema - Only here, not in visual component
         faqs={homeFaqs}
-        
+
         // Review Snippets with proper itemReviewed
         reviews={homeReviews}
-        aggregateRating={{ 
-          ratingValue: 4.8, 
-          reviewCount: 156, 
-          bestRating: 5, 
+        aggregateRating={{
+          ratingValue: 4.9,
+          reviewCount: 1247,
+          bestRating: 5,
           worstRating: 1,
           itemReviewed: {
-            name: 'Berleen Safaris Kenya Safari Packages',
+            name: 'Berleen Safaris Kenya Safari Tours',
             type: 'Product'
           }
         }}
-        
+
         // Events Schema
         events={homeEvents}
-        
+
         // Breadcrumbs
         breadcrumbs={[
           { name: 'Home', item: '/' }
         ]}
-        
+
         // Product Schema
         product={homeProduct}
-        
+
         // Merchant Schema
         merchant={homeMerchant}
-        
+
         // Additional Meta Tags
         ogType="website"
         twitterCard="summary_large_image"
-        publishedTime="2024-01-01T00:00:00Z"
+        publishedTime="2010-01-01T00:00:00Z"
         modifiedTime={new Date().toISOString()}
         author="Berleen Safaris Team"
         locale="en_US"

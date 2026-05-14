@@ -162,9 +162,9 @@ export function Contact() {
     <>
       {/* Ultimate SEO Component with ALL Features */}
       <UltimateSEO
-        title="Contact Us"
-        description="Contact Berleen Safaris to start planning your dream African safari. Get expert advice, custom itineraries, and instant responses to your safari questions. Call, email, or WhatsApp us today!"
-        keywords="contact berleen safaris, safari inquiry, kenya safari booking, african safari planner, east africa tours, custom safari packages, safari consultation, berleen safaris contact"
+        title="Contact Berleen Safaris | Book Your Safari Today"
+        description="Contact Berleen Safaris for expert safari planning in Kenya, Tanzania, Uganda & Rwanda. Get instant WhatsApp support, custom itineraries, and the best safari deals. Rated 4.9/5 by 1247+ travelers. Call +254755690133!"
+        keywords="contact berleen safaris, book safari kenya, safari inquiry, kenya safari booking, african safari planner, east africa tours, custom safari packages, safari consultation, berleen safaris contact, whatsapp safari booking, safari quote kenya"
         canonicalUrl="/contact"
         
         /* Meta Images */

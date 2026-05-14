@@ -110,9 +110,9 @@ export function SafariDetail() {
   }
 
   // Generate SEO metadata
-  const seoTitle = safari.title
-  const seoDescription = `${safari.title}. ${safari.duration} of adventure in ${safari.destinations?.join(', ')}. ${safari.description?.substring(0, 160)} Book your safari with Berleen Safaris for an unforgettable wildlife experience.`
-  const seoKeywords = `${safari.title}, ${safari.destinations?.join(', ')}, ${safari.duration} day safari, safari kenya, wildlife safari, ${safari.category} safari, african safari package, ${safari.destinations?.[0]} safari`
+  const seoTitle = safari.title + ' | Berleen Safaris Safari Packages';
+  const seoDescription = `${safari.title} - Book this incredible ${safari.duration} safari adventure in ${safari.destinations?.join(', ')}. ${safari.description?.substring(0, 160)} Enjoy Big Five wildlife, luxury accommodations, expert guides. Best price guaranteed!`;
+  const seoKeywords = `${safari.title}, ${safari.destinations?.join(', ')}, ${safari.duration} safari, ${safari.category} safari, kenya safari, wildlife safari, african safari package, big five safari, maasai mara safari, berleen safaris ${safari.id}`;
   
   // Generate FAQs
   const safariFaqs = generateSafariFaqs(safari)

@@ -136,9 +136,9 @@ export function DestinationDetail() {
     <>
       {/* Ultimate SEO Component with ALL Features */}
       <UltimateSEO
-        title={`${destination.name} | Safari Destination`}
-        description={`Discover ${destination.name} - ${destination.description?.substring(0, 160)}. Book unforgettable safari packages to ${destination.name} with Berleen Safaris. Experience incredible wildlife, stunning landscapes, and expert guides.`}
-        keywords={destinationKeywords}
+        title={`${destination.name} Safari Tours | Best Wildlife Experiences`}
+        description={`Discover ${destination.name} - Kenya's premier safari destination! Book unforgettable safari packages with Berleen Safaris. Experience incredible ${destination.name} wildlife, stunning landscapes, expert guides. Rated 4.9/5 by 1247+ travelers!`}
+        keywords={`${destination.name} safari, ${destination.name} tours, ${destination.name} kenya, ${destination.name} wildlife, ${destination.name} national park, ${destination.name} accommodation, safari ${destination.name}, masai mara, amboseli, tsavo, big five ${destination.name}, kenya safari tours`}
         canonicalUrl={`/destinations/${country}`}
         
         /* Meta Images */

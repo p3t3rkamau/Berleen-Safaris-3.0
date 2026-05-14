@@ -1,12 +1,23 @@
 # https://www.robotstxt.org/robotstxt.html
+# Berleen Safaris - Enhanced robots.txt for SEO
+
 User-agent: *
 Allow: /
+
+# Admin and private areas
 Disallow: /admin/
-Disallow: /dashboard/
 Disallow: /api/
+Disallow: /dashboard/
 Disallow: /private/
 Disallow: /temp/
 Disallow: /_internal/
+
+# Block search query parameters from indexing (optional - can be removed if needed)
+# Disallow: /*?*
+
+# Block common non-content files
+Disallow: /*.json$
+Disallow: /*.xml$
 
 # Sitemaps
 Sitemap: https://www.berleensafaris.com/sitemap.xml
@@ -14,18 +25,60 @@ Sitemap: https://www.berleensafaris.com/sitemap-images.xml
 Sitemap: https://www.berleensafaris.com/sitemap-videos.xml
 Sitemap: https://www.berleensafaris.com/sitemap-index.xml
 
-# Crawl delay - be respectful to the server
+# Crawl delay for respectful crawling
 Crawl-delay: 1
 
 # Host directive
 Host: https://www.berleensafaris.com
 
-# Allow Googlebot to crawl all content
+# Googlebot - Full access
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 0.5
 
-# Allow Bingbot
+# Googlebot Image
+User-agent: Googlebot-Image
+Allow: /
+
+# Googlebot Video
+User-agent: Googlebot-Video
+Allow: /
+
+# Bingbot
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 1
+
+# Slurp (Yahoo)
+User-agent: Slurp
+Allow: /
+
+# DuckDuckBot
+User-agent: DuckDuckBot
+Allow: /
+
+# Baiduspider
+User-agent: Baiduspider
+Allow: /
+
+# YandexBot
+User-agent: YandexBot
+Allow: /
+
+# Sogou Spider
+User-agent: Sogou
+Allow: /
+
+# Exabot
+User-agent: Exabot
+Allow: /
+
+# AI Crawlers - Allow for SEO
+User-agent: GPTBot
+Allow: /
+User-agent: CCBot
+Allow: /
+User-agent: Anthropic AI
+Allow: /
+User-agent:Omgubuntu
+Allow: /

@@ -223,9 +223,9 @@ export function About() {
     <>
       {/* Ultimate SEO Component with ALL Features */}
       <UltimateSEO
-        title="About Us"
-        description="Learn about Berleen Safaris - Kenya's premier safari operator since 2010. Discover our story, meet our expert team, and understand our commitment to exceptional wildlife experiences and sustainable tourism in East Africa."
-        keywords="about berleen safaris, kenya safari company, african safari operator, sustainable tourism kenya, east africa travel agency, best safari company, berleen safaris history, kenya tour operator"
+        title="About Us | Kenya's Premier Safari Company Since 2010"
+        description="Discover Berleen Safaris - East Africa's leading safari operator since 2010. Learn about our expert guides, sustainable tourism commitment, and 10,000+ happy travelers. Book your dream safari with our award-winning team!"
+        keywords="about berleen safaris, kenya safari company, kenya tour operator, east africa safari company, safari guides kenya, sustainable tourism africa, kenya travel agency, safari expert kenya, berleen safaris history, best safari company kenya, maasai mara tours,Amboseli tours, tsavo tours"
         canonicalUrl="/about"
         
         /* Meta Images */

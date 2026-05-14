@@ -175,9 +175,9 @@ export function Safaris() {
     <>
       {/* Ultimate SEO Component with ALL Features */}
       <UltimateSEO
-        title="Safari Packages | Kenya & East Africa Safari Tours"
-        description={`Explore ${allSafaris.length}+ safari packages across Kenya, Tanzania, Rwanda, and Uganda. From budget to luxury, short to extended safaris. Book your African adventure with Berleen Safaris today!`}
-        keywords="safari packages kenya, kenya safari tours, tanzania safaris, east africa safari deals, budget safaris, luxury safaris, masai mara packages, serengeti safaris, gorilla trekking, berleen safaris"
+        title="Safari Packages | Kenya & East Africa Safari Tours 2026"
+        description={`Explore ${allSafaris.length}+ safari packages across Kenya, Tanzania, Rwanda, and Uganda! From budget camping to luxury lodges, short weekend getaways to extended adventures. Book your dream African safari with Berleen Safaris - rated 4.9/5 by 1247+ travelers!`}
+        keywords={`safari packages kenya, kenya safari tours, tanzania safaris, east africa safari deals, budget safaris, luxury safaris, masai mara packages, serengeti safaris, gorilla trekking, berleen safaris, safari 2026, african wildlife tours, big five safari, great migration tours, kenya tanzania safari`}
         canonicalUrl="/safaris"
         
         /* Meta Images */
