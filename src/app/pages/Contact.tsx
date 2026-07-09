@@ -88,7 +88,7 @@ const contactMerchant = {
   image: 'https://www.berleensafaris.com/logo-large.png',
   priceRange: '$$$',
   telephone: '+254755690133',
-  address: 'Wilson Airport, Nairobi, Kenya',
+  address: 'Westlands, Nairobi, Kenya',
   openingHours: ['Mon-Fri 8:00-18:00', 'Sat 9:00-16:00'],
   paymentAccepted: ['Visa', 'Mastercard', 'Bank Transfer', 'M-Pesa', 'Cash'],
   areaServed: ['Kenya', 'Tanzania', 'Uganda', 'Rwanda', 'Worldwide']
@@ -491,7 +491,7 @@ export function Contact() {
                     <div>
                       <div className="font-semibold mb-1">Office Location</div>
                       <p className="text-gray-300" itemProp="address">
-                        Wilson Airport<br />
+                        Westlands<br />
                         Nairobi, Kenya
                       </p>
                     </div>
@@ -622,7 +622,7 @@ export function Contact() {
               Visit Our Office
             </h2>
             <p className="text-lg text-gray-600 mb-8 text-center max-w-2xl mx-auto">
-              Located at Wilson Airport, Nairobi - Convenient for meeting before or after your safari
+              Located at Westlands, Nairobi - Convenient for meeting before or after your safari
             </p>
             
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
@@ -645,7 +645,7 @@ export function Contact() {
                     <MapPin className="w-5 h-5 text-[var(--safari-gold)] flex-shrink-0 mt-0.5" />
                     <div>
                       <p className="font-semibold text-sm">Berleen Safaris Office</p>
-                      <p className="text-xs text-gray-600">Wilson Airport, Nairobi, Kenya</p>
+                      <p className="text-xs text-gray-600">Westlands, Nairobi, Kenya</p>
                       <p className="text-xs text-gray-500 mt-1">📞 +254755690133</p>
                     </div>
                   </div>
@@ -668,7 +668,7 @@ export function Contact() {
               <div className="bg-white p-4 rounded-lg text-center">
                 <div className="text-2xl mb-2">🚌</div>
                 <p className="font-semibold">Public Transport</p>
-                <p className="text-sm text-gray-600">Matatus from city center to Wilson Airport regularly</p>
+                <p className="text-sm text-gray-600">Matatus from city center to Westlands regularly</p>
               </div>
             </div>
           </motion.div>

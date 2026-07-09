@@ -372,7 +372,7 @@ export function Gallery() {
           image: 'https://www.berleensafaris.com/logo-large.png',
           priceRange: 'Free to view',
           telephone: '+254755690133',
-          address: 'Wilson Airport, Nairobi, Kenya',
+          address: 'Westlands, Nairobi, Kenya',
           openingHours: ['Mon-Sun 24/7'],
           paymentAccepted: ['N/A - Free Gallery'],
           areaServed: ['Worldwide']

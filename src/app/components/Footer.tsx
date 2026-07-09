@@ -65,7 +65,7 @@ export function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-1 flex-shrink-0" />
-                <span>Wilson Airport,Nairobi, Kenya</span>
+                <span>Westlands,Nairobi, Kenya</span>
               </li>
         
               <li className="flex items-center gap-2">

@@ -555,7 +555,7 @@ export function Home() {
             </div>
             <div className="flex items-center gap-2">
               <MapPinIcon className="w-5 h-5" />
-              <span>Wilson Airport, Nairobi, Kenya</span>
+              <span>Westlands, Nairobi, Kenya</span>
             </div>
             <div className="flex items-center gap-2">
               <Clock className="w-5 h-5" />

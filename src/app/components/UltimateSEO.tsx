@@ -744,7 +744,7 @@ export function UltimateSEO(props: UltimateSEOProps) {
               },
               address: {
                 '@type': 'PostalAddress',
-                streetAddress: 'Wilson Airport',
+                streetAddress: 'Westlands',
                 addressLocality: 'Nairobi',
                 addressCountry: 'KE'
               }

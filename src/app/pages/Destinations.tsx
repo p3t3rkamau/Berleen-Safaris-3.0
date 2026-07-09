@@ -98,7 +98,7 @@ const destinationsMerchant = {
   image: 'https://www.berleensafaris.com/logo-large.png',
   priceRange: '$$$',
   telephone: '+254755690133',
-  address: 'Wilson Airport, Nairobi, Kenya',
+  address: 'Westlands, Nairobi, Kenya',
   openingHours: ['Mon-Fri 9:00-18:00', 'Sat 10:00-16:00'],
   paymentAccepted: ['Visa', 'Mastercard', 'Bank Transfer', 'M-Pesa', 'Cash'],
   areaServed: allDestinations.map(d => d.name)
