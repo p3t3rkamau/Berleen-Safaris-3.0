@@ -140,7 +140,7 @@ const galleryImages = [
 const galleryFaqs = [
   {
     question: 'Can I use these photos for my website or publication?',
-    answer: 'All photos in our gallery are copyrighted by Berleen Safaris. For media inquiries or permission to use our photos, please contact us directly at media@berleensafaris.com with your specific request.'
+    answer: 'All photos in our gallery are copyrighted by Berleen Safaris. For media inquiries or permission to use our photos, please contact us directly at tours@berleensafaris.com with your specific request.'
   },
   {
     question: 'Do you offer photography tours?',
@@ -148,7 +148,7 @@ const galleryFaqs = [
   },
   {
     question: 'Can I submit my own safari photos to your gallery?',
-    answer: 'We love seeing our guests\' photos! Tag us on social media @berleensafaris or email your best shots to gallery@berleensafaris.com for a chance to be featured.'
+    answer: 'We love seeing our guests\' photos! Tag us on social media @berleensafaris or email your best shots to tours@berleensafaris.com for a chance to be featured.'
   },
   {
     question: 'What camera equipment do you recommend for safari?',
