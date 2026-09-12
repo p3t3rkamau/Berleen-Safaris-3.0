@@ -42,20 +42,20 @@ const features = [
 
 const team = [
   {
-    name: 'Beth Nampaso',
+    name: 'Silantoi Bellie',
     role: 'Founder & Lead Guide',
     image: 'https://www.berleensafaris.com/images/team/beth-nampaso.jpg',
-    bio: '15+ years of safari experience across East Africa. Beth started Berleen Safaris with a vision to share Kenya\'s wildlife heritage with the world.',
-    email: 'beth@berleensafaris.com',
+    bio: '15+ years of safari experience across East Africa. Silantoi Bellie started Berleen Safaris with a vision to share Kenya\'s wildlife heritage with the world.',
+    email: 'tours@berleensafaris.com',
     phone: '+254755 690133',
     social: { linkedin: '#', twitter: '#', instagram: '#' }
   },
   {
-    name: 'James Mwangi',
+    name: 'Charles Mutai',
     role: 'Senior Safari Guide',
     image: 'https://www.berleensafaris.com/images/team/james-mwangi.jpg',
-    bio: 'Expert birder and wildlife photographer with 12 years of guiding experience. James speaks 5 languages including English, French, and German.',
-    email: 'james@berleensafaris.com',
+    bio: 'Expert birder and wildlife photographer with 12 years of guiding experience. Charles speaks 5 languages including English, French, and German.',
+    email: 'tours@berleensafaris.com',
     phone: '+254755 690133',
     social: { linkedin: '#', twitter: '#', instagram: '#' }
   },
@@ -64,7 +64,7 @@ const team = [
     role: 'Operations Manager',
     image: 'https://www.berleensafaris.com/images/team/sarah-kimani.jpg',
     bio: 'Ensures every safari runs smoothly from booking to drop-off. Sarah has a degree in Tourism Management and 8 years of industry experience.',
-    email: 'sarah@berleensafaris.com',
+    email: 'tours@berleensafaris.com',
     phone: '+254755 690133',
     social: { linkedin: '#', twitter: '#', instagram: '#' }
   },
@@ -73,7 +73,7 @@ const team = [
     role: 'Conservation Officer',
     image: 'https://www.berleensafaris.com/images/team/david-omondi.jpg',
     bio: 'Leads our sustainable tourism initiatives and community outreach programs. David works closely with local wildlife trusts.',
-    email: 'david@berleensafaris.com',
+    email: 'tours@berleensafaris.com',
     phone: '+254755690133',
     social: { linkedin: '#', twitter: '#', instagram: '#' }
   },
@@ -82,7 +82,7 @@ const team = [
     role: 'Customer Experience Manager',
     image: 'https://www.berleensafaris.com/images/team/maria-santos.jpg',
     bio: 'Ensures every guest has an unforgettable experience. Maria handles all customer inquiries and satisfaction.',
-    email: 'maria@berleensafaris.com',
+    email: 'tours@berleensafaris.com',
     phone: '+254755690133',
     social: { linkedin: '#', twitter: '#', instagram: '#' }
   }

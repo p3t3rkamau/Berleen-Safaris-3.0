@@ -12,7 +12,7 @@ export function Footer() {
               
                <div className="ml-0">
                 <div className="">
-                  <img src={logo} alt="Berleen Safaris" className="h-20 w-auto" />
+                  <img src={logo} alt="Berleen Safaris" className="h-14 w-auto" />
                 </div>
             
               </div>
