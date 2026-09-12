@@ -52,7 +52,7 @@ export function Navigation() {
             <div className="flex items-center">
               <div className="ml-0">
                 <div className="">
-                  <img src={logo} alt="Berleen Safaris" className="h-20 w-auto" />
+                  <img src={logo} alt="Berleen Safaris" className="h-10 w-auto" />
                 </div>
               </div>
             </div>
