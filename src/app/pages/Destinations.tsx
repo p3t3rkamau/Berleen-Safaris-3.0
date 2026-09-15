@@ -581,7 +581,7 @@ export function Destinations() {
             <div className="flex items-center gap-2">
               <Award className="w-8 h-8 text-[var(--safari-gold)]" />
               <div>
-                <div className="font-bold text-sm">Kenya Tourism Board</div>
+                <div className="font-bold text-sm">TRA</div>
                 <div className="text-xs text-gray-500">Registered Member</div>
               </div>
             </div>

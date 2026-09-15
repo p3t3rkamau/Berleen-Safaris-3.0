@@ -45,7 +45,7 @@ const team = [
     name: 'Silantoi Bellie',
     role: 'Senior Safari Expert',
     image: 'https://www.berleensafaris.com/images/team/beth-nampaso.jpg',
-    bio: '15+ years of safari experience across East Africa. Silantoi Bellie started Berleen Safaris with a vision to share Kenya\'s wildlife heritage with the world.',
+    bio: '15+ years of safari experience across East Africa. Silantoi Bellie joined Berleen Safaris with a vision to share Kenya\'s wildlife heritage with the world.',
     email: 'tours@berleensafaris.com',
     phone: '+254755 690133',
     social: { linkedin: '#', twitter: '#', instagram: '#' }
@@ -93,7 +93,7 @@ const companyTimeline = [
   { year: '2010', event: 'Berleen Safaris founded with a single safari vehicle', icon: '🚀' },
   { year: '2012', event: 'Expanded to Tanzania with Serengeti safaris', icon: '🦁' },
   { year: '2015', event: 'Added gorilla trekking in Rwanda and Uganda', icon: '🦍' },
-  { year: '2018', event: 'Received Kenya Tourism Board Excellence Award', icon: '🏆' },
+  { year: '2018', event: 'Received TRA Excellence Award', icon: '🏆' },
   { year: '2020', event: 'Launched sustainable tourism initiative', icon: '🌱' },
   { year: '2024', event: 'Served over 10,000 happy travelers', icon: '✨' }
 ];
@@ -325,7 +325,7 @@ export function About() {
               </h2>
               <div className="prose prose-lg text-gray-600 space-y-4">
                 <p>
-                  Berleen Safaris Ltd. was founded in 2010 by Silantoi Bellie, a passionate wildlife enthusiast and 
+                  Berleen Safaris Ltd. was founded in 2010, a passionate wildlife enthusiast and 
                   experienced safari guide. What started as a small operation with a single safari vehicle has grown 
                   into one of East Africa's most trusted safari companies.
                 </p>
@@ -647,7 +647,7 @@ export function About() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {[
               { name: 'Licensed Tour Operator', icon: '📜' },
-              { name: 'Kenya Tourism Board', icon: '🇰🇪' },
+              { name: 'TRA', icon: '🇰🇪' },
               { name: 'Tanzania Tourism Board', icon: '🇹🇿' },
               { name: 'Rwanda Development Board', icon: '🇷🇼' },
               { name: 'Uganda Tourism Board', icon: '🇺🇬' },

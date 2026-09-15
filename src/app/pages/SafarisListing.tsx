@@ -530,7 +530,7 @@ export function SafarisListing() {
                       </div>
                       <div className="flex items-center gap-2 text-sm text-gray-600">
                         <Award className="w-4 h-4 text-[var(--safari-gold)]" />
-                        <span>Kenya Tourism Board Member</span>
+                        <span>TRA Member</span>
                       </div>
                       <div className="flex items-center gap-2 text-sm text-gray-600">
                         <Users className="w-4 h-4 text-blue-600" />

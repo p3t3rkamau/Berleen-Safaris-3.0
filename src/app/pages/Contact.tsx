@@ -520,7 +520,7 @@ export function Contact() {
                   </div>
                   <div className="flex items-center gap-2 text-sm mt-2">
                     <Award className="w-4 h-4 text-[var(--safari-gold)]" />
-                    <span>Kenya Tourism Board Member</span>
+                    <span>TRA Member</span>
                   </div>
                 </div>
               </motion.div>
