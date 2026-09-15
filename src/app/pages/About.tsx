@@ -43,7 +43,7 @@ const features = [
 const team = [
   {
     name: 'Silantoi Bellie',
-    role: 'Founder & Lead Guide',
+    role: 'Senior Safari Expert',
     image: 'https://www.berleensafaris.com/images/team/beth-nampaso.jpg',
     bio: '15+ years of safari experience across East Africa. Silantoi Bellie started Berleen Safaris with a vision to share Kenya\'s wildlife heritage with the world.',
     email: 'tours@berleensafaris.com',
