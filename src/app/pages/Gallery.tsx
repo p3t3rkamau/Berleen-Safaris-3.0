@@ -50,7 +50,7 @@ const galleryImages = [
     title: 'Zebra Migration',
     description: 'Thousands of zebras during the Great Migration',
     location: 'Masai Mara, Kenya',
-    photographer: 'Beth Nampaso',
+    photographer: 'Silantoi Bellie',
     date: '2024-01-12'
   },
   {
@@ -95,7 +95,7 @@ const galleryImages = [
     title: 'Mountain Gorilla',
     description: 'Rare mountain gorilla in its natural habitat',
     location: 'Volcanoes National Park, Rwanda',
-    photographer: 'Beth Nampaso',
+    photographer: 'Silantoi Bellie',
     date: '2024-01-06'
   },
   {
@@ -131,7 +131,7 @@ const galleryImages = [
     title: 'Masai Culture',
     description: 'Traditional Masai warriors in their colorful attire',
     location: 'Masai Mara, Kenya',
-    photographer: 'Beth Nampaso',
+    photographer: 'Silantoi Bellie',
     date: '2024-01-11'
   }
 ];

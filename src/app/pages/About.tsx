@@ -325,7 +325,7 @@ export function About() {
               </h2>
               <div className="prose prose-lg text-gray-600 space-y-4">
                 <p>
-                  Berleen Safaris Ltd. was founded in 2010 by Beth Nampaso, a passionate wildlife enthusiast and 
+                  Berleen Safaris Ltd. was founded in 2010 by Silantoi Bellie, a passionate wildlife enthusiast and 
                   experienced safari guide. What started as a small operation with a single safari vehicle has grown 
                   into one of East Africa's most trusted safari companies.
                 </p>
